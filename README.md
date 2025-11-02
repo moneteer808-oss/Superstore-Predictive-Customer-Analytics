@@ -27,7 +27,7 @@ Key insights generated from the predictive analytics pipeline:
 
 ## Live Report
 View the interactive predictive analytics report here:  
-👉 [Superstore Predictive Customer Analytics Report](https://moneteer808-oss.github.io/Superstore-Predictive-Customer-Analytics/)
+[Open Predictive Analytics Report →](report/Superstore_Predictive_Customer_Analytics.html)
 
 > **Previous Project:** [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)  
 > This RFM segmentation serves as the foundation for all predictive modeling and strategy simulations.
