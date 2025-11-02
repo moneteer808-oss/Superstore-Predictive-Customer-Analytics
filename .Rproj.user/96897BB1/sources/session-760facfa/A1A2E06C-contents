@@ -1,0 +1,136 @@
+# Load libraries
+library(tidyverse)
+library(janitor)
+library(dplyr)
+library(lubridate)
+library(here)
+library(caret)
+library(xgboost)
+library(Metrics)
+
+# Step 1: Load and clean data
+tx <- read_csv(here("data", "Superstore.csv")) %>%
+  clean_names() %>%
+  select(customer_id, order_date, sales, category) %>%
+  mutate(
+    order_date = mdy(order_date),
+    sales = as.numeric(sales)
+  ) %>%
+  filter(!is.na(order_date), sales > 0)
+
+# Step 2: Time-based RFM and targets
+cutoff_date <- as.Date("2017-07-01")
+tx_train <- tx %>% filter(order_date < cutoff_date)
+tx_future <- tx %>% filter(order_date >= cutoff_date)
+
+# RFM features
+rfm_features <- tx_train %>%
+  group_by(customer_id) %>%
+  summarise(
+    recency = as.numeric(cutoff_date - max(order_date)),
+    frequency = n(),
+    monetary = sum(sales),
+    first_purchase = min(order_date),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    tenure_days = as.numeric(cutoff_date - first_purchase),
+    r_score = ntile(-recency, 5),
+    f_score = ntile(frequency, 5),
+    m_score = ntile(monetary, 5)
+  )
+
+# Targets
+clv_target <- tx_future %>% group_by(customer_id) %>% summarise(future_spend = sum(sales), .groups = "drop")
+all_customers <- tibble(customer_id = unique(rfm_features$customer_id))
+churn_target <- all_customers %>% mutate(is_churn = ifelse(customer_id %in% tx_future$customer_id, 0, 1))
+
+model_data <- rfm_features %>%
+  left_join(clv_target, by = "customer_id") %>%
+  mutate(future_spend = replace_na(future_spend, 0)) %>%
+  left_join(churn_target, by = "customer_id")
+
+# Step 3: Load RFM segments from Project 1
+rfm_segments <- read_csv(here("output", "rfm_customer_segments.csv")) %>%
+  select(customer_id, Segment) %>%
+  rename(segment = Segment)
+
+model_data <- model_data %>% left_join(rfm_segments, by = "customer_id")
+
+# Step 4: Train CLV model
+clv_df <- model_data %>% select(future_spend, recency, frequency, monetary, r_score, f_score, m_score, tenure_days) %>% na.omit()
+set.seed(123)
+clv_train_idx <- createDataPartition(clv_df$future_spend, p = 0.8, list = FALSE)
+clv_train <- clv_df[clv_train_idx, ]
+clv_test  <- clv_df[-clv_train_idx, ]
+
+clv_xgb <- train(future_spend ~ ., data = clv_train, method = "xgbTree", trControl = trainControl(method = "cv", number = 3), metric = "RMSE")
+model_data$clv_pred <- predict(clv_xgb, model_data)
+
+# Step 5: Train churn model (with correct factor levels)
+model_data$is_churn <- factor(model_data$is_churn, levels = c(0, 1), labels = c("No", "Yes"))
+churn_df <- model_data %>% select(is_churn, recency, frequency, monetary, r_score, f_score, m_score, tenure_days) %>% na.omit()
+set.seed(123)
+churn_train_idx <- createDataPartition(churn_df$is_churn, p = 0.8, list = FALSE)
+churn_train <- churn_df[churn_train_idx, ]
+churn_test  <- churn_df[-churn_train_idx, ]
+
+ctrl <- trainControl(method = "cv", number = 3, classProbs = TRUE, summaryFunction = twoClassSummary)
+churn_xgb <- train(is_churn ~ ., data = churn_train, method = "xgbTree", trControl = ctrl, metric = "ROC")
+model_data$retention_score <- 1 - predict(churn_xgb, model_data, type = "prob")[, "Yes"]
+
+# Step 6: Add value & retention tiers
+model_data <- model_data %>%
+  mutate(
+    value_tier = case_when(
+      clv_pred >= quantile(clv_pred, 0.75) ~ "High Value",
+      clv_pred >= quantile(clv_pred, 0.25) ~ "Medium Value",
+      TRUE ~ "Low Value"
+    ),
+    retention_tier = case_when(
+      retention_score >= quantile(retention_score, 0.75) ~ "High Retention",
+      retention_score >= quantile(retention_score, 0.25) ~ "Medium Retention",
+      TRUE ~ "Low Retention"
+    )
+  )
+
+# Step 7: Add top category
+top_category <- tx %>%
+  group_by(customer_id, category) %>%
+  summarise(total_spend = sum(sales), .groups = "drop") %>%
+  arrange(desc(total_spend)) %>%
+  group_by(customer_id) %>%
+  filter(row_number() == 1) %>%
+  ungroup() %>%
+  select(customer_id, top_category = category)
+
+model_data <- model_data %>% left_join(top_category, by = "customer_id")
+
+# Step 8: Save final dataset
+write_csv(model_data, here("output", "predictive_customer_segments_with_category.csv"))
+
+# Step 9: Visualization with pastel colors
+viz_data <- model_data %>%
+  count(value_tier, retention_tier) %>%
+  mutate(
+    value_tier = factor(value_tier, levels = c("Low Value", "Medium Value", "High Value")),
+    retention_tier = factor(retention_tier, levels = c("Low Retention", "Medium Retention", "High Retention")),
+    segment_color = case_when(
+      value_tier == "Low Value" & retention_tier == "Low Retention" ~ "#FFB3BA",
+      value_tier == "Medium Value" & retention_tier == "Low Retention" ~ "#FFDFBA",
+      value_tier == "High Value" & retention_tier == "Low Retention" ~ "#BAE1FF",
+      value_tier == "Low Value" & retention_tier == "Medium Retention" ~ "#D8BFD8",
+      value_tier == "Medium Value" & retention_tier == "Medium Retention" ~ "#FFFFBA",
+      value_tier == "High Value" & retention_tier == "Medium Retention" ~ "#B0E0E6",
+      value_tier == "Low Value" & retention_tier == "High Retention" ~ "#E6E6FA",
+      value_tier == "Medium Value" & retention_tier == "High Retention" ~ "#F0E68C",
+      value_tier == "High Value" & retention_tier == "High Retention" ~ "#ADD8E6"
+    )
+  )
+
+p1 <- ggplot(viz_data, aes(x = value_tier, y = retention_tier)) +
+  geom_tile(aes(fill = segment_color), color = "white") +
+  scale_fill_identity() +
+  labs(title = "Customer Segments: Predicted Value vs Retention") +
+  theme_minimal()
+print(p1)

@@ -1,0 +1,10 @@
+marketing_segment,customers,avg_clv_pred,avg_retention,avg_recency,avg_frequency,avg_monetary
+High Value + Medium Retention,110,1044.75,0.814,218.8,8.8,2160.25
+High Value + Low Retention,52,1011.75,0.455,329.3,7.7,1696.68
+High Value + High Retention,42,1009.66,0.96,168.7,8.6,2576.63
+Medium Value + Medium Retention,194,807.75,0.812,222.9,10.8,2246.3
+Medium Value + Low Retention,92,804.97,0.395,181.3,9.8,2217.23
+Medium Value + High Retention,101,788.77,0.956,167.8,11.1,2689.03
+Low Value + Medium Retention,89,592.99,0.815,170.7,11.4,2578.79
+Low Value + Low Retention,53,587.27,0.423,248.6,10.1,2745.92
+Low Value + High Retention,54,569.31,0.952,154,8.9,1859.54

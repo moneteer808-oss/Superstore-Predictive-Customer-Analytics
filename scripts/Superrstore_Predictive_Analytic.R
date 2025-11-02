@@ -1,0 +1,532 @@
+# PREDICTIVE CUSTOMER SEGMENTATION - R SCRIPT
+# Project: Customer Lifetime Value & Churn Prediction
+# Author: Moneteer
+# Date: 2025
+
+
+# ABOUT THIS SCRIPT:
+# This script builds machine learning models to predict customer behavior
+# (CLV and churn) and creates actionable marketing segments with ROI analysis.
+# It builds upon the RFM analysis from Project 1.
+
+# PREREQUISITES:
+# - Raw data: data/Superstore.csv
+# - Optional: output/rfm_customer_segments.csv (from Project 1)
+
+
+# SETUP: LOAD REQUIRED LIBRARIES ----
+
+# Data manipulation and visualization
+library(tidyverse)   # Core data science packages
+library(janitor)     # Clean column names
+library(lubridate)   # Date handling
+library(here)        # File path management
+library(knitr)       # Table formatting
+library(ggplot2)     # Visualization
+library(dplyr)       # Data manipulation
+
+# Machine learning libraries
+library(caret)       # Model training and evaluation
+library(xgboost)     # Gradient boosting models
+library(randomForest) # Random forest models
+library(Metrics)     # Model performance metrics
+
+# 1. Load and Prepare Data ----
+
+# Purpose: Load transaction data and perform initial data quality checks
+# Why: Ensures we have clean data with proper date and numeric formats
+
+tx <- read_csv(here("data", "Superstore.csv")) %>%
+  clean_names() %>%
+  select(customer_id, order_date, sales) %>%
+  mutate(
+    order_date = mdy(order_date),  # Parse dates from MM/DD/YYYY format
+    sales = as.numeric(sales)       # Ensure sales is numeric
+  ) %>%
+  filter(!is.na(order_date), sales > 0)  # Remove invalid records
+
+# 2. Create Time-Based Train/Test Split ----
+
+# Purpose: Split data into training (historical) and future (target) periods
+# Why: We use past behavior to predict future behavior, mimicking real-world deployment
+# Cutoff date: July 1, 2017 - data before = features, data after = targets
+
+cutoff_date <- as.Date("2017-07-01")
+
+# Split transactions into two time periods
+tx_train <- tx %>% filter(order_date < cutoff_date)   # Historical behavior
+tx_future <- tx %>% filter(order_date >= cutoff_date) # Future behavior (our targets)
+
+# 3. Build RFM Features from Training Period ----
+
+# Purpose: Calculate customer-level RFM metrics from historical data
+# Why: RFM metrics are proven predictors of future customer behavior
+# Features: Recency, Frequency, Monetary, Tenure, and RFM scores
+
+rfm_features <- tx_train %>%
+  group_by(customer_id) %>%
+  summarise(
+    recency = as.numeric(cutoff_date - max(order_date)),  # Days since last purchase
+    frequency = n(),                                       # Total number of orders
+    monetary = sum(sales),                                 # Total spend
+    first_purchase = min(order_date),                     # First purchase date
+    .groups = "drop"
+  ) %>%
+  mutate(
+    tenure_days = as.numeric(cutoff_date - first_purchase),  # Customer age
+    r_score = ntile(-recency, 5),   # Recency score (1-5, higher = more recent)
+    f_score = ntile(frequency, 5),  # Frequency score (1-5, higher = more frequent)
+    m_score = ntile(monetary, 5)    # Monetary score (1-5, higher = more spend)
+  )
+
+# 4. Create Target Variables ----
+
+# 4.1 CLV TARGET: Future spend in the post-cutoff period
+# Purpose: Measure actual customer value after our training period
+# Why: This is what we want to predict - how much will customers spend?
+
+clv_target <- tx_future %>%
+  group_by(customer_id) %>%
+  summarise(future_spend = sum(sales), .groups = "drop")
+
+# 4.2 CHURN TARGET: Did customer make any purchase after cutoff?
+# Purpose: Binary indicator of customer retention
+# Why: Helps identify at-risk customers who stopped purchasing
+
+all_customers <- tibble(customer_id = unique(rfm_features$customer_id))
+churn_target <- all_customers %>%
+  mutate(is_churn = ifelse(customer_id %in% tx_future$customer_id, 0, 1))
+
+# 4.3 MERGE: Combine features and targets into final modeling dataset
+# Purpose: Create one dataset with all features and both target variables
+
+model_data <- rfm_features %>%
+  left_join(clv_target, by = "customer_id") %>%
+  mutate(future_spend = replace_na(future_spend, 0)) %>%  # 0 spend if churned
+  left_join(churn_target, by = "customer_id")
+
+# 5. Train CLV Prediction Model ----
+
+# Purpose: Build XGBoost model to predict future customer spending
+# Why: Identify high-value customers for targeted marketing
+# Model: Gradient boosting regression predicting future_spend
+
+# Prepare data: Keep only customers who made future purchases
+clv_df <- model_data %>%
+  select(future_spend, recency, frequency, monetary, r_score, f_score, m_score, tenure_days) %>%
+  filter(future_spend > 0) %>%  # Only active customers for CLV modeling
+  na.omit()
+
+# 80/20 train-test split
+set.seed(123)
+train_idx_clv <- createDataPartition(clv_df$future_spend, p = 0.8, list = FALSE)
+clv_train <- clv_df[train_idx_clv, ]
+clv_test  <- clv_df[-train_idx_clv, ]
+
+# Train XGBoost regression model with 5-fold cross-validation
+ctrl_reg <- trainControl(method = "cv", number = 5)
+
+clv_xgb <- train(
+  future_spend ~ .,
+  data = clv_train,
+  method = "xgbTree",
+  trControl = ctrl_reg,
+  metric = "RMSE",
+  verbosity = 0
+)
+
+# Evaluate model performance on test set
+clv_pred_test <- predict(clv_xgb, clv_test)
+rmse_val <- RMSE(clv_pred_test, clv_test$future_spend)
+r2_val <- cor(clv_pred_test, clv_test$future_spend)^2
+
+# Visualize model performance
+clv_comparison <- data.frame(
+  Actual = clv_test$future_spend,
+  Predicted = clv_pred_test
+)
+
+p1 <- ggplot(clv_comparison, aes(x = Actual, y = Predicted)) +
+  geom_point(alpha = 0.5, color = "#2E86AB") +
+  geom_abline(slope = 1, intercept = 0, color = "red", linetype = "dashed") +
+  labs(
+    title = "CLV Model: Actual vs Predicted Future Spend",
+    x = "Actual Future Spend ($)",
+    y = "Predicted Future Spend ($)"
+  ) +
+  theme_minimal()
+
+print(p1)
+
+# 6. Train Churn Prediction Model ----
+
+# Purpose: Build XGBoost model to predict customer churn probability
+# Why: Identify at-risk customers for retention campaigns
+# Model: Gradient boosting classification predicting churn (Yes/No)
+
+# Convert churn to factor for classification
+model_data$is_churn <- factor(model_data$is_churn, levels = c(0, 1), labels = c("No", "Yes"))
+
+# Prepare modeling data
+churn_df <- model_data %>%
+  select(is_churn, recency, frequency, monetary, r_score, f_score, m_score, tenure_days) %>%
+  na.omit()
+
+# 80/20 train-test split
+set.seed(123)
+train_idx <- createDataPartition(churn_df$is_churn, p = 0.8, list = FALSE)
+churn_train <- churn_df[train_idx, ]
+churn_test  <- churn_df[-train_idx, ]
+
+# Train XGBoost classification model with 5-fold CV
+ctrl <- trainControl(
+  method = "cv",
+  number = 5,
+  classProbs = TRUE,              # Need probabilities, not just classes
+  summaryFunction = twoClassSummary
+)
+
+churn_xgb <- train(
+  is_churn ~ .,
+  data = churn_train,
+  method = "xgbTree",
+  trControl = ctrl,
+  metric = "ROC",               # Optimize for AUC
+  verbosity = 0
+)
+
+# Evaluate model with AUC (Area Under ROC Curve)
+churn_pred_prob <- predict(churn_xgb, churn_test, type = "prob")[, "Yes"]
+auc_val <- Metrics::auc(ifelse(churn_test$is_churn == "Yes", 1, 0), churn_pred_prob)
+
+# Visualize churn probability distribution
+churn_viz_df <- data.frame(
+  actual_churn = churn_test$is_churn,
+  churn_probability = churn_pred_prob
+)
+
+p2 <- ggplot(churn_viz_df, aes(x = churn_probability, fill = actual_churn)) +
+  geom_density(alpha = 0.6) +
+  scale_fill_manual(values = c("#52B788", "#E63946"), 
+                    labels = c("Retained", "Churned")) +
+  labs(
+    title = "Churn Probability Distribution by Actual Outcome",
+    x = "Predicted Churn Probability",
+    y = "Density",
+    fill = "Actual Status"
+  ) +
+  theme_minimal()
+
+print(p2)
+
+# 7. Add Predictions to Full Dataset ----
+
+# Purpose: Score all customers with CLV and churn predictions
+# Why: Enable segmentation and prioritization of customers
+
+# Predict CLV for all customers
+model_data$clv_pred <- predict(clv_xgb, model_data)
+
+# Predict churn probability and calculate retention score
+model_data$churn_prob <- predict(churn_xgb, model_data, type = "prob")[, "Yes"]
+model_data$retention_score <- 1 - model_data$churn_prob  # Higher = more likely to stay
+
+# 8. Integrate RFM Segments from Project 1 ----
+
+# Purpose: Merge traditional RFM segments if available
+# Why: Combines rule-based and predictive segmentation approaches
+
+rfm_file <- here("output", "rfm_customer_segments.csv")
+
+if (file.exists(rfm_file)) {
+  rfm_segments <- read_csv(rfm_file, show_col_types = FALSE) %>%
+    select(customer_id, Segment) %>%          
+    rename(segment = Segment)
+  
+  model_data <- model_data %>%
+    left_join(rfm_segments, by = "customer_id")
+} else {
+  model_data$segment <- NA
+}
+
+
+# 9. Create Advanced Marketing Segments ----
+
+
+# Purpose: Create 9 marketing segments combining value and retention
+# Why: Enables targeted marketing strategies for different customer groups
+# Segments: High/Medium/Low Value x High/Medium/Low Retention = 9 segments
+
+model_data <- model_data %>%
+  mutate(
+    # Value tier based on predicted CLV (quartile-based)
+    value_tier = case_when(
+      clv_pred >= quantile(clv_pred, 0.75, na.rm = TRUE) ~ "High Value",
+      clv_pred >= quantile(clv_pred, 0.25, na.rm = TRUE) ~ "Medium Value",
+      TRUE ~ "Low Value"
+    ),
+    # Retention tier based on retention score (quartile-based)
+    retention_tier = case_when(
+      retention_score >= quantile(retention_score, 0.75, na.rm = TRUE) ~ "High Retention",
+      retention_score >= quantile(retention_score, 0.25, na.rm = TRUE) ~ "Medium Retention",
+      TRUE ~ "Low Retention"
+    ),
+    # Combined segment
+    marketing_segment = paste(value_tier, retention_tier, sep = " + ")
+  )
+
+# Summarize segment distribution
+segment_summary <- model_data %>%
+  count(marketing_segment, sort = TRUE) %>%
+  mutate(pct = round(n / sum(n) * 100, 1))
+
+
+# 10. Add Product Category Insights ----
+
+
+# Purpose: Identify each customer's primary product category
+# Why: Enables category-specific marketing and personalization
+
+# Find top category by spend for each customer
+top_category <- read_csv(here("data", "Superstore.csv"), show_col_types = FALSE) %>%
+  clean_names() %>%
+  select(customer_id, category, sales) %>%
+  group_by(customer_id, category) %>%
+  summarise(total_spend = sum(sales), .groups = "drop") %>%
+  arrange(desc(total_spend)) %>%
+  group_by(customer_id) %>%
+  filter(row_number() == 1) %>%  # Keep only top category per customer
+  ungroup() %>%
+  select(customer_id, top_category = category)
+
+# Merge into model_data
+model_data <- model_data %>%
+  left_join(top_category, by = "customer_id")
+
+# Create enhanced segment with category
+model_data <- model_data %>%
+  mutate(
+    category_segment = paste(value_tier, retention_tier, top_category, sep = " + ")
+  )
+
+
+# 11. Visualize Customer Segments ----
+
+
+# Purpose: Create heatmap showing customer distribution across segments
+# Why: Visual representation helps identify key segments at a glance
+
+# Prepare visualization data
+viz_data <- model_data %>%
+  count(value_tier, retention_tier) %>%
+  mutate(
+    value_tier = factor(value_tier, levels = c("Low Value", "Medium Value", "High Value")),
+    retention_tier = factor(retention_tier, levels = c("Low Retention", "Medium Retention", "High Retention"))
+  )
+
+# Assign unique pastel colors to each segment
+viz_data <- viz_data %>%
+  mutate(
+    segment_color = case_when(
+      value_tier == "Low Value" & retention_tier == "Low Retention" ~ "#FFB3BA",
+      value_tier == "Medium Value" & retention_tier == "Low Retention" ~ "#FFDFBA",
+      value_tier == "High Value" & retention_tier == "Low Retention" ~ "#BAE1FF",
+      value_tier == "Low Value" & retention_tier == "Medium Retention" ~ "#D8BFD8",
+      value_tier == "Medium Value" & retention_tier == "Medium Retention" ~ "#FFFFBA",
+      value_tier == "High Value" & retention_tier == "Medium Retention" ~ "#B0E0E6",
+      value_tier == "Low Value" & retention_tier == "High Retention" ~ "#E6E6FA",
+      value_tier == "Medium Value" & retention_tier == "High Retention" ~ "#F0E68C",
+      value_tier == "High Value" & retention_tier == "High Retention" ~ "#ADD8E6"
+    )
+  )
+
+# Create heatmap
+p3 <- ggplot(viz_data, aes(x = value_tier, y = retention_tier)) +
+  geom_tile(aes(fill = segment_color), color = "white", size = 1) +
+  geom_text(aes(label = n), size = 6, fontface = "bold") +
+  scale_fill_identity() +
+  labs(
+    title = "Customer Segments: Predicted Value vs Retention",
+    subtitle = "Numbers represent customer count in each segment",
+    x = "Predicted Value Tier",
+    y = "Retention Tier"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+
+print(p3)
+
+# Calculate and display average metrics by segment
+segment_metrics <- model_data %>%
+  group_by(marketing_segment) %>%
+  summarise(
+    customers = n(),
+    avg_clv_pred = round(mean(clv_pred, na.rm = TRUE), 2),
+    avg_retention = round(mean(retention_score, na.rm = TRUE), 3),
+    avg_recency = round(mean(recency, na.rm = TRUE), 1),
+    avg_frequency = round(mean(frequency, na.rm = TRUE), 1),
+    avg_monetary = round(mean(monetary, na.rm = TRUE), 2),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(avg_clv_pred))
+
+
+# 12. Calculate Expected ROI by Segment ----
+
+
+# Purpose: Estimate return on investment for marketing campaigns by segment
+# Why: Prioritize marketing spend on segments with highest ROI
+# Assumptions: $5 cost per customer, 10% retention uplift from campaigns
+
+campaign_cost_per_customer <- 5
+retention_uplift <- 0.10  # 10% increase in retention
+
+roi_summary <- model_data %>%
+  group_by(marketing_segment) %>%
+  summarise(
+    customers = n(),
+    avg_clv = mean(clv_pred, na.rm = TRUE),
+    total_clv = sum(clv_pred, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    retained_customers = customers * retention_uplift,           # Expected customers retained
+    incremental_revenue = retained_customers * avg_clv,          # Revenue from retention
+    campaign_cost = customers * campaign_cost_per_customer,      # Total campaign cost
+    expected_roi = round((incremental_revenue - campaign_cost) / campaign_cost, 2)  # ROI ratio
+  ) %>%
+  arrange(desc(expected_roi))
+
+# Visualize ROI
+roi_viz <- roi_summary %>%
+  filter(expected_roi > 0) %>%
+  arrange(expected_roi)
+
+p4 <- ggplot(roi_viz, aes(x = reorder(marketing_segment, expected_roi), y = expected_roi)) +
+  geom_col(fill = "#2E86AB") +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  coord_flip() +
+  labs(
+    title = "Expected ROI by Marketing Segment",
+    subtitle = paste0("Campaign cost: $", campaign_cost_per_customer, " per customer | Retention uplift: ", retention_uplift * 100, "%"),
+    x = "Marketing Segment",
+    y = "Expected ROI"
+  ) +
+  theme_minimal()
+
+print(p4)
+
+
+# 13. Identify High-Priority Customers ----
+
+
+# Purpose: Extract top 100 customers who are high-value but at risk of churning
+# Why: These customers require immediate attention - they're valuable but likely to leave
+# Action: Personal outreach, satisfaction surveys, special offers
+
+high_value_low_retention <- model_data %>%
+  filter(value_tier == "High Value", retention_tier == "Low Retention") %>%
+  arrange(desc(clv_pred)) %>%
+  head(100)
+
+
+# 14. Save Outputs ----
+
+
+# Purpose: Export all analysis results to CSV files for further use
+# Why: Enable stakeholders to access data, import to CRM, track over time
+
+# Ensure output and figures folders exist
+if(!dir.exists(here("output"))) dir.create(here("output"), recursive = TRUE)
+if(!dir.exists(here("figures"))) dir.create(here("figures"), recursive = TRUE)
+
+# Save CSV files to output folder
+write_csv(model_data, here("output", "predictive_customer_segments_with_category.csv"))
+cat("✓ Saved: output/predictive_customer_segments_with_category.csv\n")
+
+write_csv(segment_summary, here("output", "marketing_segment_summary.csv"))
+cat("✓ Saved: output/marketing_segment_summary.csv\n")
+
+write_csv(roi_summary, here("output", "segment_roi_summary.csv"))
+cat("✓ Saved: output/segment_roi_summary.csv\n")
+
+write_csv(high_value_low_retention, here("output", "high_value_low_retention_customers.csv"))
+cat("✓ Saved: output/high_value_low_retention_customers.csv\n")
+
+write_csv(segment_metrics, here("output", "segment_metrics.csv"))
+cat("✓ Saved: output/segment_metrics.csv\n")
+
+# Save plots to figures folder
+ggsave(here("figures", "clv_actual_vs_predicted.png"), plot = p1, width = 10, height = 6)
+cat("✓ Saved: figures/clv_actual_vs_predicted.png\n")
+
+ggsave(here("figures", "churn_probability_distribution.png"), plot = p2, width = 10, height = 6)
+cat("✓ Saved: figures/churn_probability_distribution.png\n")
+
+ggsave(here("figures", "customer_segments_heatmap.png"), plot = p3, width = 10, height = 6)
+cat("✓ Saved: figures/customer_segments_heatmap.png\n")
+
+ggsave(here("figures", "roi_by_segment.png"), plot = p4, width = 10, height = 6)
+cat("✓ Saved: figures/roi_by_segment.png\n")
+
+
+# 15. Business Recommendations ----
+
+
+# Purpose: Provide actionable recommendations for each segment
+# Why: Translate data insights into concrete marketing actions
+
+recommendations <- tibble(
+  Segment = c(
+    "High Value + High Retention",
+    "High Value + Low Retention",
+    "Medium Value + Medium Retention",
+    "Low Value + High Retention"
+  ),
+  Priority = c("VIP Treatment", "CRITICAL INTERVENTION", "Growth Opportunity", "Nurture & Develop"),
+  Actions = c(
+    "Loyalty rewards, exclusive access, VIP support, appreciation events",
+    "URGENT: Personal outreach, win-back offers, satisfaction surveys, account managers",
+    "Targeted promotions, product recommendations, engagement campaigns",
+    "Educational content, upsell campaigns, community building"
+  ),
+  Expected_Outcome = c(
+    "Maintain loyalty, increase advocacy, maximize lifetime value",
+    "Prevent churn, recover revenue, improve satisfaction",
+    "Increase transaction frequency and value",
+    "Develop into higher value segments over time"
+  )
+)
+
+
+# 16. Session Info ----
+
+
+# Purpose: Document R version, packages, and environment for reproducibility
+
+print(sessionInfo())
+
+
+# SCRIPT COMPLETE ----
+
+cat("\n")
+cat("==============================================================================\n")
+cat("ANALYSIS COMPLETE!\n")
+cat("==============================================================================\n")
+cat("All outputs saved to:\n")
+cat("  - CSV files: ", here("output"), "\n")
+cat("  - Plots: ", here("figures"), "\n")
+cat("\nKey Deliverables:\n")
+cat("  1. Customer segments with CLV and churn predictions\n")
+cat("  2. ROI analysis by marketing segment\n")
+cat("  3. High-priority customer list for immediate action\n")
+cat("  4. Segment metrics and visualizations\n")
+cat("\nNext Steps:\n")
+cat("  - Review high-priority customers for retention campaigns\n")
+cat("  - Implement segment-specific marketing strategies\n")
+cat("  - Monitor segment transitions over time\n")
+cat("  - A/B test campaigns to validate ROI assumptions\n")
+cat("==============================================================================\n")

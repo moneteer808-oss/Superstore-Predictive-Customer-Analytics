@@ -1,0 +1,788 @@
+customer_id,recency,frequency,monetary,first_purchase,tenure_days,r_score,f_score,m_score,future_spend,is_churn,retention_score,segment,clv_pred,value_tier,retention_tier,marketing_segment
+AA-10315,2,11,5563.56,2014-03-31,1188,5,3,5,0,Yes,0.3471642732620239,Potential Loyalists,528.22064208984375,Medium Value,Low Retention,Medium Value + Low Retention
+AA-10375,229,10,849.658,2014-04-21,1167,2,3,2,206.732,No,0.8053052425384521,Loyal Customers,494.7148132324219,Low Value,Medium Retention,Low Value + Medium Retention
+AA-10480,77,12,1790.512,2014-05-04,1154,4,4,3,0,Yes,0.7388437390327454,Needs Attention,579.6904296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+AA-10645,300,17,5073.975,2014-06-22,1105,2,5,5,12.96,No,0.9287459254264832,Loyal Customers,570.018310546875,Medium Value,High Retention,Medium Value + High Retention
+AB-10015,233,6,886.156,2014-02-18,1229,2,2,2,0,Yes,0.4981459379196167,At Risk,458.470947265625,Low Value,Low Retention,Low Value + Low Retention
+AB-10060,55,11,4899.346,2015-09-18,652,4,3,5,2856.274,No,0.9690462350845337,Loyal Customers,868.14239501953125,High Value,High Retention,High Value + High Retention
+AB-10105,26,13,12997.607,2014-12-20,924,5,4,5,1475.964,No,0.8254892230033875,Champions,847.99664306640625,High Value,Medium Retention,High Value + Medium Retention
+AB-10150,517,7,736.054,2014-03-05,1214,1,2,2,230.65599999999998,No,0.9216662645339966,Potential Loyalists,403.3636474609375,Low Value,High Retention,Low Value + High Retention
+AB-10165,78,11,910.086,2014-11-16,958,4,3,2,203.752,No,0.8095345497131348,Loyal Customers,716.75921630859375,Medium Value,Medium Retention,Medium Value + Medium Retention
+AB-10255,15,13,434.548,2014-07-22,1075,5,4,1,479.984,No,0.9383129477500916,Potential Loyalists,469.6571044921875,Low Value,High Retention,Low Value + High Retention
+AB-10600,579,3,40.808,2014-11-18,956,1,1,1,1475.0539999999999,No,0.8744532465934753,Potential Loyalists,589.0260009765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+AC-10420,50,5,925.8,2014-07-12,1085,4,1,2,0,Yes,0.630269467830658,At Risk,680.3909912109375,Medium Value,Medium Retention,Medium Value + Medium Retention
+AC-10450,219,7,2068.246,2014-10-31,974,2,2,3,3459.6,No,0.8128908276557922,Champions,868.535888671875,High Value,Medium Retention,High Value + Medium Retention
+AC-10615,99,5,243.888,2015-09-15,655,4,1,1,2293.7980000000002,No,0.8209525942802429,Loyal Customers,454.8357238769531,Low Value,Medium Retention,Low Value + Medium Retention
+AC-10660,100,6,657.316,2014-10-15,990,3,2,1,0,Yes,0.7142919301986694,Needs Attention,662.8914794921875,Medium Value,Medium Retention,Medium Value + Medium Retention
+AD-10180,62,9,5026.33,2014-11-19,955,4,3,5,1080.55,No,0.941162109375,Champions,970.71343994140625,High Value,High Retention,High Value + High Retention
+AF-10870,68,13,1772.5220000000002,2015-12-06,573,4,4,3,280.38599999999997,No,0.9441362619400024,Loyal Customers,676.0350341796875,Medium Value,High Retention,Medium Value + High Retention
+AF-10885,233,7,861.5649999999999,2014-05-10,1148,2,2,2,0,Yes,0.503268837928772,At Risk,556.0091552734375,Medium Value,Low Retention,Medium Value + Low Retention
+AG-10270,96,14,2582.898,2014-05-13,1145,4,4,4,0,Yes,0.6302437782287598,Needs Attention,469.1286926269531,Low Value,Medium Retention,Low Value + Medium Retention
+AG-10300,208,4,361.588,2014-04-26,1162,2,1,1,5.96,No,0.7279810309410095,Needs Attention,634.4332275390625,Medium Value,Medium Retention,Medium Value + Medium Retention
+AG-10330,332,2,248.82,2016-08-03,332,1,1,1,412.152,No,0.6700927019119263,Potential Loyalists,520.127685546875,Medium Value,Medium Retention,Medium Value + Medium Retention
+AG-10390,212,7,181.185,2014-04-19,1169,2,2,1,19.76,No,0.5961323976516724,Needs Attention,408.6337585449219,Low Value,Low Retention,Low Value + Low Retention
+AG-10495,254,17,2242.479,2015-01-04,909,2,5,4,114.376,No,0.6534420251846313,Loyal Customers,641.902587890625,Medium Value,Medium Retention,Medium Value + Medium Retention
+AG-10525,663,9,1455.038,2014-08-09,1057,1,3,3,0,Yes,0.4441279172897339,Needs Attention,447.02655029296875,Low Value,Low Retention,Low Value + Low Retention
+AG-10675,22,9,3335.3436,2015-05-07,786,5,3,4,153.696,No,0.9441609978675842,Loyal Customers,817.6044921875,High Value,High Retention,High Value + High Retention
+AG-10765,600,3,129.732,2014-09-17,1018,1,1,1,40.852000000000004,No,0.8904767632484436,Needs Attention,659.6102294921875,Medium Value,Medium Retention,Medium Value + Medium Retention
+AG-10900,61,19,4224.847,2014-07-23,1074,4,5,5,285.95000000000005,No,0.9747233986854553,Champions,621.12841796875,Medium Value,High Retention,Medium Value + High Retention
+AH-10030,468,10,1725.996,2014-04-22,1166,1,3,3,18.704,No,0.8005654811859131,Loyal Customers,546.17498779296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+AH-10075,43,11,1868.0259999999998,2014-11-16,958,4,3,3,1382.311,No,0.914651095867157,Champions,925.14947509765625,High Value,Medium Retention,High Value + Medium Retention
+AH-10120,84,11,1359.984,2014-07-18,1079,4,3,3,375.53000000000003,No,0.9212040305137634,Potential Loyalists,529.68389892578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+AH-10195,195,5,1543.006,2015-03-05,849,3,1,3,44.446000000000005,No,0.744141161441803,Needs Attention,744.50994873046875,High Value,Medium Retention,High Value + Medium Retention
+AH-10210,115,9,1679.264,2014-11-29,945,3,3,3,3126.08,No,0.8249894380569458,Champions,851.87774658203125,High Value,Medium Retention,High Value + Medium Retention
+AH-10465,48,8,2495.3916,2015-01-03,910,4,2,4,0,Yes,0.5474594831466675,Needs Attention,904.97662353515625,High Value,Low Retention,High Value + Low Retention
+AH-10585,289,3,483.28,2014-10-26,979,2,1,1,255.22400000000002,No,0.7893168926239014,Potential Loyalists,811.841796875,High Value,Medium Retention,High Value + Medium Retention
+AH-10690,228,23,7888.294,2014-04-02,1186,2,5,5,0,Yes,0.19874489307403564,Loyal Customers,455.497314453125,Low Value,Low Retention,Low Value + Low Retention
+AI-10855,57,15,3800.832,2014-04-28,1160,4,5,5,574.954,No,0.8467947840690613,Champions,476.570556640625,Low Value,Medium Retention,Low Value + Medium Retention
+AJ-10780,48,14,4559.568,2014-01-10,1268,4,4,5,307.776,No,0.991136908531189,Loyal Customers,1515.6494140625,High Value,High Retention,High Value + High Retention
+AJ-10795,187,17,3206.366,2014-05-14,1144,3,5,4,1295.0249999999999,No,0.8791220188140869,Loyal Customers,469.3377685546875,Low Value,Medium Retention,Low Value + Medium Retention
+AJ-10945,225,8,1191.166,2014-03-03,1216,2,2,2,648.0740000000001,No,0.8362168669700623,Potential Loyalists,385.64971923828125,Low Value,Medium Retention,Low Value + Medium Retention
+AJ-10960,914,4,618.608,2014-09-14,1021,1,1,1,10.64,No,0.9764418601989746,Needs Attention,679.0416259765625,Medium Value,High Retention,Medium Value + High Retention
+AM-10360,34,7,635.122,2014-10-06,999,5,2,1,178.89,No,0.8335671424865723,Potential Loyalists,736.16314697265625,High Value,Medium Retention,High Value + Medium Retention
+AM-10705,6,15,4712.042,2014-10-31,974,5,5,5,951.98,No,0.9293263554573059,Loyal Customers,709.58819580078125,Medium Value,High Retention,Medium Value + High Retention
+AO-10810,319,1,161.28,2016-08-16,319,1,1,1,0,Yes,0.23892755806446075,At Risk,520.127685546875,Medium Value,Low Retention,Medium Value + Low Retention
+AP-10720,207,17,1500.172,2014-03-03,1216,2,5,3,138.382,No,0.8837449550628662,Loyal Customers,266.4497375488281,Low Value,Medium Retention,Low Value + Medium Retention
+AP-10915,65,28,3070.536,2014-08-23,1043,4,5,4,253.01999999999998,No,0.9050355553627014,Loyal Customers,570.59051513671875,Medium Value,Medium Retention,Medium Value + Medium Retention
+AR-10345,660,3,955.614,2014-12-30,914,1,1,2,100.08,No,0.3723931610584259,Needs Attention,712.7366943359375,Medium Value,Low Retention,Medium Value + Low Retention
+AR-10405,12,6,747.704,2014-10-03,1002,5,2,2,1488.424,No,0.9487790465354919,Potential Loyalists,544.07464599609375,Medium Value,High Retention,Medium Value + High Retention
+AR-10510,187,6,254.064,2014-05-02,1156,3,2,1,10.8,No,0.9033166170120239,Potential Loyalists,358.4911193847656,Low Value,Medium Retention,Low Value + Medium Retention
+AR-10540,166,8,6590.568,2014-11-25,949,3,2,5,17.88,No,0.6744240522384644,Champions,917.48651123046875,High Value,Medium Retention,High Value + Medium Retention
+AR-10570,352,2,88.15,2016-07-14,352,1,1,1,0,Yes,0.3307268023490906,At Risk,520.127685546875,Medium Value,Low Retention,Medium Value + Low Retention
+AR-10825,202,7,2147.9880000000003,2014-06-30,1097,2,2,3,2375.348,No,0.943016529083252,Loyal Customers,792.3802490234375,High Value,High Retention,High Value + High Retention
+AS-10045,180,6,1315.06,2014-07-27,1070,3,2,2,1735.632,No,0.8983197808265686,Loyal Customers,534.29815673828125,Medium Value,Medium Retention,Medium Value + Medium Retention
+AS-10090,91,19,2536.55,2014-09-22,1013,4,5,4,718.76,No,0.7983347773551941,Champions,578.44842529296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+AS-10135,230,1,4.18,2016-11-13,230,2,1,1,54.64,No,0.49946287274360657,Needs Attention,603.7857666015625,Medium Value,Low Retention,Medium Value + Low Retention
+AS-10225,211,5,2409.2000000000003,2014-10-18,987,2,1,4,1851.584,No,0.8921701908111572,Loyal Customers,868.535888671875,High Value,Medium Retention,High Value + Medium Retention
+AS-10240,10,13,584.6080000000001,2014-03-15,1204,5,4,1,0,Yes,0.9705649018287659,Needs Attention,270.86602783203125,Low Value,High Retention,Low Value + High Retention
+AS-10285,232,7,3097.924,2016-05-21,406,2,2,4,116.312,No,0.8307967782020569,Loyal Customers,855.769775390625,High Value,Medium Retention,High Value + Medium Retention
+AS-10630,62,9,460.952,2014-08-01,1065,4,3,1,372.44599999999997,No,0.8495205044746399,Potential Loyalists,525.4415283203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+AT-10435,90,6,75.32600000000001,2014-11-24,950,4,2,1,1096.488,No,0.9632667899131775,Loyal Customers,630.6783447265625,Medium Value,High Retention,Medium Value + High Retention
+AT-10735,43,11,3414.044,2014-08-30,1036,4,3,5,417.82,No,0.9742178320884705,Champions,822.51275634765625,High Value,High Retention,High Value + High Retention
+AW-10840,580,3,43.144000000000005,2015-04-13,810,1,1,1,606.232,No,0.9050942659378052,Potential Loyalists,507.5588073730469,Medium Value,Medium Retention,Medium Value + Medium Retention
+AW-10930,225,13,2141.608,2014-07-14,1083,2,4,3,711.36,No,0.9117658734321594,Loyal Customers,731.0859375,High Value,Medium Retention,High Value + Medium Retention
+AY-10555,195,6,274.98199999999997,2014-04-06,1182,3,2,1,222.03199999999998,No,0.8065047264099121,Potential Loyalists,485.4830017089844,Low Value,Medium Retention,Low Value + Medium Retention
+AZ-10750,512,11,1500.482,2014-03-17,1202,1,4,3,121.536,No,0.9389027953147888,Potential Loyalists,473.4088134765625,Low Value,High Retention,Low Value + High Retention
+BB-10990,30,6,729.54,2014-07-27,1070,5,2,2,14.8,No,0.9239642024040222,Needs Attention,596.97509765625,Medium Value,High Retention,Medium Value + High Retention
+BB-11545,187,12,2179.468,2015-06-05,757,3,4,4,4586.26,No,0.711890697479248,Champions,676.0350341796875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BC-11125,20,18,2933.676,2014-07-06,1091,5,5,4,0,Yes,0.7332944273948669,Loyal Customers,575.56451416015625,Medium Value,Medium Retention,Medium Value + Medium Retention
+BD-11320,21,16,5290.233,2015-05-31,762,5,5,5,428.28799999999995,No,0.9589740037918091,Champions,689.4918212890625,Medium Value,High Retention,Medium Value + High Retention
+BD-11500,156,8,4041.2639999999997,2014-02-01,1246,3,2,5,369.97900000000004,No,0.9438220262527466,Loyal Customers,550.88848876953125,Medium Value,High Retention,Medium Value + High Retention
+BD-11560,96,4,320.54,2015-05-30,763,4,1,1,0,Yes,0.5205272436141968,At Risk,680.6351318359375,Medium Value,Low Retention,Medium Value + Low Retention
+BD-11605,183,18,3034.647,2014-01-13,1265,3,5,4,253.82399999999998,No,0.9020370244979858,Loyal Customers,622.29327392578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+BD-11620,182,6,956.04,2014-06-30,1097,3,2,2,582.0699999999999,No,0.9159930944442749,Potential Loyalists,607.11932373046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BD-11635,574,4,511.646,2014-10-05,1000,1,1,1,71,No,0.8666684627532959,Potential Loyalists,621.2391357421875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BD-11725,32,7,1341.55,2015-07-03,729,5,2,2,184.95,No,0.7500544190406799,Potential Loyalists,602.66143798828125,Medium Value,Medium Retention,Medium Value + Medium Retention
+BD-11770,145,10,658.466,2016-03-10,478,3,3,1,0,Yes,0.9767788648605347,Needs Attention,520.5330810546875,Medium Value,High Retention,Medium Value + High Retention
+BE-11335,100,3,314.75600000000003,2016-01-15,533,4,1,1,3889.92,No,0.9177210330963135,Potential Loyalists,680.6351318359375,Medium Value,Medium Retention,Medium Value + Medium Retention
+BE-11410,161,4,2009.798,2016-02-07,510,3,1,3,251.64,No,0.9604232907295227,Potential Loyalists,836.13702392578125,High Value,High Retention,High Value + High Retention
+BE-11455,72,13,1727.652,2015-08-02,699,4,4,3,0,Yes,0.3793487846851349,Needs Attention,676.0350341796875,Medium Value,Low Retention,Medium Value + Low Retention
+BF-10975,223,12,579.134,2014-07-14,1083,2,4,1,20.664,No,0.9311060309410095,Potential Loyalists,575.5841064453125,Medium Value,High Retention,Medium Value + High Retention
+BF-11005,338,5,594.144,2014-09-25,1010,1,1,1,739.736,No,0.5209866166114807,Potential Loyalists,629.3758544921875,Medium Value,Low Retention,Medium Value + Low Retention
+BF-11020,91,13,2149.124,2014-02-15,1232,4,4,3,739.382,No,0.7850307822227478,Loyal Customers,482.15234375,Low Value,Medium Retention,Low Value + Medium Retention
+BF-11080,946,1,14.67,2014-11-28,946,1,1,1,258.28,No,0.6731410026550293,Potential Loyalists,646.8284912109375,Medium Value,Medium Retention,Medium Value + Medium Retention
+BF-11170,117,22,4064.57,2014-04-13,1175,3,5,5,1843.402,No,0.7615510821342468,Champions,408.4820251464844,Low Value,Medium Retention,Low Value + Medium Retention
+BF-11215,110,7,1529.546,2014-11-09,965,3,2,3,55.616,No,0.940758466720581,Needs Attention,825.9771728515625,High Value,High Retention,High Value + High Retention
+BF-11275,1197,2,388.70399999999995,2014-03-22,1197,1,1,1,403.28599999999994,No,0.5368074774742126,Needs Attention,404.09503173828125,Low Value,Low Retention,Low Value + Low Retention
+BG-11035,226,9,2100.712,2014-11-05,969,2,3,3,698.236,No,0.8066677451133728,Loyal Customers,902.0203857421875,High Value,Medium Retention,High Value + Medium Retention
+BG-11695,186,6,1811.554,2014-05-11,1147,3,2,3,62.617999999999995,No,0.9640597701072693,Loyal Customers,640.98480224609375,Medium Value,High Retention,Medium Value + High Retention
+BG-11740,75,6,519.9879999999999,2014-03-23,1196,4,2,1,486.368,No,0.9545185565948486,Potential Loyalists,485.4830017089844,Low Value,High Retention,Low Value + High Retention
+BH-11710,44,22,5882.711,2014-06-09,1118,4,5,5,372.64,No,0.9761682152748108,Champions,478.6263427734375,Low Value,High Retention,Low Value + High Retention
+BK-11260,232,14,590.818,2014-08-03,1063,2,4,1,68.32,No,0.8848755955696106,Potential Loyalists,465.02227783203125,Low Value,Medium Retention,Low Value + Medium Retention
+BM-11140,125,16,11789.630000000001,2014-09-08,1027,3,5,5,0,Yes,0.68335723876953125,Potential Loyalists,506.607421875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BM-11575,44,9,792.6519999999999,2015-09-15,655,4,3,2,15.51,No,0.9334015846252441,Potential Loyalists,530.7723388671875,Medium Value,High Retention,Medium Value + High Retention
+BM-11650,49,22,4087.911,2014-07-09,1088,4,5,5,3206.274,No,0.9866979718208313,Champions,583.00640869140625,Medium Value,High Retention,Medium Value + High Retention
+BM-11785,36,14,1338.842,2014-06-06,1121,5,4,2,0,Yes,0.2571920156478882,Potential Loyalists,334.4607238769531,Low Value,Low Retention,Low Value + Low Retention
+BN-11470,109,5,254.616,2014-09-12,1023,3,1,1,10.68,No,0.6613070368766785,Potential Loyalists,459.7440490722656,Low Value,Medium Retention,Low Value + Medium Retention
+BN-11515,408,14,1331.934,2014-03-17,1202,1,4,2,127.41000000000001,No,0.8044085502624512,Potential Loyalists,130.13507080078125,Low Value,Medium Retention,Low Value + Medium Retention
+BO-11350,59,11,2632.328,2016-01-03,545,4,4,4,50.4,No,0.9764219522476196,Potential Loyalists,676.0350341796875,Medium Value,High Retention,Medium Value + High Retention
+BO-11425,660,1,6.08,2015-09-10,660,1,1,1,124.75,No,0.7746202349662781,Needs Attention,470.9859619140625,Low Value,Medium Retention,Low Value + Medium Retention
+BP-11050,105,6,940.66,2014-10-12,993,3,2,2,42.76,No,0.6374189853668213,Potential Loyalists,683.27496337890625,Medium Value,Medium Retention,Medium Value + Medium Retention
+BP-11095,77,16,1228.262,2014-06-07,1120,4,5,2,1213.7820000000002,No,0.8013579845428467,Champions,193.10040283203125,Low Value,Medium Retention,Low Value + Medium Retention
+BP-11155,93,9,1629.901,2015-06-04,758,4,3,3,67.96,No,0.9121314287185669,Potential Loyalists,676.0350341796875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BP-11185,190,10,1964.457,2015-03-24,830,3,3,3,1711.404,No,0.8287729024887085,Champions,770.4105224609375,High Value,Medium Retention,High Value + Medium Retention
+BP-11230,198,5,1110.51,2014-04-20,1168,3,1,2,70.98,No,0.9101484417915344,Potential Loyalists,433.0452880859375,Low Value,Medium Retention,Low Value + Medium Retention
+BP-11290,173,10,1806.457,2014-10-03,1002,3,3,3,668.6999999999999,No,0.8452584147453308,Loyal Customers,757.09893798828125,High Value,Medium Retention,High Value + Medium Retention
+BS-11365,376,9,10501.653,2014-05-04,1154,1,3,5,0,Yes,0.29660454392433167,Potential Loyalists,550.489501953125,Medium Value,Low Retention,Medium Value + Low Retention
+BS-11380,111,3,845.9159999999999,2014-11-29,945,3,1,2,3041.918,No,0.6459296345710754,Loyal Customers,876.861328125,High Value,Medium Retention,High Value + Medium Retention
+BS-11590,287,9,1752.9679999999998,2014-01-14,1264,2,3,3,701.96,No,0.778160035610199,Loyal Customers,1059.4234619140625,High Value,Medium Retention,High Value + Medium Retention
+BS-11665,400,11,3288.11,2014-06-23,1104,1,4,4,0,Yes,0.7300320863723755,Needs Attention,614.4725341796875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BS-11755,82,10,2287.538,2014-05-18,1140,4,3,4,274.844,No,0.8111149668693542,Loyal Customers,579.6904296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BS-11800,83,8,949.43,2015-09-26,644,4,2,2,0,Yes,0.8570756316184998,At Risk,602.21087646484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+BT-11305,154,9,2567.656,2014-04-25,1163,3,3,4,0,Yes,0.6336014270782471,Needs Attention,579.6904296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BT-11395,120,10,2186.6130000000003,2014-10-28,977,3,3,4,0,Yes,0.48009392619132996,Potential Loyalists,757.09893798828125,High Value,Low Retention,High Value + Low Retention
+BT-11440,378,7,603.876,2014-06-04,1123,1,2,1,0,Yes,0.26450860500335693,At Risk,451.9673156738281,Low Value,Low Retention,Low Value + Low Retention
+BT-11485,477,3,415.19599999999997,2015-12-27,552,1,1,1,0,Yes,0.8296298980712891,At Risk,647.1195068359375,Medium Value,Medium Retention,Medium Value + Medium Retention
+BT-11530,125,9,2524.512,2014-05-21,1137,3,3,4,159.98,No,0.8098646998405457,Potential Loyalists,579.6904296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+BT-11680,436,17,3095.3920000000003,2014-11-28,946,1,5,4,101.36,No,0.55239105224609375,Loyal Customers,708.00927734375,Medium Value,Low Retention,Medium Value + Low Retention
+BV-11245,152,14,1523.273,2015-03-26,828,3,4,3,0,Yes,0.8964335322380066,Needs Attention,572.6536865234375,Medium Value,Medium Retention,Medium Value + Medium Retention
+BW-11065,30,3,385.516,2014-05-25,1133,5,1,1,0,Yes,0.67092365026474,Needs Attention,657.56231689453125,Medium Value,Medium Retention,Medium Value + Medium Retention
+BW-11110,35,15,4031.06,2015-03-20,834,5,5,5,719.298,No,0.9018725752830505,Loyal Customers,740.5621337890625,High Value,Medium Retention,High Value + Medium Retention
+BW-11200,21,10,1738.406,2014-08-12,1054,5,3,3,0,Yes,0.20225615799427032,Potential Loyalists,754.21502685546875,High Value,Low Retention,High Value + Low Retention
+CA-11965,156,9,3765.2748,2014-01-26,1252,3,3,5,24.448,No,0.9487692713737488,Loyal Customers,550.449951171875,Medium Value,High Retention,Medium Value + High Retention
+CA-12055,219,10,1679.7240000000002,2015-09-05,665,2,3,3,0,Yes,0.8109570741653442,Needs Attention,726.1776123046875,High Value,Medium Retention,High Value + Medium Retention
+CA-12265,510,8,1121.63,2014-03-25,1194,1,2,2,1526.6572,No,0.8633109927177429,Loyal Customers,511.49652099609375,Medium Value,Medium Retention,Medium Value + Medium Retention
+CA-12310,545,7,831.87,2014-07-19,1078,1,2,2,590.084,No,0.8183667659759521,Potential Loyalists,602.154541015625,Medium Value,Medium Retention,Medium Value + Medium Retention
+CA-12775,50,16,2543.306,2014-06-28,1099,4,5,4,498.26,No,0.9257060885429382,Potential Loyalists,474.311767578125,Low Value,High Retention,Low Value + High Retention
+CB-12025,146,19,5279.671,2014-03-21,1198,3,5,5,796.468,No,0.8959926962852478,Champions,422.337646484375,Low Value,Medium Retention,Low Value + Medium Retention
+CB-12415,127,10,1740.8120000000001,2015-11-05,604,3,3,3,208.38799999999998,No,0.9809767603874207,Loyal Customers,676.0350341796875,Medium Value,High Retention,Medium Value + High Retention
+CB-12535,15,19,4246.4555,2015-01-02,911,5,5,5,0,Yes,0.4854614734649658,Loyal Customers,654.8111572265625,Medium Value,Low Retention,Medium Value + Low Retention
+CC-12100,275,13,1770.945,2014-12-16,928,2,4,3,0,Yes,0.5902283787727356,Potential Loyalists,820.5531005859375,High Value,Low Retention,High Value + Low Retention
+CC-12145,309,10,2439.906,2014-07-20,1077,1,3,4,31.744,No,0.7044318318367004,Potential Loyalists,647.4276123046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+CC-12220,5,16,3120.998,2014-09-09,1026,5,5,4,792.42,No,0.8109840154647827,Champions,514.80609130859375,Medium Value,Medium Retention,Medium Value + Medium Retention
+CC-12370,320,8,11901.184000000001,2016-05-23,404,1,2,5,227.888,No,0.7402935028076172,Loyal Customers,708.128173828125,Medium Value,Medium Retention,Medium Value + Medium Retention
+CC-12430,42,13,2157.9500000000003,2015-09-06,664,5,4,3,712.1,No,0.23735226690769196,Champions,749.3067626953125,High Value,Low Retention,High Value + Low Retention
+CC-12475,236,6,858.836,2014-05-16,1142,2,2,2,800.6020000000001,No,0.8336538076400757,Loyal Customers,556.0091552734375,Medium Value,Medium Retention,Medium Value + Medium Retention
+CC-12550,16,1,47.976,2017-06-15,16,5,1,1,65.856,No,0.7715566754341125,Needs Attention,497.8587951660156,Low Value,Medium Retention,Low Value + Medium Retention
+CC-12610,264,10,2275.223,2014-08-27,1039,2,3,4,265.408,No,0.8541179299354553,Loyal Customers,731.0859375,High Value,Medium Retention,High Value + Medium Retention
+CC-12670,13,11,2010.2615,2014-12-23,921,5,4,3,259.44,No,0.8898174166679382,Loyal Customers,714.6259765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+CC-12685,617,12,2854.1150000000002,2014-03-22,1197,1,4,4,0,Yes,0.4334363639354706,Needs Attention,507.05535888671875,Medium Value,Low Retention,Medium Value + Low Retention
+CD-11920,36,5,474.3,2014-03-24,1195,5,1,1,1559.6680000000001,No,0.9296421408653259,Potential Loyalists,558.75482177734375,Medium Value,High Retention,Medium Value + High Retention
+CD-11980,105,5,320.806,2016-11-24,219,3,1,1,318.96,No,0.6934106349945068,Needs Attention,581.827392578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+CD-12790,217,15,1860.732,2014-02-02,1245,2,5,3,0,Yes,0.8655964136123657,Needs Attention,421.7331237792969,Low Value,Medium Retention,Low Value + Medium Retention
+CG-12040,104,8,886.2280000000001,2015-06-01,761,3,2,2,18.24,No,0.5969738364219666,Potential Loyalists,602.21087646484375,Medium Value,Low Retention,Medium Value + Low Retention
+CG-12520,156,5,1148.78,2015-10-15,625,3,1,2,0,Yes,0.5743275284767151,Needs Attention,529.3897705078125,Medium Value,Low Retention,Medium Value + Low Retention
+CH-12070,509,4,1537.236,2015-06-25,737,1,1,3,0,Yes,0.5354644060134888,Needs Attention,827.3934326171875,High Value,Low Retention,High Value + Low Retention
+CJ-11875,183,1,16.52,2016-12-30,183,3,1,1,0,Yes,0.332854300737381,At Risk,553.6431884765625,Medium Value,Low Retention,Medium Value + Low Retention
+CJ-12010,7,20,11164.974,2016-03-10,478,5,5,5,0,Yes,0.6562919020652771,Loyal Customers,445.91461181640625,Low Value,Medium Retention,Low Value + Medium Retention
+CK-12205,50,26,1663.8329999999999,2014-03-11,1208,4,5,3,1491.022,No,0.8059197664260864,Champions,376.773681640625,Low Value,Medium Retention,Low Value + Medium Retention
+CK-12325,134,11,2937.741,2014-03-14,1205,3,4,4,7.58,No,0.9204479455947876,Potential Loyalists,482.15234375,Low Value,Medium Retention,Low Value + Medium Retention
+CK-12595,128,21,1549.762,2014-12-26,918,3,5,3,822.988,No,0.866294801235199,Loyal Customers,504.56512451171875,Medium Value,Medium Retention,Medium Value + Medium Retention
+CK-12760,95,12,863.014,2014-02-07,1240,4,4,2,719.095,No,0.8505972623825073,Loyal Customers,347.0339660644531,Low Value,Medium Retention,Low Value + Medium Retention
+CL-11890,21,3,180.324,2014-07-26,1071,5,1,1,1081.69,No,0.9664992094039917,Needs Attention,631.8233642578125,Medium Value,High Retention,Medium Value + High Retention
+CL-12565,102,28,10880.546,2014-03-04,1215,3,5,5,0,Yes,0.19039320945739746,Loyal Customers,307.8164367675781,Low Value,Low Retention,Low Value + Low Retention
+CL-12700,78,7,2335.586,2016-04-24,433,4,2,4,18,No,0.9824571013450623,Potential Loyalists,737.32940673828125,High Value,High Retention,High Value + High Retention
+CM-11815,34,7,679.424,2014-11-14,960,5,2,2,994.464,No,0.8399553298950195,Potential Loyalists,767.909423828125,High Value,Medium Retention,High Value + Medium Retention
+CM-11935,526,4,565.392,2015-09-24,646,1,1,1,0,Yes,0.5650618672370911,At Risk,759.0863037109375,High Value,Low Retention,High Value + Low Retention
+CM-12115,92,4,800.0400000000001,2015-03-29,825,4,1,2,861.57,No,0.9737623333930969,Potential Loyalists,711.97821044921875,Medium Value,High Retention,Medium Value + High Retention
+CM-12160,196,2,2101.68,2016-10-21,253,3,1,3,431.634,No,0.8134225010871887,Loyal Customers,836.13702392578125,High Value,Medium Retention,High Value + Medium Retention
+CM-12190,600,3,533.152,2015-09-18,652,1,1,1,941.992,No,0.9257790446281433,Loyal Customers,705.5380859375,Medium Value,High Retention,Medium Value + High Retention
+CM-12235,203,8,2305.712,2016-05-01,426,2,2,4,0,Yes,0.7653743624687195,Needs Attention,787.4720458984375,High Value,Medium Retention,High Value + Medium Retention
+CM-12385,179,7,8713.652,2015-03-16,838,3,2,5,240.368,No,0.8112410306930542,Loyal Customers,836.01934814453125,High Value,Medium Retention,High Value + Medium Retention
+CM-12445,254,9,287.99,2014-06-09,1118,2,3,1,0,Yes,0.7909597158432007,At Risk,474.331298828125,Low Value,Medium Retention,Low Value + Medium Retention
+CM-12655,230,8,4112.7076,2015-03-19,835,2,2,5,2226.8500000000004,No,0.7911391258239746,Loyal Customers,1000.6832275390625,High Value,Medium Retention,High Value + Medium Retention
+CM-12715,853,13,3984.4524,2014-03-07,1212,1,4,5,0,Yes,0.9358835816383362,Needs Attention,406.9368591308594,Low Value,High Retention,Low Value + High Retention
+CP-12085,169,10,5278.326,2014-12-04,940,3,3,5,123.928,No,0.7937819957733154,Loyal Customers,970.71343994140625,High Value,Medium Retention,High Value + Medium Retention
+CP-12340,68,14,5875.147,2014-03-17,1202,4,4,5,13.128,No,0.922099232673645,Loyal Customers,375.90496826171875,Low Value,High Retention,Low Value + High Retention
+CR-12580,219,4,275.918,2016-04-18,439,2,1,1,1872.934,No,0.9759860634803772,Potential Loyalists,730.7777099609375,High Value,High Retention,High Value + High Retention
+CR-12625,288,4,475.9,2014-06-01,1126,2,1,1,0,Yes,0.2999257445335388,At Risk,634.4332275390625,Medium Value,Low Retention,Medium Value + Low Retention
+CR-12730,313,5,695.65,2014-08-20,1046,1,1,2,904.9,No,0.5232852697372437,Needs Attention,490.1878662109375,Low Value,Low Retention,Low Value + Low Retention
+CR-12820,134,4,715.9624,2015-01-24,889,3,1,2,681.91,No,0.9412767887115479,Needs Attention,711.97821044921875,Medium Value,High Retention,Medium Value + High Retention
+CS-11845,140,5,1095.364,2014-12-14,930,3,1,2,183.59,No,0.8745013475418091,Potential Loyalists,623.76519775390625,Medium Value,Medium Retention,Medium Value + Medium Retention
+CS-11860,29,5,516.336,2014-05-02,1156,5,1,1,21.296,No,0.96828460693359375,Needs Attention,558.75482177734375,Medium Value,High Retention,Medium Value + High Retention
+CS-11950,55,17,2894.953,2014-06-08,1119,4,5,4,141.594,No,0.9313700795173645,Champions,474.311767578125,Low Value,High Retention,Low Value + High Retention
+CS-12130,307,7,884.64,2014-08-05,1061,2,2,2,0,Yes,0.23048153519630432,At Risk,573.6036376953125,Medium Value,Low Retention,Medium Value + Low Retention
+CS-12175,50,8,844.4580000000001,2014-08-12,1054,4,2,2,0,Yes,0.3572729825973511,Needs Attention,680.3909912109375,Medium Value,Low Retention,Medium Value + Low Retention
+CS-12250,159,22,2311.936,2014-01-13,1265,3,5,4,442.28,No,0.9165620803833008,Loyal Customers,553.99554443359375,Medium Value,Medium Retention,Medium Value + Medium Retention
+CS-12355,15,15,2389.7,2014-08-15,1051,5,5,4,812.462,No,0.8240338563919067,Champions,514.59698486328125,Medium Value,Medium Retention,Medium Value + Medium Retention
+CS-12400,85,9,3089.4185,2014-09-26,1009,4,3,4,562.44,No,0.901468813419342,Champions,825.39666748046875,High Value,Medium Retention,High Value + Medium Retention
+CS-12490,242,9,1077.2285,2015-01-12,901,2,3,2,0,Yes,0.2419721484184265,Needs Attention,612.613525390625,Medium Value,Low Retention,Medium Value + Low Retention
+CS-12505,218,8,5521.955,2014-03-26,1193,2,2,5,168.1,No,0.8879702687263489,Loyal Customers,695.442138671875,Medium Value,Medium Retention,Medium Value + Medium Retention
+CT-11995,2,16,2963.668,2014-05-07,1151,5,5,4,278.23,No,0.6746989488601685,Loyal Customers,345.25567626953125,Low Value,Medium Retention,Low Value + Medium Retention
+CV-12295,72,13,2830.628,2014-03-28,1191,4,4,4,0,Yes,0.5178462266921997,Potential Loyalists,579.6904296875,Medium Value,Low Retention,Medium Value + Low Retention
+CV-12805,30,17,2316.5456,2016-05-09,418,5,5,4,53.768,No,0.8497483134269714,Champions,570.65618896484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+CW-11905,49,10,543.852,2014-06-09,1118,4,3,1,592.74,No,0.8720563054084778,Loyal Customers,497.4604187011719,Low Value,Medium Retention,Low Value + Medium Retention
+CY-12745,301,7,1467.502,2014-12-12,932,2,2,3,1432.524,No,0.5511510968208313,Loyal Customers,794.652587890625,High Value,Low Retention,High Value + Low Retention
+Co-12640,367,8,1300.076,2014-06-20,1107,1,2,2,0,Yes,0.41675010323524475,Needs Attention,399.52960205078125,Low Value,Low Retention,Low Value + Low Retention
+DA-13450,170,8,156.76,2014-04-25,1163,3,2,1,0,Yes,0.6186660528182983,At Risk,358.4911193847656,Low Value,Low Retention,Low Value + Low Retention
+DB-12910,92,9,1793.022,2014-10-24,981,4,3,3,378.577,No,0.8625115752220154,Loyal Customers,757.09893798828125,High Value,Medium Retention,High Value + Medium Retention
+DB-12970,59,14,2839.2272,2014-11-12,962,4,4,4,0,Yes,0.8398499488830566,Potential Loyalists,741.31573486328125,High Value,Medium Retention,High Value + Medium Retention
+DB-13060,125,8,3750.494,2014-03-01,1218,3,2,5,781.1519999999999,No,0.974976122379303,Champions,611.74432373046875,Medium Value,High Retention,Medium Value + High Retention
+DB-13120,170,13,2962.534,2015-05-01,792,3,4,4,10.56,No,0.9405731558799744,Loyal Customers,676.0350341796875,Medium Value,High Retention,Medium Value + High Retention
+DB-13210,213,13,1540.907,2015-03-22,832,2,4,3,791.6700000000001,No,0.7447066307067871,Champions,733.358154296875,High Value,Medium Retention,High Value + Medium Retention
+DB-13270,12,11,3834.3830000000003,2014-02-04,1243,5,4,5,821.514,No,0.9762658476829529,Loyal Customers,433.809814453125,Low Value,High Retention,Low Value + High Retention
+DB-13360,82,6,1081.466,2014-11-19,955,4,2,2,0,Yes,0.7491014003753662,Needs Attention,705.232421875,Medium Value,Medium Retention,Medium Value + Medium Retention
+DB-13405,5,14,1711.692,2015-08-08,693,5,4,3,0,Yes,0.26761293411254883,Needs Attention,509.6885681152344,Medium Value,Low Retention,Medium Value + Low Retention
+DB-13555,56,11,2882.5708,2014-04-21,1167,4,4,4,1026.232,No,0.4105195701122284,Potential Loyalists,579.6904296875,Medium Value,Low Retention,Medium Value + Low Retention
+DB-13615,56,8,1880.846,2014-09-30,1005,4,2,3,108.20400000000001,No,0.8710578680038452,Loyal Customers,818.393310546875,High Value,Medium Retention,High Value + Medium Retention
+DB-13660,98,6,257.426,2014-06-17,1110,4,2,1,897.7760000000001,No,0.9281684160232544,Loyal Customers,358.4911193847656,Low Value,High Retention,Low Value + High Retention
+DC-12850,9,8,892.37,2014-07-05,1092,5,2,2,2443.7980000000002,No,0.858222484588623,Champions,551.33489990234375,Medium Value,Medium Retention,Medium Value + Medium Retention
+DC-13285,233,5,784.572,2014-12-29,915,2,1,2,390.046,No,0.5629101991653442,Potential Loyalists,663.3131103515625,Medium Value,Low Retention,Medium Value + Low Retention
+DD-13570,60,7,241.178,2014-03-31,1188,4,2,1,28.363999999999997,No,0.8712970018386841,Potential Loyalists,358.4911193847656,Low Value,Medium Retention,Low Value + Medium Retention
+DE-13255,537,9,2550.874,2014-08-22,1044,1,3,4,0,Yes,0.4420795440673828,Needs Attention,759.39453125,High Value,Low Retention,High Value + Low Retention
+DF-13135,518,6,2390.534,2014-10-04,1001,1,2,4,0,Yes,0.8915868401527405,Needs Attention,896.844482421875,High Value,Medium Retention,High Value + Medium Retention
+DG-13300,313,6,1135.968,2014-11-01,973,1,2,2,2059.85,No,0.779920220375061,Loyal Customers,576.9381103515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+DH-13075,95,23,4932.872,2014-11-21,953,4,5,5,0,Yes,0.601617157459259,Potential Loyalists,792.0628662109375,High Value,Low Retention,High Value + Low Retention
+DH-13675,594,11,1043.096,2014-08-12,1054,1,4,2,0,Yes,0.45295777916908264,Needs Attention,332.543701171875,Low Value,Low Retention,Low Value + Low Retention
+DJ-13420,455,5,2012.52,2014-12-08,936,1,1,3,0,Yes,0.3938734531402588,Needs Attention,879.656494140625,High Value,Low Retention,High Value + Low Retention
+DJ-13510,54,9,2332.2039999999997,2014-08-17,1049,4,3,4,169.484,No,0.534916877746582,Loyal Customers,754.21502685546875,High Value,Low Retention,High Value + Low Retention
+DJ-13630,224,4,467.88,2015-12-14,565,2,1,1,2888.518,No,0.9203099608421326,Loyal Customers,730.7777099609375,High Value,Medium Retention,High Value + Medium Retention
+DK-12835,68,18,1694.736,2014-03-26,1193,4,5,3,1561.7440000000001,No,0.9193071722984314,Champions,401.0401611328125,Low Value,Medium Retention,Low Value + Medium Retention
+DK-12895,645,6,2660.6240000000003,2015-03-08,846,1,2,4,1621.552,No,0.8292248845100403,Loyal Customers,749.0474853515625,High Value,Medium Retention,High Value + Medium Retention
+DK-12985,57,5,1383.72,2014-11-24,950,4,1,3,303.32,No,0.7149883508682251,Potential Loyalists,761.9124755859375,High Value,Medium Retention,High Value + Medium Retention
+DK-13090,130,7,1440.015,2015-03-02,852,3,2,3,1210.5420000000001,No,0.6771531701087952,Loyal Customers,680.44525146484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+DK-13150,939,2,433.56,2014-12-05,939,1,1,1,364.272,No,0.5977622866630554,Potential Loyalists,773.8203125,High Value,Low Retention,High Value + Low Retention
+DK-13225,2,17,4788.93,2014-03-14,1205,5,5,5,13.464,No,0.845184326171875,Champions,366.55316162109375,Low Value,Medium Retention,Low Value + Medium Retention
+DK-13375,344,17,2798.08,2014-09-07,1028,1,5,4,520.406,No,0.8840151429176331,Champions,468.7773742675781,Low Value,Medium Retention,Low Value + Medium Retention
+DL-12865,163,13,1490.818,2014-06-29,1098,3,4,3,12.294,No,0.9720436334609985,Potential Loyalists,492.4958190917969,Low Value,High Retention,Low Value + High Retention
+DL-12925,628,11,3196.3,2014-09-09,1026,1,4,4,75.9,No,0.838360071182251,Loyal Customers,666.583740234375,Medium Value,Medium Retention,Medium Value + Medium Retention
+DL-13315,179,12,975.6080000000001,2014-01-16,1262,3,4,2,482.65,No,0.8050696849822998,Loyal Customers,801.34124755859375,High Value,Medium Retention,High Value + Medium Retention
+DL-13330,246,7,543.65,2014-06-23,1104,2,2,1,41.37,No,0.8025949597358704,Needs Attention,535.6256103515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+DL-13495,62,8,1478.44,2015-12-25,554,4,2,3,2060.882,No,0.9734781384468079,Loyal Customers,650.13446044921875,Medium Value,High Retention,Medium Value + High Retention
+DM-12955,275,8,1240.466,2014-09-30,1005,2,2,2,81.568,No,0.7799302935600281,Potential Loyalists,660.596435546875,Medium Value,Medium Retention,Medium Value + Medium Retention
+DM-13015,299,14,4838.994,2014-09-14,1021,2,4,5,1506.1090000000002,No,0.8167628049850464,Loyal Customers,815.5152587890625,High Value,Medium Retention,High Value + Medium Retention
+DM-13345,84,9,3830.888,2014-11-03,971,4,3,5,243.584,No,0.9880335330963135,Champions,859.31964111328125,High Value,High Retention,High Value + High Retention
+DM-13525,299,10,1376.792,2014-07-05,1092,2,3,3,0,Yes,0.809990406036377,Needs Attention,579.8265380859375,Medium Value,Medium Retention,Medium Value + Medium Retention
+DN-13690,35,11,2139.79,2014-09-20,1015,5,4,3,0,Yes,0.19907422363758087,Potential Loyalists,830.37066650390625,High Value,Low Retention,High Value + Low Retention
+DO-13435,5,12,1197.3115,2014-10-03,1002,5,4,2,102.72,No,0.7711118459701538,Potential Loyalists,493.3750305175781,Low Value,Medium Retention,Low Value + Medium Retention
+DO-13645,602,1,76.64,2015-11-07,602,1,1,1,1190.676,No,0.9653698205947876,Potential Loyalists,578.5462646484375,Medium Value,High Retention,Medium Value + High Retention
+DP-13000,48,16,985.676,2014-01-03,1275,4,5,2,64.96,No,0.6837670207023621,Potential Loyalists,1120.78515625,High Value,Medium Retention,High Value + Medium Retention
+DP-13105,79,9,1971.1200000000001,2015-08-22,679,4,3,3,243.882,No,0.7744415402412415,Loyal Customers,676.0350341796875,Medium Value,Medium Retention,Medium Value + Medium Retention
+DP-13165,630,4,1058.616,2014-12-02,942,1,1,2,0,Yes,0.18331241607666016,Needs Attention,721.382568359375,Medium Value,Low Retention,Medium Value + Low Retention
+DP-13390,176,14,5480.723999999999,2014-07-05,1092,3,4,5,0,Yes,0.9815272688865662,Loyal Customers,574.69598388671875,Medium Value,High Retention,Medium Value + High Retention
+DR-12880,2,14,3378.606,2015-09-25,645,5,4,5,3149.428,No,0.8082347512245178,Champions,577.98626708984375,Medium Value,Medium Retention,Medium Value + Medium Retention
+DR-12940,214,11,7861.838,2014-03-28,1191,2,4,5,489.03,No,0.7486333847045898,Champions,634.147705078125,Medium Value,Medium Retention,Medium Value + Medium Retention
+DS-13030,88,13,1226.949,2014-07-09,1088,4,4,2,535.264,No,0.9682791233062744,Potential Loyalists,473.0038757324219,Low Value,High Retention,Low Value + High Retention
+DS-13180,92,18,2862.7088000000003,2014-04-28,1160,4,5,4,19.104,No,0.7847970128059387,Champions,401.0401611328125,Low Value,Medium Retention,Low Value + Medium Retention
+DV-13045,1,4,57.12,2016-06-12,384,5,1,1,1062.363,No,0.9412442445755005,Potential Loyalists,497.8587951660156,Low Value,High Retention,Low Value + High Retention
+DV-13465,20,10,2321.324,2014-06-22,1105,5,3,4,1020.2629999999999,No,0.8237448930740356,Loyal Customers,652.962158203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+DW-13195,223,7,876.346,2014-01-18,1260,2,2,2,204.405,No,0.3312588930130005,Potential Loyalists,985.5994873046875,High Value,Low Retention,High Value + Low Retention
+DW-13480,35,11,5271.628,2014-06-01,1126,5,4,5,0,Yes,0.605268120765686,Potential Loyalists,771.79779052734375,High Value,Low Retention,High Value + Low Retention
+DW-13540,117,4,172.648,2016-02-27,490,3,1,1,171.432,No,0.9115544557571411,Needs Attention,553.6431884765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+DW-13585,60,10,1204.854,2014-08-24,1042,4,3,2,0,Yes,0.6810826659202576,Needs Attention,473.0038757324219,Low Value,Medium Retention,Low Value + Medium Retention
+Dl-13600,23,5,740.53,2014-03-30,1189,5,1,2,15.072,No,0.9577533006668091,Needs Attention,495.722412109375,Low Value,High Retention,Low Value + High Retention
+Dp-13240,16,13,3312.89,2014-05-26,1132,5,4,4,3885.871,No,0.9760885834693909,Champions,592.2037353515625,Medium Value,High Retention,Medium Value + High Retention
+EA-14035,62,24,2791.889,2014-09-13,1022,4,5,4,54.816,No,0.8207412362098694,Loyal Customers,502.29278564453125,Low Value,Medium Retention,Low Value + Medium Retention
+EB-13705,54,9,2679.286,2014-07-08,1089,4,3,4,965.692,No,0.829746425151825,Champions,754.21502685546875,High Value,Medium Retention,High Value + Medium Retention
+EB-13750,76,17,2820.314,2015-03-12,842,4,5,4,416,No,0.8222542405128479,Champions,591.75994873046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+EB-13840,209,4,3714.6079999999997,2014-05-30,1128,2,1,5,643.52,No,0.9469717144966125,Loyal Customers,858.2327880859375,High Value,High Retention,High Value + High Retention
+EB-13870,113,10,2765.311,2014-05-05,1153,3,3,4,1.908,No,0.774371325969696,Loyal Customers,579.6904296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+EB-13930,252,6,418.25600000000003,2014-02-02,1245,2,2,1,526.344,No,0.3837900459766388,Needs Attention,438.0874328613281,Low Value,Low Retention,Low Value + Low Retention
+EB-13975,264,4,1608.631,2016-01-04,544,2,1,3,34.623999999999995,No,0.9739516973495483,Potential Loyalists,799.0848388671875,High Value,High Retention,High Value + High Retention
+EB-14110,229,10,2812.598,2015-04-13,810,2,3,4,258.528,No,0.8861061930656433,Potential Loyalists,820.5531005859375,High Value,Medium Retention,High Value + Medium Retention
+EB-14170,238,6,1175.51,2014-09-29,1006,2,2,2,10.816,No,0.9382319450378418,Potential Loyalists,660.596435546875,Medium Value,High Retention,Medium Value + High Retention
+EC-14050,100,4,330.234,2014-12-17,927,4,1,1,131.68,No,0.24912959337234497,Needs Attention,775.0106201171875,High Value,Low Retention,High Value + Low Retention
+ED-13885,132,9,3341.112,2014-08-09,1057,3,3,4,143.808,No,0.9587967991828918,Loyal Customers,749.24102783203125,High Value,High Retention,High Value + High Retention
+EG-13900,92,7,1376.5159999999998,2015-11-02,607,4,2,3,455.504,No,0.9595714211463928,Loyal Customers,586.06976318359375,Medium Value,High Retention,Medium Value + High Retention
+EH-13765,160,30,8952.396,2014-04-12,1176,3,5,5,1358.484,No,0.44263407588005066,Loyal Customers,405.35467529296875,Low Value,Low Retention,Low Value + Low Retention
+EH-13945,35,17,684.1709999999999,2014-07-02,1095,5,5,2,0,Yes,0.6943303942680359,Potential Loyalists,357.0304260253906,Low Value,Medium Retention,Low Value + Medium Retention
+EH-13990,223,8,825.9499999999999,2014-01-15,1263,2,2,2,0,Yes,0.4044130742549896,Needs Attention,902.18359375,High Value,Low Retention,High Value + Low Retention
+EH-14005,27,6,717.428,2014-05-13,1145,5,2,2,502.10200000000003,No,0.9358773827552795,Loyal Customers,495.722412109375,Low Value,High Retention,Low Value + High Retention
+EH-14125,10,17,3041.229,2014-10-19,986,5,5,4,41.424,No,0.8002892732620239,Loyal Customers,590.96173095703125,Medium Value,Medium Retention,Medium Value + Medium Retention
+EH-14185,183,7,903.34,2014-05-22,1136,3,2,2,20.544,No,0.7594208121299744,Needs Attention,505.8664855957031,Medium Value,Medium Retention,Medium Value + Medium Retention
+EJ-13720,120,8,2162.174,2014-01-27,1251,3,2,4,0,Yes,0.32102322578430176,Needs Attention,543.44659423828125,Medium Value,Low Retention,Medium Value + Low Retention
+EJ-14155,48,6,2192.091,2014-03-03,1216,4,2,4,464.6,No,0.9067609906196594,Potential Loyalists,616.71832275390625,Medium Value,Medium Retention,Medium Value + Medium Retention
+EK-13795,560,3,1280.118,2014-03-18,1201,1,1,2,23.36,No,0.7723006010055542,Potential Loyalists,293.85467529296875,Low Value,Medium Retention,Low Value + Medium Retention
+EL-13735,435,1,86.62,2016-04-22,435,1,1,1,37.66,No,0.6103078126907349,Needs Attention,520.127685546875,Medium Value,Low Retention,Medium Value + Low Retention
+EM-13810,484,6,2526.72,2015-06-07,755,1,2,4,40.29,No,0.7849221229553223,Potential Loyalists,703.813720703125,Medium Value,Medium Retention,Medium Value + Medium Retention
+EM-13825,60,9,739.15,2014-12-02,942,4,3,2,1600.448,No,0.8203156590461731,Loyal Customers,633.34332275390625,Medium Value,Medium Retention,Medium Value + Medium Retention
+EM-13960,551,5,747.164,2015-10-01,639,1,1,2,186.54,No,0.9230723977088928,Needs Attention,597.2462158203125,Medium Value,High Retention,Medium Value + High Retention
+EM-14065,27,5,217.78,2014-07-22,1075,5,1,1,11.21,No,0.980612576007843,Needs Attention,533.01580810546875,Medium Value,High Retention,Medium Value + High Retention
+EM-14095,236,9,975.922,2015-08-07,694,2,3,2,65.12,No,0.5886988639831543,Needs Attention,518.23809814453125,Medium Value,Low Retention,Medium Value + Low Retention
+EM-14140,186,15,3616.356,2014-07-19,1078,3,5,5,972.08,No,0.9862042665481567,Loyal Customers,638.6790771484375,Medium Value,High Retention,Medium Value + High Retention
+EM-14200,97,3,68.706,2015-12-20,559,4,1,1,298.116,No,0.9634974002838135,Needs Attention,553.6431884765625,Medium Value,High Retention,Medium Value + High Retention
+EN-13780,105,9,2199.366,2015-05-30,763,3,3,4,0,Yes,0.5754839777946472,Needs Attention,676.0350341796875,Medium Value,Low Retention,Medium Value + Low Retention
+EP-13915,120,18,4155.5428,2014-07-06,1091,3,5,5,1322.518,No,0.9830484390258789,Champions,621.12841796875,Medium Value,High Retention,Medium Value + High Retention
+ER-13855,239,5,1245.788,2015-12-21,558,2,1,2,0,Yes,0.5447065234184265,Needs Attention,579.5323486328125,Medium Value,Low Retention,Medium Value + Low Retention
+ES-14020,385,4,389.106,2014-09-20,1015,1,1,1,3121.352,No,0.2030489444732666,Loyal Customers,728.1834716796875,High Value,Low Retention,High Value + Low Retention
+ES-14080,127,17,4391.392,2014-10-02,1003,3,5,5,266.532,No,0.9705020189285278,Champions,697.2840576171875,Medium Value,High Retention,Medium Value + High Retention
+FA-14230,223,15,1618.574,2014-09-19,1016,2,5,3,1365.48,No,0.8543705344200134,Loyal Customers,696.6795654296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+FC-14245,117,9,3026.8379999999997,2015-06-13,749,3,3,4,391.904,No,0.9349558353424072,Loyal Customers,744.332763671875,High Value,High Retention,High Value + High Retention
+FC-14335,2,10,3889.366,2014-10-10,995,5,3,5,0,Yes,0.5914918780326843,Potential Loyalists,708.75634765625,Medium Value,Low Retention,Medium Value + Low Retention
+FG-14260,957,4,746.12,2014-05-21,1137,1,1,2,637.024,No,0.9564974308013916,Potential Loyalists,438.6009216308594,Low Value,High Retention,Low Value + High Retention
+FH-14275,49,14,1646.1760000000002,2014-04-06,1182,4,4,3,2610.096,No,0.7500296831130981,Champions,542.40032958984375,Medium Value,Medium Retention,Medium Value + Medium Retention
+FH-14350,30,14,2271.284,2015-08-23,678,5,4,4,0,Yes,0.3184579908847809,Needs Attention,638.7447509765625,Medium Value,Low Retention,Medium Value + Low Retention
+FH-14365,212,7,6506.072,2014-10-20,985,2,2,5,481.124,No,0.91126549243927,Champions,872.8504638671875,High Value,Medium Retention,High Value + Medium Retention
+FM-14215,63,14,2274.688,2014-03-11,1208,4,4,4,181.95,No,0.8320021033287048,Champions,371.5904846191406,Low Value,Medium Retention,Low Value + Medium Retention
+FM-14290,190,7,1750.008,2014-08-26,1040,3,2,3,1986.19,No,0.8023690581321716,Champions,742.2376708984375,High Value,Medium Retention,High Value + Medium Retention
+FM-14380,6,13,2443.274,2015-07-12,720,5,4,4,79.992,No,0.6738504767417908,Loyal Customers,620.25048828125,Medium Value,Medium Retention,Medium Value + Medium Retention
+FO-14305,12,13,2634.086,2014-06-09,1118,5,4,4,44.352000000000004,No,0.9505026340484619,Loyal Customers,523.9061279296875,Medium Value,High Retention,Medium Value + High Retention
+FP-14320,187,12,3664.4900000000002,2014-12-07,937,3,4,5,382.256,No,0.8406931757926941,Champions,920.17547607421875,High Value,Medium Retention,High Value + Medium Retention
+FW-14395,180,3,79.75,2015-03-22,832,3,1,1,0,Yes,0.3356704115867615,At Risk,648.0186767578125,Medium Value,Low Retention,Medium Value + Low Retention
+GA-14515,7,13,3819.906,2014-05-18,1140,5,4,5,99.87,No,0.9425927400588989,Loyal Customers,531.347900390625,Medium Value,High Retention,Medium Value + High Retention
+GA-14725,111,13,894.13,2014-02-11,1236,3,4,2,504.252,No,0.8869721293449402,Loyal Customers,347.0339660644531,Low Value,Medium Retention,Low Value + Medium Retention
+GB-14530,91,19,1521.48,2014-04-28,1160,4,5,3,46.96,No,0.924800455570221,Loyal Customers,313.8453369140625,Low Value,High Retention,Low Value + High Retention
+GB-14575,154,15,4171.908,2015-06-12,750,3,5,5,544.38,No,0.9548684358596802,Loyal Customers,684.30865478515625,Medium Value,High Retention,Medium Value + High Retention
+GD-14590,28,5,1884.214,2014-05-05,1153,5,1,3,3.856,No,0.9554793238639832,Potential Loyalists,714.25653076171875,Medium Value,High Retention,Medium Value + High Retention
+GG-14650,69,16,1402.648,2014-10-31,974,4,5,3,821.352,No,0.9423193335533142,Loyal Customers,427.18914794921875,Low Value,High Retention,Low Value + High Retention
+GH-14410,1,16,2219.482,2014-07-09,1088,5,5,4,599.985,No,0.8674801588058472,Loyal Customers,446.5084533691406,Low Value,Medium Retention,Low Value + Medium Retention
+GH-14425,568,9,4061.056,2014-06-17,1110,1,3,5,111.79,No,0.9614272117614746,Potential Loyalists,446.67254638671875,Low Value,High Retention,Low Value + High Retention
+GH-14485,205,3,1361.2440000000001,2015-10-08,632,2,1,3,0,Yes,0.2898782789707184,Needs Attention,735.0201416015625,High Value,Low Retention,High Value + Low Retention
+GH-14665,592,1,40.92,2015-11-17,592,1,1,1,106.02080000000001,No,0.9258252382278442,Potential Loyalists,413.1833801269531,Low Value,High Retention,Low Value + High Retention
+GK-14620,188,13,6487.414,2014-06-25,1102,3,4,5,9.856,No,0.9438347816467285,Loyal Customers,584.00506591796875,Medium Value,High Retention,Medium Value + High Retention
+GM-14440,70,9,3376.9359999999997,2014-03-21,1198,4,3,5,205.88400000000001,No,0.9425355792045593,Loyal Customers,550.449951171875,Medium Value,High Retention,Medium Value + High Retention
+GM-14455,438,6,1718.466,2014-04-11,1177,1,2,3,1360.1580000000001,No,0.9554758667945862,Loyal Customers,607.46923828125,Medium Value,High Retention,Medium Value + High Retention
+GM-14500,370,10,879.7379999999999,2014-08-09,1057,1,3,2,375.944,No,0.6523708701133728,Potential Loyalists,512.3094482421875,Medium Value,Medium Retention,Medium Value + Medium Retention
+GM-14680,273,10,2878.052,2014-05-10,1148,2,3,4,285.576,No,0.907360851764679,Potential Loyalists,629.8330078125,Medium Value,Medium Retention,Medium Value + Medium Retention
+GM-14695,284,10,4727.6140000000005,2014-04-05,1183,2,3,5,1322.352,No,0.8338850736618042,Potential Loyalists,748.668701171875,High Value,Medium Retention,High Value + Medium Retention
+GP-14740,583,5,236.53,2014-04-06,1182,1,1,1,0,Yes,0.5296503901481628,At Risk,218.03099060058594,Low Value,Low Retention,Low Value + Low Retention
+GR-14560,953,5,1284.38,2014-11-19,955,1,1,2,0,Yes,0.2595587968826294,Needs Attention,622.5750732421875,Medium Value,Low Retention,Medium Value + Low Retention
+GT-14635,604,4,1183.792,2014-06-06,1121,1,1,2,8167.419999999999,No,0.6124228835105896,Potential Loyalists,556.7559814453125,Medium Value,Low Retention,Medium Value + Low Retention
+GT-14710,4,25,11721.776,2014-05-23,1135,5,5,5,98.344,No,0.8005037903785706,Champions,349.5701904296875,Low Value,Medium Retention,Low Value + Medium Retention
+GT-14755,33,6,192.868,2015-02-18,864,5,2,1,33.568,No,0.9583145380020142,Needs Attention,622.48272705078125,Medium Value,High Retention,Medium Value + High Retention
+GW-14605,253,7,1467.273,2014-03-01,1218,2,2,3,721.7460000000001,No,0.9173511862754822,Loyal Customers,506.39459228515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+GZ-14470,56,11,3827.62,2014-08-05,1061,4,4,5,527.53,No,0.9723021984100342,Champions,688.38519287109375,Medium Value,High Retention,Medium Value + High Retention
+GZ-14545,21,3,442.32,2014-09-28,1007,5,1,1,2012.3020000000001,No,0.807843804359436,Needs Attention,834.97088623046875,High Value,Medium Retention,High Value + Medium Retention
+HA-14905,284,6,1284.0439999999999,2014-06-30,1097,2,2,2,879.256,No,0.885326623916626,Potential Loyalists,584.4407958984375,Medium Value,Medium Retention,Medium Value + Medium Retention
+HA-14920,261,15,2538.886,2014-10-11,994,2,5,4,45.272,No,0.9537177085876465,Loyal Customers,696.6795654296875,Medium Value,High Retention,Medium Value + High Retention
+HD-14785,587,7,251.36,2014-05-11,1147,1,2,1,0,Yes,0.5565754771232605,At Risk,218.03099060058594,Low Value,Low Retention,Low Value + Low Retention
+HE-14800,208,4,284.582,2016-01-30,518,2,1,1,598.95,No,0.9747937321662903,Potential Loyalists,730.7777099609375,High Value,High Retention,High Value + High Retention
+HF-14995,216,17,2489.314,2014-05-26,1132,2,5,4,43.85,No,0.9141459465026855,Loyal Customers,451.18280029296875,Low Value,Medium Retention,Low Value + Medium Retention
+HG-14845,103,5,403.08000000000004,2014-04-29,1159,3,1,1,382.548,No,0.4895063638687134,Needs Attention,485.4830017089844,Low Value,Low Retention,Low Value + Low Retention
+HG-14965,92,14,1092.58,2014-09-20,1015,4,4,2,2155.062,No,0.7539949417114258,Champions,438.5975036621094,Low Value,Medium Retention,Low Value + Medium Retention
+HG-15025,19,8,3382.1440000000002,2014-10-14,991,5,3,5,308.14,No,0.9662950038909912,Champions,898.66839599609375,High Value,High Retention,High Value + High Retention
+HH-15010,1037,2,123.28,2014-08-29,1037,1,1,1,95.388,No,0.8795402646064758,Needs Attention,475.89422607421875,Low Value,Medium Retention,Low Value + Medium Retention
+HJ-14875,218,5,304.38,2015-04-13,810,2,1,1,53.72,No,0.7105017304420471,Needs Attention,726.345458984375,High Value,Medium Retention,High Value + Medium Retention
+HK-14890,28,14,4822.888,2014-06-10,1117,5,4,5,54.896,No,0.9632518887519836,Loyal Customers,661.23590087890625,Medium Value,High Retention,Medium Value + High Retention
+HL-15040,271,9,2350.748,2014-01-20,1258,2,3,4,10522.55,No,0.8084629774093628,Loyal Customers,2007.74951171875,High Value,Medium Retention,High Value + Medium Retention
+HM-14860,78,13,7752.7828,2014-07-21,1076,4,4,5,483.982,No,0.9641678929328918,Champions,685.25775146484375,Medium Value,High Retention,Medium Value + High Retention
+HM-14980,65,7,736.276,2015-10-02,638,4,2,2,0,Yes,0.9325037598609924,At Risk,518.7950439453125,Medium Value,High Retention,Medium Value + High Retention
+HP-14815,159,8,678.942,2014-05-06,1152,3,3,2,1311.372,No,0.7647666931152344,Loyal Customers,361.1562805175781,Low Value,Medium Retention,Low Value + Medium Retention
+HR-14770,85,12,1287.48,2014-03-01,1218,4,4,2,11.808,No,0.9384894371032715,Potential Loyalists,274.21270751953125,Low Value,High Retention,Low Value + High Retention
+HR-14830,99,13,2848.827,2014-11-24,950,4,4,4,2399.96,No,0.7170718312263489,Loyal Customers,851.87774658203125,High Value,Medium Retention,High Value + Medium Retention
+HW-14935,30,15,6110.348,2015-09-27,643,5,5,5,3189.906,No,0.9525793194770813,Loyal Customers,643.05926513671875,Medium Value,High Retention,Medium Value + High Retention
+HZ-14950,33,2,87.304,2016-03-14,474,5,1,1,799.216,No,0.9601609110832214,Potential Loyalists,626.9149169921875,Medium Value,High Retention,Medium Value + High Retention
+IG-15085,379,4,545.404,2014-10-18,987,1,1,1,199.17,No,0.851104199886322,Needs Attention,728.1834716796875,High Value,Medium Retention,High Value + Medium Retention
+IL-15100,300,11,3394.866,2014-08-01,1065,2,4,5,1645.87,No,0.9060983657836914,Loyal Customers,799.3836669921875,High Value,Medium Retention,High Value + Medium Retention
+IM-15055,227,4,2872.63,2014-01-23,1255,2,1,4,0,Yes,0.6173039078712463,Needs Attention,750.301025390625,High Value,Low Retention,High Value + Low Retention
+IM-15070,208,21,4930.474,2014-12-19,925,2,5,5,0,Yes,0.1971094012260437,Loyal Customers,760.7381591796875,High Value,Low Retention,High Value + Low Retention
+JA-15970,47,18,1505.241,2014-09-17,1018,4,5,3,4985.785,No,0.9078567028045654,Loyal Customers,564.525390625,Medium Value,Medium Retention,Medium Value + Medium Retention
+JB-15400,343,10,937.207,2014-09-14,1021,1,3,2,854.398,No,0.6667293906211853,Champions,588.4649658203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+JB-15925,555,8,900.552,2014-12-05,939,1,3,2,0,Yes,0.3783361315727234,At Risk,576.29931640625,Medium Value,Low Retention,Medium Value + Low Retention
+JB-16000,110,3,222.76600000000002,2016-01-10,538,3,1,1,421.3528,No,0.8990097641944885,Potential Loyalists,553.6431884765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+JB-16045,205,8,2490.655,2015-05-03,790,2,3,4,27.46,No,0.7026352286338806,Loyal Customers,726.1776123046875,High Value,Medium Retention,High Value + Medium Retention
+JC-15340,200,3,23.323,2014-01-28,1250,3,1,1,47.94,No,0.7898141145706177,Needs Attention,359.7605895996094,Low Value,Medium Retention,Low Value + Medium Retention
+JC-15775,1,11,2294.963,2014-09-14,1021,5,4,4,477.092,No,0.2703959345817566,Loyal Customers,701.314453125,Medium Value,Low Retention,Medium Value + Low Retention
+JC-16105,667,4,703.2660000000001,2014-11-18,956,1,1,2,155.31,No,0.8800825476646423,Needs Attention,710.7879638671875,Medium Value,Medium Retention,Medium Value + Medium Retention
+JD-15790,29,4,2112.256,2015-04-02,821,5,1,3,40.096,No,0.7234547138214111,Potential Loyalists,1003.7842407226562,High Value,Medium Retention,High Value + Medium Retention
+JD-15895,212,32,7610.8640000000005,2014-03-26,1193,2,5,5,0,Yes,0.23142361640930176,Loyal Customers,455.497314453125,Low Value,Low Retention,Low Value + Low Retention
+JD-16015,47,7,224,2014-10-04,1001,4,2,1,161.43,No,0.8816511034965515,Needs Attention,609.17138671875,Medium Value,Medium Retention,Medium Value + Medium Retention
+JD-16060,118,6,695.442,2014-09-24,1011,3,2,2,0,Yes,0.5704782009124756,At Risk,599.85906982421875,Medium Value,Low Retention,Medium Value + Low Retention
+JD-16150,98,15,6306.5505,2014-11-16,958,4,5,5,2521.4799999999996,No,0.7346157431602478,Champions,745.63018798828125,High Value,Medium Retention,High Value + Medium Retention
+JE-15475,11,13,1388.682,2015-03-16,838,5,4,3,0,Yes,0.5663120150566101,Potential Loyalists,563.366455078125,Medium Value,Low Retention,Medium Value + Low Retention
+JE-15610,92,14,6779.558,2014-10-14,991,4,4,5,975.418,No,0.8740853071212769,Champions,650.85162353515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+JE-15715,16,20,8637.907,2014-08-25,1041,5,5,5,59.93600000000001,No,0.9434882998466492,Champions,450.8229675292969,Low Value,High Retention,Low Value + High Retention
+JE-15745,15,20,5986.785,2014-06-22,1105,5,5,5,774.0300000000001,No,0.9718950390815735,Champions,349.5701904296875,Low Value,High Retention,Low Value + High Retention
+JE-16165,208,4,2657.81,2016-12-05,208,2,1,4,39.438,No,0.8229421973228455,Potential Loyalists,886.2796630859375,High Value,Medium Retention,High Value + Medium Retention
+JF-15190,90,12,1265.434,2014-11-15,959,4,4,2,1014.152,No,0.9231047034263611,Loyal Customers,643.93804931640625,Medium Value,High Retention,Medium Value + High Retention
+JF-15295,43,14,955.124,2014-03-14,1205,4,4,2,0,Yes,0.5505449175834656,Needs Attention,309.7437438964844,Low Value,Low Retention,Low Value + Low Retention
+JF-15355,69,13,1748.334,2015-10-23,617,4,4,3,163.51,No,0.9441362619400024,Potential Loyalists,676.0350341796875,Medium Value,High Retention,Medium Value + High Retention
+JF-15415,615,5,416.716,2014-06-17,1110,1,1,1,1954.732,No,0.5399441719055176,Loyal Customers,510.3858947753906,Medium Value,Low Retention,Medium Value + Low Retention
+JF-15490,56,13,1063.798,2014-10-19,986,4,4,2,19.119999999999997,No,0.6519311666488647,Potential Loyalists,549.15948486328125,Medium Value,Medium Retention,Medium Value + Medium Retention
+JF-15565,253,11,3366.964,2014-10-11,994,2,4,4,831.368,No,0.933508574962616,Loyal Customers,875.539306640625,High Value,High Retention,High Value + High Retention
+JG-15115,576,7,2358.676,2014-09-21,1014,1,2,4,0,Yes,0.40033745765686035,Needs Attention,677.933349609375,Medium Value,Low Retention,Medium Value + Low Retention
+JG-15160,35,15,5572.608,2014-05-30,1128,5,5,5,793.784,No,0.8571836948394775,Champions,546.71490478515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+JG-15310,345,7,969.9739999999999,2016-03-03,485,1,2,2,1270.606,No,0.8331925868988037,Loyal Customers,568.6953125,Medium Value,Medium Retention,Medium Value + Medium Retention
+JG-15805,41,9,1507.018,2014-04-05,1183,5,3,3,0,Yes,0.5429476499557495,Potential Loyalists,565.767333984375,Medium Value,Low Retention,Medium Value + Low Retention
+JH-15430,1223,2,55.672,2014-02-24,1223,1,1,1,253.609,No,0.971789538860321,Potential Loyalists,277.1031494140625,Low Value,High Retention,Low Value + High Retention
+JH-15820,155,7,299.99,2014-05-19,1139,3,2,1,228.92,No,0.5211780071258545,Needs Attention,485.4830017089844,Low Value,Low Retention,Low Value + Low Retention
+JH-15910,34,8,740.402,2015-06-12,750,5,3,2,219.075,No,0.947756826877594,Potential Loyalists,530.7723388671875,Medium Value,High Retention,Medium Value + High Retention
+JH-15985,238,9,7578.898,2014-08-09,1057,2,3,5,376.09999999999997,No,0.8734899759292603,Loyal Customers,735.400390625,High Value,Medium Retention,High Value + Medium Retention
+JH-16180,222,5,2256.394,2015-05-25,768,2,1,4,0,Yes,0.6820375919342041,Needs Attention,787.4720458984375,High Value,Medium Retention,High Value + Medium Retention
+JJ-15445,301,6,709.178,2015-03-05,849,2,2,2,0,Yes,0.40274637937545776,Needs Attention,663.3131103515625,Medium Value,Low Retention,Medium Value + Low Retention
+JJ-15760,571,3,195,2015-10-05,635,1,1,1,0,Yes,0.75151526927948,At Risk,413.1833801269531,Low Value,Medium Retention,Low Value + Medium Retention
+JK-15205,273,7,2433.37,2014-07-11,1086,2,2,4,1993.772,No,0.9416568875312805,Loyal Customers,792.3802490234375,High Value,High Retention,High Value + High Retention
+JK-15325,105,4,383.81199999999995,2014-11-21,953,3,1,1,0,Yes,0.12405554205179214,At Risk,856.47784423828125,High Value,Low Retention,High Value + Low Retention
+JK-15370,218,10,2280.382,2014-04-11,1177,2,3,4,429.25,No,0.7900090217590332,Loyal Customers,629.8330078125,Medium Value,Medium Retention,Medium Value + Medium Retention
+JK-15625,554,9,2848.208,2014-05-31,1127,1,3,4,911.82,No,0.881072998046875,Loyal Customers,658.1416015625,Medium Value,Medium Retention,Medium Value + Medium Retention
+JK-15640,554,8,609.462,2014-09-19,1016,1,3,1,4150.972,No,0.5949287414550781,Loyal Customers,680.0482177734375,Medium Value,Low Retention,Medium Value + Low Retention
+JK-15730,9,17,4525.994000000001,2014-11-18,956,5,5,5,341.206,No,0.8182271718978882,Champions,736.2783203125,High Value,Medium Retention,High Value + Medium Retention
+JK-16090,802,4,893.09,2015-04-21,802,1,1,2,2854.578,No,0.8945236802101135,Potential Loyalists,712.7366943359375,Medium Value,Medium Retention,Medium Value + Medium Retention
+JK-16120,51,16,2902.1,2014-11-02,972,4,5,4,30.384,No,0.9647147059440613,Loyal Customers,746.4989013671875,High Value,High Retention,High Value + High Retention
+JL-15130,64,7,124.608,2014-07-18,1079,4,2,1,1090.348,No,0.956902027130127,Loyal Customers,459.7440490722656,Low Value,High Retention,Low Value + High Retention
+JL-15175,380,4,710.939,2014-12-31,913,1,1,2,860.584,No,0.816849410533905,Potential Loyalists,678.4625244140625,Medium Value,Medium Retention,Medium Value + Medium Retention
+JL-15235,64,8,1948.452,2014-05-25,1133,4,3,3,255.248,No,0.9338712692260742,Potential Loyalists,579.6904296875,Medium Value,High Retention,Medium Value + High Retention
+JL-15505,37,8,585.0600000000001,2014-11-14,960,5,3,1,2588.814,No,0.9278748035430908,Loyal Customers,769.6474609375,High Value,High Retention,High Value + High Retention
+JL-15835,98,18,4781.453,2014-04-18,1170,4,5,5,5018.47,No,0.9187741279602051,Champions,519.875732421875,Medium Value,Medium Retention,Medium Value + Medium Retention
+JL-15850,432,11,2725.256,2014-07-22,1075,1,4,4,0,Yes,0.6723588109016418,Potential Loyalists,647.4276123046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+JM-15250,71,12,2362.33,2016-03-29,459,4,4,4,796.792,No,0.9341039061546326,Loyal Customers,676.0350341796875,Medium Value,High Retention,Medium Value + High Retention
+JM-15265,202,11,1487.826,2014-08-25,1041,2,4,3,316.32,No,0.8665274381637573,Potential Loyalists,643.89111328125,Medium Value,Medium Retention,Medium Value + Medium Retention
+JM-15535,189,8,1692.683,2014-09-13,1022,3,3,3,40.76,No,0.8817205429077148,Potential Loyalists,680.94329833984375,Medium Value,Medium Retention,Medium Value + Medium Retention
+JM-15580,296,6,300.924,2016-04-14,443,2,2,1,3.024,No,0.9479276537895203,Potential Loyalists,631.969970703125,Medium Value,High Retention,Medium Value + High Retention
+JM-15655,201,6,476.431,2014-04-08,1180,2,2,1,388.516,No,0.6192601323127747,Potential Loyalists,535.6256103515625,Medium Value,Low Retention,Medium Value + Low Retention
+JM-15865,46,12,7458.636,2014-11-19,955,4,4,5,166.44,No,0.8658641576766968,Loyal Customers,929.46392822265625,High Value,Medium Retention,High Value + Medium Retention
+JM-16195,229,14,2068.074,2014-04-30,1158,2,4,3,765.8520000000001,No,0.8598175048828125,Loyal Customers,519.2713623046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+JO-15145,166,10,2584.076,2014-01-06,1272,3,3,4,670.8729999999999,No,0.8619855642318726,Loyal Customers,1434.1038818359375,High Value,Medium Retention,High Value + Medium Retention
+JO-15280,438,10,1690.3519999999999,2014-03-31,1188,1,3,3,243.92,No,0.9561068415641785,Potential Loyalists,546.17498779296875,Medium Value,High Retention,Medium Value + High Retention
+JO-15550,33,11,1090.838,2015-03-19,835,5,4,2,0,Yes,0.38472259044647217,Needs Attention,635.7425537109375,Medium Value,Low Retention,Medium Value + Low Retention
+JP-15460,138,11,1420.654,2014-08-24,1042,3,4,3,248.481,No,0.8580337166786194,Loyal Customers,529.68389892578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+JP-15520,300,10,1811.4099999999999,2014-08-22,1044,2,3,3,1824.184,No,0.5693105459213257,Champions,731.0859375,High Value,Low Retention,High Value + Low Retention
+JP-16135,50,12,1672.31,2014-09-23,1012,4,4,3,35.4,No,0.7713524699211121,Loyal Customers,830.37066650390625,High Value,Medium Retention,High Value + Medium Retention
+JR-15670,411,3,1156.658,2015-12-24,555,1,1,2,0,Yes,0.8515227437019348,Needs Attention,594.681640625,Medium Value,Medium Retention,Medium Value + Medium Retention
+JR-16210,447,4,847.854,2015-09-18,652,1,1,2,1353.832,No,0.6180375814437866,Potential Loyalists,667.5029296875,Medium Value,Low Retention,Medium Value + Low Retention
+JS-15595,249,5,1160.146,2014-03-03,1216,2,1,2,257.508,No,0.9149277210235596,Needs Attention,385.64971923828125,Low Value,Medium Retention,Low Value + Medium Retention
+JS-15685,12,6,578.208,2016-06-14,382,5,2,1,552.856,No,0.9958838820457458,Potential Loyalists,526.04302978515625,Medium Value,High Retention,Medium Value + High Retention
+JS-15880,352,9,3868.02,2014-04-08,1180,1,3,5,0,Yes,0.5512019395828247,Potential Loyalists,553.61669921875,Medium Value,Low Retention,Medium Value + Low Retention
+JS-15940,281,8,469.169,2014-05-03,1155,2,3,1,0,Yes,0.3053187131881714,Needs Attention,474.331298828125,Low Value,Low Retention,Low Value + Low Retention
+JS-16030,135,15,2173.498,2014-02-27,1220,3,5,4,342.996,No,0.9250484704971313,Loyal Customers,371.5904846191406,Low Value,High Retention,Low Value + High Retention
+JW-15220,286,8,2337.166,2015-04-30,793,2,3,4,5384.548,No,0.8495973348617554,Loyal Customers,726.1776123046875,High Value,Medium Retention,High Value + Medium Retention
+JW-15955,71,5,522.908,2015-08-16,685,4,1,1,721.178,No,0.9435455799102783,Loyal Customers,581.827392578125,Medium Value,High Retention,Medium Value + High Retention
+JW-16075,279,7,1428.731,2015-03-21,833,2,2,3,0,Yes,0.23010464012622833,Needs Attention,730.587890625,High Value,Low Retention,High Value + Low Retention
+KA-16525,32,6,716.7180000000001,2014-03-11,1208,5,2,2,802.788,No,0.9510607719421387,Loyal Customers,398.18414306640625,Low Value,High Retention,Low Value + High Retention
+KB-16240,511,4,349.21299999999997,2014-03-31,1188,1,1,1,2803.402,No,0.6747495532035828,Champions,662.7418212890625,Medium Value,Medium Retention,Medium Value + Medium Retention
+KB-16315,114,22,1569.464,2014-08-26,1040,3,5,3,0,Yes,0.9110540151596069,Potential Loyalists,415.0982666015625,Low Value,Medium Retention,Low Value + Medium Retention
+KB-16405,589,3,155.16,2015-11-20,589,1,1,1,753.661,No,0.9534386992454529,Needs Attention,413.1833801269531,Low Value,High Retention,Low Value + High Retention
+KB-16585,48,23,2744.742,2014-04-04,1184,4,5,4,0,Yes,0.16437143087387085,Potential Loyalists,474.311767578125,Low Value,Low Retention,Low Value + Low Retention
+KB-16600,375,4,106.07600000000001,2014-12-30,914,1,1,1,877.846,No,0.3950536549091339,Loyal Customers,614.5030517578125,Medium Value,Low Retention,Medium Value + Low Retention
+KC-16255,225,10,2120.954,2014-09-08,1027,2,3,3,0,Yes,0.789009153842926,Potential Loyalists,731.0859375,High Value,Medium Retention,High Value + Medium Retention
+KC-16540,229,4,3805.2059999999997,2015-11-02,607,2,1,5,103.056,No,0.98384857177734375,Potential Loyalists,893.7215576171875,High Value,High Retention,High Value + High Retention
+KC-16675,36,5,699.054,2014-12-13,931,5,1,2,446.99600000000004,No,0.9490452408790588,Needs Attention,686.44219970703125,Medium Value,High Retention,Medium Value + High Retention
+KD-16270,302,16,8282.358,2014-11-11,963,2,5,5,0,Yes,0.5202039480209351,Potential Loyalists,644.0260009765625,Medium Value,Low Retention,Medium Value + Low Retention
+KD-16345,14,9,1856.9959999999999,2014-09-02,1033,5,3,3,31.968,No,0.5165350437164307,Loyal Customers,625.1588134765625,Medium Value,Low Retention,Medium Value + Low Retention
+KD-16495,158,26,8063.842000000001,2014-09-28,1007,3,5,5,117.414,No,0.8843584060668945,Loyal Customers,582.7630615234375,Medium Value,Medium Retention,Medium Value + Medium Retention
+KD-16615,107,13,2243.5099999999998,2015-09-13,657,3,4,4,0,Yes,0.48779281973838806,Needs Attention,676.0350341796875,Medium Value,Low Retention,Medium Value + Low Retention
+KE-16420,279,12,1407.588,2014-04-03,1185,2,4,3,279.1432,No,0.469298779964447,Loyal Customers,478.5736999511719,Low Value,Low Retention,Low Value + Low Retention
+KF-16285,84,7,7726.8640000000005,2014-09-26,1009,4,2,5,2877.402,No,0.8993178009986877,Loyal Customers,822.70782470703125,High Value,Medium Retention,High Value + Medium Retention
+KH-16330,12,13,2665.168,2014-04-01,1187,5,4,4,647.696,No,0.6778973340988159,Loyal Customers,523.9061279296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+KH-16360,89,9,1285.932,2014-04-29,1159,4,3,2,1814.6799999999998,No,0.8737514615058899,Loyal Customers,371.7509460449219,Low Value,Medium Retention,Low Value + Medium Retention
+KH-16510,596,11,1931.624,2014-08-15,1051,1,4,3,4021.235,No,0.6767778992652893,Champions,705.8463134765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+KH-16630,200,12,3639.996,2014-11-01,973,3,4,5,278.96999999999997,No,0.980926513671875,Loyal Customers,825.39666748046875,High Value,High Retention,High Value + High Retention
+KH-16690,16,14,5264.959,2014-03-21,1198,5,4,5,725.84,No,0.8841276168823242,Champions,434.6416931152344,Low Value,Medium Retention,Low Value + Medium Retention
+KL-16555,182,16,2831.158,2014-06-15,1112,3,5,4,2185.33,No,0.9769332408905029,Champions,401.0401611328125,Low Value,High Retention,Low Value + High Retention
+KL-16645,39,28,14153.229,2014-07-25,1072,5,5,5,22,No,0.8529499769210815,Champions,579.8790283203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+KM-16225,233,11,1792.08,2015-07-06,726,2,4,3,468.878,No,0.7121252417564392,Loyal Customers,726.1776123046875,High Value,Medium Retention,High Value + Medium Retention
+KM-16375,131,19,5615.8859999999995,2014-07-20,1077,3,5,5,4.3,No,0.9706548452377319,Loyal Customers,506.607421875,Medium Value,High Retention,Medium Value + High Retention
+KM-16660,334,6,179.612,2014-12-22,922,1,2,1,273.926,No,0.46781113743782043,Potential Loyalists,515.69549560546875,Medium Value,Low Retention,Medium Value + Low Retention
+KM-16720,438,25,3638.302,2014-03-30,1189,1,5,5,1271.17,No,0.3292860984802246,Champions,435.8222351074219,Low Value,Low Retention,Low Value + Low Retention
+KN-16390,28,14,2206.782,2014-12-02,942,5,4,4,410.49,No,0.622397780418396,Champions,814.58746337890625,High Value,Medium Retention,High Value + Medium Retention
+KN-16450,552,7,1897.762,2014-04-12,1176,1,2,3,274.2,No,0.8942204713821411,Potential Loyalists,719.43603515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+KN-16705,20,10,988.07,2014-03-02,1217,5,3,2,1292.51,No,0.6099278330802917,Loyal Customers,347.4844970703125,Low Value,Low Retention,Low Value + Low Retention
+KS-16300,113,4,88.472,2015-01-13,900,3,1,1,0,Yes,0.4116288423538208,At Risk,648.0186767578125,Medium Value,Low Retention,Medium Value + Low Retention
+KT-16465,209,14,3057.1,2014-09-08,1027,2,4,4,0,Yes,0.8761466145515442,Potential Loyalists,688.8216552734375,Medium Value,Medium Retention,Medium Value + Medium Retention
+KT-16480,7,11,4535.6884,2014-03-10,1209,5,4,5,106.4,No,0.8558903932571411,Champions,545.20355224609375,Medium Value,Medium Retention,Medium Value + Medium Retention
+KW-16435,245,5,3817.702,2015-08-24,677,2,1,5,598.818,No,0.909711480140686,Loyal Customers,794.9139404296875,High Value,Medium Retention,High Value + Medium Retention
+KW-16570,589,5,449.096,2014-09-30,1005,1,1,1,0,Yes,0.6887084245681763,At Risk,522.43145751953125,Medium Value,Medium Retention,Medium Value + Medium Retention
+LA-16780,190,24,8545.534,2014-04-29,1159,3,5,5,127.688,No,0.755678117275238,Loyal Customers,405.35467529296875,Low Value,Medium Retention,Low Value + Medium Retention
+LB-16735,66,2,23.468,2016-07-25,341,4,1,1,26.72,No,0.8997364044189453,Needs Attention,553.6431884765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+LB-16795,53,21,4113.176,2014-04-23,1165,4,5,5,872.5,No,0.7846656441688538,Loyal Customers,593.1473388671875,Medium Value,Medium Retention,Medium Value + Medium Retention
+LC-16870,96,19,2140.448,2015-05-03,790,4,5,3,440.256,No,0.670415997505188,Loyal Customers,497.38446044921875,Low Value,Medium Retention,Low Value + Medium Retention
+LC-16885,19,20,6555.778,2014-04-25,1163,5,5,5,1107.348,No,0.5901739001274109,Champions,478.6263427734375,Low Value,Low Retention,Low Value + Low Retention
+LC-16930,21,12,4040.466,2014-02-20,1227,5,4,5,452.48,No,0.9809550642967224,Champions,562.8658447265625,Medium Value,High Retention,Medium Value + High Retention
+LC-16960,254,7,3246.626,2015-02-23,859,2,2,4,0,Yes,0.6377319693565369,Needs Attention,950.145263671875,High Value,Medium Retention,High Value + Medium Retention
+LC-17050,514,5,1766.5040000000001,2014-01-31,1247,1,1,3,328.56,No,0.8839064240455627,Potential Loyalists,621.8978271484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+LC-17140,190,12,1363.7259999999999,2014-09-09,1026,3,4,3,1269.856,No,0.8440321087837219,Champions,529.68389892578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+LD-16855,370,1,5.304,2016-06-26,370,1,1,1,0,Yes,0.35878491401672363,At Risk,520.127685546875,Medium Value,Low Retention,Medium Value + Low Retention
+LD-17005,232,7,1961.934,2014-09-29,1006,2,2,3,0,Yes,0.829369843006134,Needs Attention,868.535888671875,High Value,Medium Retention,High Value + Medium Retention
+LE-16810,40,8,1024.682,2014-05-27,1131,5,3,2,444.768,No,0.6338564157485962,Loyal Customers,445.022705078125,Low Value,Medium Retention,Low Value + Medium Retention
+LF-17185,135,13,3711.699,2014-07-26,1071,3,4,5,218.81,No,0.9914445281028748,Champions,749.24102783203125,High Value,High Retention,High Value + High Retention
+LH-16750,67,2,15.466000000000001,2014-09-21,1014,4,1,1,271.96,No,0.7008394598960876,Needs Attention,634.7073974609375,Medium Value,Medium Retention,Medium Value + Medium Retention
+LH-16900,205,12,1980.046,2014-08-19,1047,2,4,3,315.286,No,0.8334237933158875,Champions,731.0859375,High Value,Medium Retention,High Value + Medium Retention
+LH-17020,57,6,318.239,2014-09-08,1027,4,2,1,0,Yes,0.7378318905830383,At Risk,586.73583984375,Medium Value,Medium Retention,Medium Value + Medium Retention
+LH-17155,203,19,1739.689,2014-12-12,932,2,5,3,0,Yes,0.35586613416671753,Potential Loyalists,641.902587890625,Medium Value,Low Retention,Medium Value + Low Retention
+LL-16840,67,12,2741.2039999999997,2014-04-29,1159,4,4,4,0,Yes,0.6102164387702942,Potential Loyalists,579.6904296875,Medium Value,Low Retention,Medium Value + Low Retention
+LM-17065,209,7,1346.774,2014-06-27,1100,2,2,3,0,Yes,0.862652063369751,Needs Attention,483.18792724609375,Low Value,Medium Retention,Low Value + Medium Retention
+LO-17170,34,4,470.39,2015-02-06,876,5,1,1,173.96,No,0.9305322766304016,Potential Loyalists,848.2823486328125,High Value,High Retention,High Value + High Retention
+LP-17080,51,7,629.95,2014-06-24,1103,4,2,1,126.656,No,0.937993586063385,Needs Attention,558.75482177734375,Medium Value,High Retention,Medium Value + High Retention
+LP-17095,120,11,3100.979,2016-06-06,390,3,4,4,552.42,No,0.9723911881446838,Champions,744.332763671875,High Value,High Retention,High Value + High Retention
+LR-16915,202,15,4493.892,2014-08-08,1058,2,5,5,649,No,0.9609734416007996,Champions,739.359619140625,High Value,High Retention,High Value + High Retention
+LR-17035,278,8,1486.246,2014-09-07,1028,2,3,3,393.06,No,0.9064689874649048,Potential Loyalists,643.89111328125,Medium Value,Medium Retention,Medium Value + Medium Retention
+LS-16945,68,9,2448.876,2015-04-25,798,4,3,4,396.394,No,0.8209369778633118,Potential Loyalists,770.4105224609375,High Value,Medium Retention,High Value + Medium Retention
+LS-16975,237,12,1626.074,2014-10-20,985,2,4,3,1362.6000000000001,No,0.9414432644844055,Champions,807.2415771484375,High Value,High Retention,High Value + High Retention
+LS-17200,14,11,796.956,2014-10-18,987,5,4,2,213.29999999999998,No,0.8147189021110535,Potential Loyalists,482.7803955078125,Low Value,Medium Retention,Low Value + Medium Retention
+LS-17230,595,6,368.88,2014-01-06,1272,1,2,1,0,Yes,0.7492594122886658,At Risk,1199.435791015625,High Value,Medium Retention,High Value + Medium Retention
+LS-17245,381,10,843.7959999999999,2014-10-16,989,1,3,2,164.34,No,0.85891193151474,Potential Loyalists,588.4649658203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+LT-16765,781,2,255.524,2014-09-01,1034,1,1,1,74.352,No,0.9461473822593689,Potential Loyalists,475.89422607421875,Low Value,High Retention,Low Value + High Retention
+LT-17110,224,12,2644.55,2014-06-01,1126,2,4,4,291.702,No,0.8095709085464478,Loyal Customers,629.8330078125,Medium Value,Medium Retention,Medium Value + Medium Retention
+LW-16825,188,14,2217.421,2014-05-30,1128,3,5,4,20.64,No,0.9141837954521179,Potential Loyalists,469.1286926269531,Low Value,Medium Retention,Low Value + Medium Retention
+LW-16990,27,8,2498.03,2016-05-05,422,5,3,4,732.278,No,0.8875284194946289,Loyal Customers,749.3067626953125,High Value,Medium Retention,High Value + Medium Retention
+LW-17125,23,5,1259.04,2014-09-11,1024,5,1,2,0,Yes,0.411674439907074,Needs Attention,607.56982421875,Medium Value,Low Retention,Medium Value + Low Retention
+LW-17215,81,13,5353.918,2014-09-12,1023,4,4,5,66.596,No,0.9680537581443787,Champions,799.77899169921875,High Value,High Retention,High Value + High Retention
+MA-17560,312,30,4189.921,2014-08-08,1058,1,5,5,109.24,No,0.7698484063148499,Champions,587.61279296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+MA-17995,4,12,2453.284,2014-09-20,1015,5,4,4,0,Yes,0.14590339362621307,Potential Loyalists,701.314453125,Medium Value,Low Retention,Medium Value + Low Retention
+MB-17305,7,14,1003.75,2014-08-08,1058,5,5,2,544.952,No,0.45457351207733154,Loyal Customers,306.6573791503906,Low Value,Low Retention,Low Value + Low Retention
+MB-18085,56,9,1410.921,2014-01-05,1273,4,3,3,17.31,No,0.8200416564941406,Loyal Customers,1282.8441162109375,High Value,Medium Retention,High Value + Medium Retention
+MC-17275,466,12,2711.252,2014-09-08,1027,1,4,4,14.73,No,0.8350407481193542,Loyal Customers,647.4276123046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+MC-17425,217,10,4432.138,2014-05-30,1128,2,3,5,0,Yes,0.7461380958557129,Potential Loyalists,748.668701171875,High Value,Medium Retention,High Value + Medium Retention
+MC-17575,148,7,960.897,2014-12-02,942,3,2,2,342.99600000000004,No,0.44652917981147766,Loyal Customers,778.0535888671875,High Value,Low Retention,High Value + Low Retention
+MC-17590,190,15,2262.517,2014-05-20,1138,3,5,4,163.55,No,0.9183024168014526,Loyal Customers,469.1286926269531,Low Value,Medium Retention,Low Value + Medium Retention
+MC-17605,53,17,2098.232,2014-03-19,1200,4,5,3,159.96,No,0.8199118375778198,Potential Loyalists,376.773681640625,Low Value,Medium Retention,Low Value + Medium Retention
+MC-17635,7,8,795.154,2014-11-28,946,5,3,2,0,Yes,0.8345854878425598,Needs Attention,577.55889892578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+MC-17845,199,10,1700.492,2014-07-05,1092,3,3,3,2105.2219999999998,No,0.9558561444282532,Champions,680.94329833984375,Medium Value,High Retention,Medium Value + High Retention
+MC-18100,267,12,1373.118,2014-06-18,1109,2,4,3,845.862,No,0.922545850276947,Loyal Customers,478.5736999511719,Low Value,High Retention,Low Value + High Retention
+MC-18130,187,11,1581.998,2014-09-19,1016,3,4,3,0,Yes,0.715641975402832,Needs Attention,669.90411376953125,Medium Value,Medium Retention,Medium Value + Medium Retention
+MD-17350,54,13,3716.678,2014-11-05,969,4,4,5,49.704,No,0.9833923578262329,Loyal Customers,993.44720458984375,High Value,High Retention,High Value + High Retention
+MD-17860,34,5,267.374,2014-12-02,942,5,1,1,937.5360000000001,No,0.8939647674560547,Potential Loyalists,830.94183349609375,High Value,Medium Retention,High Value + Medium Retention
+ME-17320,19,19,10393.22,2014-01-06,1272,5,5,5,270.508,No,0.7976511716842651,Champions,1333.0396728515625,High Value,Medium Retention,High Value + Medium Retention
+ME-17725,2,11,1050.5532,2014-07-12,1085,5,4,2,857.9000000000001,No,0.5318242311477661,Loyal Customers,417.2193908691406,Low Value,Low Retention,Low Value + Low Retention
+ME-18010,772,5,1205.776,2014-07-21,1076,1,1,2,51.168,No,0.9010787606239319,Potential Loyalists,451.6407775878906,Low Value,Medium Retention,Low Value + Medium Retention
+MF-17665,239,8,937.039,2014-12-30,914,2,3,2,0,Yes,0.2824426293373108,Needs Attention,685.4345703125,Medium Value,Low Retention,Medium Value + Low Retention
+MF-18250,597,7,605.4300000000001,2014-09-15,1020,1,2,1,1152.87,No,0.8335246443748474,Loyal Customers,687.79443359375,Medium Value,Medium Retention,Medium Value + Medium Retention
+MG-17650,107,8,2492.3619999999996,2014-08-09,1057,3,3,4,1292.914,No,0.6067001223564148,Loyal Customers,680.94329833984375,Medium Value,Low Retention,Medium Value + Low Retention
+MG-17680,23,4,1657.058,2014-10-22,983,5,1,3,693.13,No,0.8716422319412231,Potential Loyalists,990.4727783203125,High Value,Medium Retention,High Value + Medium Retention
+MG-17695,373,7,1342.282,2014-12-26,918,1,2,3,0,Yes,0.21950699388980865,Needs Attention,590.2496337890625,Medium Value,Low Retention,Medium Value + Low Retention
+MG-17875,296,6,1095.649,2014-02-23,1224,2,2,2,147.184,No,0.9130764007568359,Needs Attention,385.64971923828125,Low Value,Medium Retention,Low Value + Medium Retention
+MG-17890,32,11,702.776,2014-12-29,915,5,4,2,73.608,No,0.9210619926452637,Potential Loyalists,625.1478271484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+MG-18145,667,4,1645.9370000000001,2014-03-29,1190,1,1,3,1415.606,No,0.8888750672340393,Potential Loyalists,657.135009765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+MG-18205,82,2,16.739,2017-04-10,82,4,1,1,0,Yes,0.8337672352790833,At Risk,553.6431884765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+MH-17290,112,10,1691.505,2014-04-26,1162,3,3,3,702.52,No,0.903119683265686,Potential Loyalists,579.6904296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+MH-17440,194,9,400.016,2014-02-04,1243,3,3,1,0,Yes,0.28395071625709534,Needs Attention,326.65045166015625,Low Value,Low Retention,Low Value + Low Retention
+MH-17455,138,7,2016.092,2014-07-11,1086,3,2,3,440.09000000000003,No,0.9655933976173401,Loyal Customers,742.2376708984375,High Value,High Retention,High Value + High Retention
+MH-17620,278,3,82.236,2015-12-05,574,2,1,1,1170.5639999999999,No,0.9026641845703125,Needs Attention,603.7857666015625,Medium Value,Medium Retention,Medium Value + Medium Retention
+MH-17785,478,10,2194.53,2014-05-27,1131,1,3,4,9.248,No,0.8599441647529602,Loyal Customers,546.17498779296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+MH-18025,126,6,1354.518,2014-07-08,1089,3,2,3,1630.43,No,0.9733956456184387,Loyal Customers,590.978271484375,Medium Value,High Retention,Medium Value + High Retention
+MH-18115,37,16,3461.679,2016-08-23,312,5,5,5,2041.414,No,0.9637781977653503,Champions,638.95391845703125,Medium Value,High Retention,Medium Value + High Retention
+MJ-17740,112,13,6223.51,2015-06-09,753,3,4,5,97.236,No,0.8208783268928528,Champions,680.34942626953125,Medium Value,Medium Retention,Medium Value + Medium Retention
+MK-17905,15,15,2218.384,2014-11-18,956,5,5,4,83.98400000000001,No,0.8521806597709656,Loyal Customers,685.53125,Medium Value,Medium Retention,Medium Value + Medium Retention
+MK-18160,58,11,1031.602,2014-12-19,925,4,4,2,0,Yes,0.5487695336341858,Needs Attention,562.47088623046875,Medium Value,Low Retention,Medium Value + Low Retention
+ML-17395,142,18,2658.463,2014-02-14,1233,3,5,4,64.38,No,0.9444907307624817,Loyal Customers,303.501953125,Low Value,High Retention,Low Value + High Retention
+ML-17410,33,8,1447.28,2014-11-14,960,5,3,3,1474.22,No,0.7745394706726074,Loyal Customers,773.88983154296875,High Value,Medium Retention,High Value + Medium Retention
+ML-17755,6,10,767.97,2016-08-04,331,5,3,2,1303.944,No,0.9626668691635132,Loyal Customers,401.71636962890625,Low Value,High Retention,Low Value + High Retention
+ML-18040,27,2,67.21000000000001,2017-03-26,97,5,1,1,674.872,No,0.9392756819725037,Needs Attention,626.9149169921875,Medium Value,High Retention,Medium Value + High Retention
+ML-18265,762,1,10.272,2015-05-31,762,1,1,1,151.96,No,0.845492422580719,Needs Attention,470.9859619140625,Low Value,Medium Retention,Low Value + Medium Retention
+MM-17260,140,4,977.0300000000001,2014-05-28,1130,3,1,2,336.993,No,0.9071905612945557,Needs Attention,531.8529052734375,Medium Value,Medium Retention,Medium Value + Medium Retention
+MM-17920,152,12,3680.384,2014-01-13,1265,3,4,5,113.696,No,0.992097020149231,Champions,800.94390869140625,High Value,High Retention,High Value + High Retention
+MM-18055,54,11,1152.204,2014-04-11,1177,4,4,2,1597.677,No,0.742526650428772,Loyal Customers,445.022705078125,Low Value,Medium Retention,Low Value + Medium Retention
+MM-18280,21,9,705.164,2014-01-20,1258,5,3,2,70.25,No,0.8414371013641357,Potential Loyalists,1812.3443603515625,High Value,Medium Retention,High Value + Medium Retention
+MN-17935,141,6,633.728,2014-02-16,1231,3,2,1,1844.218,No,0.8709079623222351,Loyal Customers,387.9447937011719,Low Value,Medium Retention,Low Value + Medium Retention
+MO-17500,270,4,831.212,2014-11-28,946,2,1,2,91.275,No,0.5371039509773254,Needs Attention,843.5880126953125,High Value,Low Retention,High Value + Low Retention
+MO-17800,22,8,821.227,2015-09-17,653,5,3,2,865.8,No,0.9535094499588013,Potential Loyalists,530.7723388671875,Medium Value,High Retention,Medium Value + High Retention
+MO-17950,821,3,130.288,2015-04-02,821,1,1,1,24,No,0.9051750302314758,Needs Attention,565.36138916015625,Medium Value,Medium Retention,Medium Value + Medium Retention
+MP-17470,537,14,3206.132,2014-03-30,1189,1,5,4,0,Yes,0.4876790940761566,Potential Loyalists,615.87744140625,Medium Value,Low Retention,Medium Value + Low Retention
+MP-17965,184,17,3642.382,2015-04-18,805,3,5,5,341.26,No,0.9423139691352844,Loyal Customers,660.05767822265625,Medium Value,High Retention,Medium Value + High Retention
+MP-18175,141,13,4831.194,2014-03-28,1191,3,4,5,256.726,No,0.9588127732276917,Champions,698.52606201171875,Medium Value,High Retention,Medium Value + High Retention
+MR-17545,998,2,137.6,2014-09-03,1032,1,1,1,501.57800000000003,No,0.919677734375,Needs Attention,475.89422607421875,Low Value,Medium Retention,Low Value + Medium Retention
+MS-17365,91,24,7443.6900000000005,2014-09-09,1026,4,5,5,0,Yes,0.7203494906425476,Loyal Customers,506.607421875,Medium Value,Medium Retention,Medium Value + Medium Retention
+MS-17530,252,7,475.656,2014-11-04,970,2,2,1,0,Yes,0.35634639859199524,Needs Attention,807.812744140625,High Value,Low Retention,High Value + Low Retention
+MS-17710,231,15,1613.402,2014-03-24,1195,2,5,3,0,Yes,0.8264234662055969,Needs Attention,432.0765075683594,Low Value,Medium Retention,Low Value + Medium Retention
+MS-17770,233,18,2950.728,2014-07-04,1093,2,5,4,193.95,No,0.9118026494979858,Loyal Customers,552.4354248046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+MS-17830,270,5,370.348,2014-01-09,1269,2,1,1,0,Yes,0.31310752034187317,Needs Attention,1390.03857421875,High Value,Low Retention,High Value + Low Retention
+MS-17980,575,6,267.108,2014-06-30,1097,1,2,1,588.008,No,0.9633370637893677,Potential Loyalists,446.2757873535156,Low Value,High Retention,Low Value + High Retention
+MT-17815,110,9,2854.659,2015-11-06,603,3,3,4,35.48,No,0.9777339100837708,Loyal Customers,676.0350341796875,Medium Value,High Retention,Medium Value + High Retention
+MT-18070,21,11,1319.4497999999999,2014-09-25,1010,5,4,2,0,Yes,0.23602989315986633,Needs Attention,622.43109130859375,Medium Value,Low Retention,Medium Value + Low Retention
+MV-17485,99,12,1109.862,2014-01-20,1258,4,4,2,450.188,No,0.8611139059066772,Loyal Customers,1749.6671142578125,High Value,Medium Retention,High Value + Medium Retention
+MV-18190,212,9,1671.234,2014-01-30,1248,2,3,3,63.339999999999996,No,0.7789756655693054,Loyal Customers,532.29498291015625,Medium Value,Medium Retention,Medium Value + Medium Retention
+MW-18220,186,13,5310.46,2014-08-25,1041,3,4,5,31.44,No,0.9553332924842834,Champions,799.77899169921875,High Value,High Retention,High Value + High Retention
+MW-18235,1137,2,3333.8999999999996,2014-05-21,1137,1,1,4,1919.976,No,0.8778877258300781,Loyal Customers,725.4327392578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+MY-17380,121,8,1556.784,2015-10-26,614,3,3,3,697.501,No,0.9884372353553772,Loyal Customers,588.840087890625,Medium Value,High Retention,Medium Value + High Retention
+MY-18295,58,17,4012.656,2014-04-28,1160,4,5,5,140.04,No,0.9189826846122742,Loyal Customers,408.4820251464844,Low Value,Medium Retention,Low Value + Medium Retention
+MZ-17335,97,5,567.7760000000001,2015-11-08,601,4,1,1,25.83,No,0.9861124157905579,Potential Loyalists,581.827392578125,Medium Value,High Retention,Medium Value + High Retention
+MZ-17515,100,10,2564.906,2014-04-04,1184,4,3,4,0,Yes,0.22512055933475494,Potential Loyalists,579.6904296875,Medium Value,Low Retention,Medium Value + Low Retention
+NB-18580,983,2,273.87199999999996,2014-09-26,1009,1,1,1,0,Yes,0.6244794726371765,At Risk,679.0416259765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+NB-18655,258,9,1753.612,2014-12-05,939,2,3,3,218.987,No,0.6353222131729126,Champions,902.0203857421875,High Value,Medium Retention,High Value + Medium Retention
+NC-18340,42,17,2461.404,2014-03-30,1189,5,5,4,0,Yes,0.2377551943063736,Potential Loyalists,474.311767578125,Low Value,Low Retention,Low Value + Low Retention
+NC-18415,260,11,489.704,2014-05-03,1155,2,4,1,1729.286,No,0.7960563898086548,Loyal Customers,474.331298828125,Low Value,Medium Retention,Low Value + Medium Retention
+NC-18535,91,10,7751.242,2014-07-23,1074,4,3,5,490.49699999999996,No,0.957377552986145,Champions,685.25775146484375,Medium Value,High Retention,Medium Value + High Retention
+NC-18625,22,9,1821.742,2014-10-29,976,5,3,3,0,Yes,0.3235110938549042,Potential Loyalists,830.37066650390625,High Value,Low Retention,High Value + Low Retention
+ND-18370,76,16,4269.588,2014-01-13,1265,4,5,5,56.550999999999995,No,0.9888489246368408,Champions,672.8311767578125,Medium Value,High Retention,Medium Value + High Retention
+ND-18460,1,8,2893.455,2014-02-06,1241,5,3,4,0,Yes,0.1743755340576172,Potential Loyalists,426.3680114746094,Low Value,Low Retention,Low Value + Low Retention
+NF-18385,278,11,6540.73,2014-02-11,1236,2,4,5,1782.096,No,0.933620274066925,Loyal Customers,536.609619140625,Medium Value,High Retention,Medium Value + High Retention
+NF-18475,343,4,377.16200000000003,2014-03-14,1205,1,1,1,0,Yes,0.3530244529247284,Needs Attention,453.2368469238281,Low Value,Low Retention,Low Value + Low Retention
+NF-18595,790,10,1635.364,2014-04-19,1169,1,3,3,396.108,No,0.934170663356781,Potential Loyalists,497.0331115722656,Low Value,High Retention,Low Value + High Retention
+NG-18355,135,10,1215.024,2014-11-24,950,3,3,2,654.5559999999999,No,0.8966444134712219,Potential Loyalists,643.93804931640625,Medium Value,Medium Retention,Medium Value + Medium Retention
+NG-18430,587,6,616.778,2014-11-24,950,1,2,1,779.16,No,0.8395277261734009,Potential Loyalists,617.210205078125,Medium Value,Medium Retention,Medium Value + Medium Retention
+NH-18610,7,11,2673.29,2014-03-02,1217,5,4,4,0,Yes,0.3853914439678192,Potential Loyalists,426.3680114746094,Low Value,Low Retention,Low Value + Low Retention
+NK-18490,13,6,412.98199999999997,2015-05-28,765,5,2,1,159.066,No,0.9835205674171448,Potential Loyalists,526.04302978515625,Medium Value,High Retention,Medium Value + High Retention
+NL-18310,397,4,259.20799999999997,2014-10-31,974,1,1,1,1158.882,No,0.8448798060417175,Potential Loyalists,601.1917724609375,Medium Value,Medium Retention,Medium Value + Medium Retention
+NM-18445,768,13,6445.424,2014-02-08,1239,1,4,5,13.92,No,0.882502555847168,Loyal Customers,403.8095703125,Low Value,Medium Retention,Low Value + Medium Retention
+NM-18520,62,15,2161.9790000000003,2015-09-08,662,4,5,4,0,Yes,0.31263720989227295,Potential Loyalists,565.4730224609375,Medium Value,Low Retention,Medium Value + Low Retention
+NP-18325,573,20,5436.68,2014-05-13,1145,1,5,5,92.94,No,0.8769528865814209,Champions,264.8945617675781,Low Value,Medium Retention,Low Value + Medium Retention
+NP-18670,223,4,1554.462,2015-02-27,855,2,1,3,2353.94,No,0.5374591946601868,Potential Loyalists,893.4603271484375,High Value,Low Retention,High Value + Low Retention
+NP-18685,224,7,1228.698,2014-03-07,1212,2,2,2,0,Yes,0.7414529919624329,Needs Attention,385.64971923828125,Low Value,Medium Retention,Low Value + Medium Retention
+NP-18700,5,11,7880.7425,2014-09-05,1030,5,4,5,22.439999999999998,No,0.6754356622695923,Loyal Customers,629.47344970703125,Medium Value,Medium Retention,Medium Value + Medium Retention
+NR-18550,28,13,2367.277,2014-06-07,1120,5,4,4,0,Yes,0.5944782495498657,Potential Loyalists,652.962158203125,Medium Value,Low Retention,Medium Value + Low Retention
+NS-18505,163,10,1897.759,2016-11-24,219,3,3,3,678.104,No,0.866511344909668,Loyal Customers,676.0350341796875,Medium Value,Medium Retention,Medium Value + Medium Retention
+NS-18640,26,24,2897.519,2014-06-25,1102,5,5,4,67.304,No,0.8500608801841736,Loyal Customers,474.311767578125,Low Value,Medium Retention,Low Value + Medium Retention
+NW-18400,240,21,7203.694,2014-06-21,1106,2,5,5,30.32,No,0.8434014916419983,Loyal Customers,455.497314453125,Low Value,Medium Retention,Low Value + Medium Retention
+NZ-18565,62,16,2029.5140000000001,2014-08-02,1064,4,5,3,458.796,No,0.9265806674957275,Loyal Customers,502.29278564453125,Low Value,High Retention,Low Value + High Retention
+ON-18715,228,15,1567.52,2014-09-13,1022,2,5,3,0,Yes,0.9326879978179932,Potential Loyalists,533.3294677734375,Medium Value,High Retention,Medium Value + High Retention
+OT-18730,5,8,3210.194,2015-04-20,803,5,3,4,608.4300000000001,No,0.8617830276489258,Potential Loyalists,782.9237060546875,High Value,Medium Retention,High Value + Medium Retention
+PA-19060,217,6,614.56,2014-05-17,1141,2,2,1,114.848,No,0.846253514289856,Needs Attention,535.6256103515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+PB-18805,259,5,243.31199999999998,2015-11-20,589,2,2,1,497.04400000000004,No,0.9329015612602234,Potential Loyalists,504.9783630371094,Medium Value,High Retention,Medium Value + High Retention
+PB-19105,468,2,616.6479999999999,2014-11-15,959,1,1,1,71.676,No,0.7729092836380005,Needs Attention,822.962158203125,High Value,Medium Retention,High Value + Medium Retention
+PB-19150,443,10,1257.15,2014-07-14,1083,1,3,2,199.8,No,0.8832631707191467,Potential Loyalists,439.48822021484375,Low Value,Medium Retention,Low Value + Medium Retention
+PB-19210,506,2,132.738,2014-11-23,951,1,1,1,0,Yes,0.321353942155838,At Risk,807.9371337890625,High Value,Low Retention,High Value + Low Retention
+PC-18745,216,4,1830.876,2014-12-31,913,2,1,3,1.188,No,0.6408849954605103,Loyal Customers,980.6551513671875,High Value,Medium Retention,High Value + Medium Retention
+PC-19000,700,3,1061.488,2014-04-08,1180,1,1,2,0,Yes,0.27463582158088684,Needs Attention,449.1955871582031,Low Value,Low Retention,Low Value + Low Retention
+PF-19120,653,19,9062.864,2014-05-05,1153,1,5,5,0,Yes,0.2617630362510681,Potential Loyalists,322.6972351074219,Low Value,Low Retention,Low Value + Low Retention
+PF-19165,14,10,2770,2014-09-20,1015,5,3,4,0,Yes,0.2576250731945038,Potential Loyalists,701.314453125,Medium Value,Low Retention,Medium Value + Low Retention
+PF-19225,184,6,1636.906,2016-06-26,370,3,2,3,569.222,No,0.969234824180603,Potential Loyalists,737.32940673828125,High Value,High Retention,High Value + High Retention
+PG-18820,225,19,2719.917,2014-05-09,1149,2,5,4,366.99,No,0.8396971225738525,Champions,451.18280029296875,Low Value,Medium Retention,Low Value + Medium Retention
+PG-18895,11,14,1925.134,2014-05-11,1147,5,5,3,62.03,No,0.6272695660591125,Loyal Customers,413.3442077636719,Low Value,Medium Retention,Low Value + Medium Retention
+PJ-18835,43,10,1141.194,2014-05-28,1130,5,3,2,78.896,No,0.7953547239303589,Loyal Customers,445.022705078125,Low Value,Medium Retention,Low Value + Medium Retention
+PJ-19015,11,9,1814.3220000000001,2014-04-07,1181,5,3,3,9.912,No,0.2701389193534851,Potential Loyalists,523.9061279296875,Medium Value,Low Retention,Medium Value + Low Retention
+PK-18910,301,3,1441.152,2014-04-04,1184,2,1,3,0,Yes,0.1487560123205185,Needs Attention,638.6756591796875,Medium Value,Low Retention,Medium Value + Low Retention
+PK-19075,118,19,2692.858,2014-11-11,963,3,5,4,5954.076,No,0.9330551624298096,Champions,673.2271728515625,Medium Value,High Retention,Medium Value + High Retention
+PL-18925,9,7,216.711,2014-11-01,973,5,2,1,22.77,No,0.9542967081069946,Potential Loyalists,480.1151428222656,Low Value,High Retention,Low Value + High Retention
+PM-18940,204,4,1405.4019999999998,2014-05-04,1154,2,1,3,0,Yes,0.4155496656894684,Needs Attention,638.6756591796875,Medium Value,Low Retention,Medium Value + Low Retention
+PM-19135,252,5,3424.518,2015-12-19,560,2,2,5,691.144,No,0.9911233186721802,Loyal Customers,855.769775390625,High Value,High Retention,High Value + High Retention
+PN-18775,67,11,1298.6460000000002,2015-08-07,694,4,4,2,168.506,No,0.7669017910957336,Loyal Customers,468.0954284667969,Low Value,Medium Retention,Low Value + Medium Retention
+PO-18850,286,12,2165.7212,2014-11-02,972,2,4,4,5308.107,No,0.5628265738487244,Champions,902.0203857421875,High Value,Low Retention,High Value + Low Retention
+PO-18865,34,6,1655.712,2014-03-23,1196,5,2,3,837.5020000000001,No,0.9500014781951904,Loyal Customers,714.25653076171875,Medium Value,High Retention,Medium Value + High Retention
+PO-19180,66,17,4493.093,2015-08-11,690,4,5,5,399.95,No,0.8921762704849243,Loyal Customers,616.2200927734375,Medium Value,Medium Retention,Medium Value + Medium Retention
+PO-19195,580,8,820.136,2014-01-04,1274,1,3,2,236.722,No,0.942107081413269,Potential Loyalists,1075.1092529296875,High Value,High Retention,High Value + High Retention
+PP-18955,44,32,6853.078,2014-08-26,1040,4,5,5,399.53,No,0.8542783260345459,Champions,579.8790283203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+PR-18880,560,4,312.248,2014-09-05,1030,1,1,1,1527.93,No,0.865821361541748,Potential Loyalists,545.08349609375,Medium Value,Medium Retention,Medium Value + Medium Retention
+PS-18760,75,15,1664.222,2014-06-15,1112,4,5,3,517.257,No,0.9537752866744995,Potential Loyalists,469.1286926269531,Low Value,High Retention,Low Value + High Retention
+PS-18970,102,11,1222.219,2014-04-15,1173,3,4,2,56.42,No,0.7766916751861572,Potential Loyalists,371.7509460449219,Low Value,Medium Retention,Low Value + Medium Retention
+PS-19045,54,13,6843.634,2014-12-20,924,4,4,5,0,Yes,0.6084413528442383,Loyal Customers,847.99664306640625,High Value,Low Retention,High Value + Low Retention
+PT-19090,299,2,98.636,2014-09-12,1023,2,1,1,61.936,No,0.8221169114112854,Needs Attention,608.6944580078125,Medium Value,Medium Retention,Medium Value + Medium Retention
+PV-18985,112,11,1188.7859999999998,2014-07-12,1085,3,4,2,1687.2600000000002,No,0.9550802111625671,Potential Loyalists,473.0038757324219,Low Value,High Retention,Low Value + High Retention
+PW-19030,4,11,3344.7960000000003,2014-05-16,1142,5,4,4,110.12,No,0.7776272296905518,Champions,592.2037353515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+PW-19240,282,12,3922.415,2014-11-18,956,2,4,5,0,Yes,0.3359772861003876,Potential Loyalists,909.4622802734375,High Value,Low Retention,High Value + Low Retention
+QJ-19255,62,12,5903.308,2014-03-17,1202,4,4,5,205.03,No,0.9567482471466064,Champions,486.4670104980469,Low Value,High Retention,Low Value + High Retention
+RA-19285,1,11,1598.016,2014-12-13,931,5,4,3,1019.89,No,0.696829617023468,Champions,627.43109130859375,Medium Value,Medium Retention,Medium Value + Medium Retention
+RA-19885,349,7,2321.018,2014-04-08,1180,1,2,4,1511.296,No,0.8286693096160889,Loyal Customers,607.46923828125,Medium Value,Medium Retention,Medium Value + Medium Retention
+RA-19915,281,16,4278.87,2014-06-30,1097,2,5,5,514.673,No,0.9462364912033081,Champions,671.27099609375,Medium Value,High Retention,Medium Value + High Retention
+RA-19945,14,6,1365.5325,2014-08-29,1037,5,2,3,321.39,No,0.8447346687316895,Potential Loyalists,535.19378662109375,Medium Value,Medium Retention,Medium Value + Medium Retention
+RB-19330,957,2,670.3779999999999,2014-11-17,957,1,1,2,337.81800000000004,No,0.9399018287658691,Needs Attention,710.7879638671875,Medium Value,High Retention,Medium Value + High Retention
+RB-19360,100,15,14966.541,2016-04-01,456,4,5,5,150.798,No,0.7124032974243164,Loyal Customers,569.78753662109375,Medium Value,Medium Retention,Medium Value + Medium Retention
+RB-19435,730,12,1841.196,2014-03-11,1208,1,4,3,821.89,No,0.8695977926254272,Loyal Customers,399.4949645996094,Low Value,Medium Retention,Low Value + Medium Retention
+RB-19465,9,19,4502.736,2014-03-14,1205,5,5,5,212.73000000000002,No,0.7909071445465088,Champions,366.55316162109375,Low Value,Medium Retention,Low Value + Medium Retention
+RB-19570,168,6,328.816,2016-04-28,429,3,2,1,199.73,No,0.781052827835083,Potential Loyalists,581.827392578125,Medium Value,Medium Retention,Medium Value + Medium Retention
+RB-19645,466,7,221.084,2014-08-23,1043,1,2,1,0,Yes,0.5478924512863159,Needs Attention,426.2283630371094,Low Value,Low Retention,Low Value + Low Retention
+RB-19705,553,2,291.578,2015-08-22,679,1,1,1,1775.8719999999998,No,0.6250328421592712,Potential Loyalists,759.0863037109375,High Value,Medium Retention,High Value + Medium Retention
+RB-19795,49,12,1939.556,2014-06-03,1124,4,4,3,3693.76,No,0.7870837450027466,Champions,652.962158203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+RC-19825,187,10,966.409,2014-12-05,939,3,3,2,0,Yes,0.4903773069381714,Needs Attention,716.75921630859375,Medium Value,Low Retention,Medium Value + Low Retention
+RC-19960,229,10,851.248,2014-08-25,1041,2,3,2,34.504,No,0.8176605105400085,Needs Attention,595.967529296875,Medium Value,Medium Retention,Medium Value + Medium Retention
+RD-19480,42,9,3297.05,2014-06-08,1119,5,3,4,975.88,No,0.9319126605987549,Loyal Customers,721.2598876953125,Medium Value,High Retention,Medium Value + High Retention
+RD-19585,153,17,2657.006,2014-04-02,1186,3,5,4,255.88799999999998,No,0.8641396760940552,Loyal Customers,401.0401611328125,Low Value,Medium Retention,Low Value + Medium Retention
+RD-19660,282,4,1208.692,2015-04-12,811,2,1,2,1577.94,No,0.6210776567459106,Potential Loyalists,772.7154541015625,High Value,Low Retention,High Value + Low Retention
+RD-19720,94,19,1408.6490000000001,2014-07-20,1077,4,5,3,11.088,No,0.9529017806053162,Loyal Customers,351.03350830078125,Low Value,High Retention,Low Value + High Retention
+RD-19810,148,11,899.26,2014-10-27,978,3,4,2,238.356,No,0.8425233960151672,Loyal Customers,621.9805908203125,Medium Value,Medium Retention,Medium Value + Medium Retention
+RD-19900,227,19,2816.3,2014-04-05,1183,2,5,4,317.624,No,0.660236656665802,Loyal Customers,451.18280029296875,Low Value,Medium Retention,Low Value + Medium Retention
+RD-19930,82,8,787.9720000000001,2014-10-03,1002,4,3,2,182.97,No,0.8626951575279236,Potential Loyalists,538.564697265625,Medium Value,Medium Retention,Medium Value + Medium Retention
+RE-19405,915,1,48.36,2014-12-29,915,1,1,1,0,Yes,0.6667113304138184,At Risk,565.36138916015625,Medium Value,Medium Retention,Medium Value + Medium Retention
+RE-19450,120,9,876.696,2014-06-03,1124,3,3,2,0,Yes,0.46580547094345093,Needs Attention,444.5721740722656,Low Value,Low Retention,Low Value + Low Retention
+RF-19345,208,16,3309.15,2014-05-20,1138,2,5,4,0,Yes,0.7707147598266602,Potential Loyalists,519.48040771484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+RF-19735,309,6,1129.906,2014-08-06,1060,1,2,2,1211.39,No,0.7309756278991699,Loyal Customers,500.78253173828125,Low Value,Medium Retention,Low Value + Medium Retention
+RF-19840,76,10,909.312,2014-11-12,962,4,3,2,35.91,No,0.8172519207000732,Loyal Customers,716.75921630859375,Medium Value,Medium Retention,Medium Value + Medium Retention
+RH-19495,701,5,3491.712,2014-08-23,1043,1,2,5,129.664,No,0.9716936349868774,Loyal Customers,727.8780517578125,High Value,High Retention,High Value + High Retention
+RH-19510,285,12,6979.18,2014-11-16,958,2,4,5,0,Yes,0.29900917410850525,Potential Loyalists,906.3348388671875,High Value,Low Retention,High Value + Low Retention
+RH-19555,337,3,740.382,2015-12-04,575,1,1,2,0,Yes,0.9847619533538818,At Risk,584.0870361328125,Medium Value,High Retention,Medium Value + High Retention
+RH-19600,352,11,2085.7400000000002,2015-07-02,730,1,4,3,0,Yes,0.3379327654838562,Needs Attention,642.5194091796875,Medium Value,Low Retention,Medium Value + Low Retention
+RK-19300,628,7,1448,2015-07-20,712,1,2,3,12.192,No,0.7578948736190796,Needs Attention,503.4125061035156,Medium Value,Medium Retention,Medium Value + Medium Retention
+RL-19615,40,17,4660.528,2014-12-05,939,5,5,5,1574.382,No,0.8623456358909607,Loyal Customers,865.3345947265625,High Value,Medium Retention,High Value + Medium Retention
+RM-19375,163,9,1453.474,2014-05-11,1147,3,3,3,0,Yes,0.6162878274917603,Needs Attention,428.4310607910156,Low Value,Low Retention,Low Value + Low Retention
+RM-19675,621,9,3008.664,2014-11-14,960,1,3,4,2970.4320000000002,No,0.872245728969574,Loyal Customers,945.078369140625,High Value,Medium Retention,High Value + Medium Retention
+RM-19750,117,2,98.35,2017-03-06,117,3,1,1,0,Yes,0.5092868804931641,At Risk,553.6431884765625,Medium Value,Low Retention,Medium Value + Low Retention
+RO-19780,233,6,2043.172,2015-05-12,781,2,2,3,1772.306,No,0.827285885810852,Loyal Customers,787.4720458984375,High Value,Medium Retention,High Value + Medium Retention
+RP-19270,314,12,954.6452,2014-10-19,986,1,4,2,0,Yes,0.3325454592704773,Needs Attention,588.4649658203125,Medium Value,Low Retention,Medium Value + Low Retention
+RP-19390,71,23,5038.67,2014-05-24,1134,4,5,5,114.414,No,0.9509981274604797,Champions,519.875732421875,Medium Value,High Retention,Medium Value + High Retention
+RP-19855,35,14,2158.556,2014-04-05,1183,5,5,4,12.16,No,0.1296742856502533,Loyal Customers,542.40032958984375,Medium Value,Low Retention,Medium Value + Low Retention
+RR-19315,229,1,7.38,2016-11-14,229,2,1,1,608.552,No,0.49946287274360657,Potential Loyalists,603.7857666015625,Medium Value,Low Retention,Medium Value + Low Retention
+RR-19525,341,8,2928.322,2014-09-09,1026,1,3,4,373.94,No,0.871356725692749,Potential Loyalists,647.4276123046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+RS-19420,174,5,2142.4,2014-08-05,1061,3,2,3,1078.89,No,0.8799219131469727,Potential Loyalists,742.2376708984375,High Value,Medium Retention,High Value + Medium Retention
+RS-19765,43,9,2920.808,2014-04-07,1181,5,3,4,1238.962,No,0.5027028918266296,Loyal Customers,652.962158203125,Medium Value,Low Retention,Medium Value + Low Retention
+RS-19870,389,1,9.648,2016-06-07,389,1,1,1,12.68,No,0.5558749437332153,Potential Loyalists,520.127685546875,Medium Value,Low Retention,Medium Value + Low Retention
+RW-19540,55,13,3253.489,2015-02-03,879,4,4,4,4143.912,No,0.8382160663604736,Loyal Customers,911.97998046875,High Value,Medium Retention,High Value + Medium Retention
+RW-19630,79,15,3213.756,2014-06-28,1099,4,5,4,65.99,No,0.9765333533287048,Loyal Customers,537.42633056640625,Medium Value,High Retention,Medium Value + High Retention
+RW-19690,102,5,2245.006,2016-05-30,397,3,2,4,1250.64,No,0.9150090217590332,Potential Loyalists,737.32940673828125,High Value,Medium Retention,High Value + Medium Retention
+SA-20830,43,20,4745.4115,2014-02-22,1225,5,5,5,21.93,No,0.8033711314201355,Champions,495.609130859375,Low Value,Medium Retention,Low Value + Medium Retention
+SB-20170,19,7,1348.02,2014-06-06,1121,5,2,3,0,Yes,0.4737156629562378,Needs Attention,506.3169860839844,Medium Value,Low Retention,Medium Value + Low Retention
+SB-20185,6,12,6410.996,2014-09-20,1015,5,4,5,0,Yes,0.3327665627002716,Loyal Customers,705.62908935546875,Medium Value,Low Retention,Medium Value + Low Retention
+SB-20290,225,12,6647.552,2014-05-09,1149,2,4,5,1410.339,No,0.8514887094497681,Champions,634.147705078125,Medium Value,Medium Retention,Medium Value + Medium Retention
+SC-20020,599,17,3362.9636,2014-03-03,1216,1,5,4,0,Yes,0.7629390358924866,Potential Loyalists,396.7026672363281,Low Value,Medium Retention,Low Value + Medium Retention
+SC-20050,81,11,4217.816,2014-03-18,1201,4,4,5,406.75600000000003,No,0.9591659307479858,Champions,600.98785400390625,Medium Value,High Retention,Medium Value + High Retention
+SC-20095,167,22,14142.334,2014-02-12,1235,3,5,5,0,Yes,0.2997088134288788,Loyal Customers,307.8164367675781,Low Value,Low Retention,Low Value + Low Retention
+SC-20230,314,10,4355.898,2016-06-06,390,1,3,5,16.06,No,0.8497617840766907,Potential Loyalists,761.3551025390625,High Value,Medium Retention,High Value + Medium Retention
+SC-20260,5,18,3729.7929999999997,2014-04-06,1182,5,5,5,0,Yes,0.260806679725647,Loyal Customers,413.5534362792969,Low Value,Low Retention,Low Value + Low Retention
+SC-20305,21,7,3504.092,2014-12-16,928,5,2,5,474.97299999999996,No,0.9695808291435242,Loyal Customers,973.27435302734375,High Value,High Retention,High Value + High Retention
+SC-20380,43,17,3736.908,2014-03-01,1218,5,5,5,2255.628,No,0.9268200993537903,Champions,445.0712585449219,Low Value,High Retention,Low Value + High Retention
+SC-20440,639,5,1372.31,2015-08-17,684,1,2,3,502.688,No,0.6336175799369812,Loyal Customers,503.4125061035156,Medium Value,Medium Retention,Medium Value + Medium Retention
+SC-20575,7,5,801.2320000000001,2014-06-16,1111,5,2,2,101.49600000000001,No,0.9477147459983826,Needs Attention,366.66619873046875,Low Value,High Retention,Low Value + High Retention
+SC-20680,196,7,1182.66,2014-11-21,953,3,2,2,71.98,No,0.6847842335700989,Potential Loyalists,705.232421875,Medium Value,Medium Retention,Medium Value + Medium Retention
+SC-20695,202,11,2362,2014-12-16,928,2,4,4,214.408,No,0.5869870185852051,Loyal Customers,820.5531005859375,High Value,Low Retention,High Value + Low Retention
+SC-20725,5,26,5226.21,2014-06-03,1124,5,5,5,0,Yes,0.3840298056602478,Loyal Customers,464.09124755859375,Low Value,Low Retention,Low Value + Low Retention
+SC-20770,121,19,3742.765,2015-06-20,742,3,5,5,749.8919999999999,No,0.9215383529663086,Champions,565.68218994140625,Medium Value,High Retention,Medium Value + High Retention
+SC-20800,16,4,276.88800000000003,2015-12-11,568,5,1,1,2.368,No,0.992439866065979,Potential Loyalists,624.8507080078125,Medium Value,High Retention,Medium Value + High Retention
+SC-20845,232,1,14.112,2016-11-11,232,2,1,1,266.52,No,0.388414204120636,Needs Attention,603.7857666015625,Medium Value,Low Retention,Medium Value + Low Retention
+SD-20485,18,21,6121.114,2014-01-26,1252,5,5,5,0,Yes,0.5262821316719055,Loyal Customers,252.03195190429688,Low Value,Low Retention,Low Value + Low Retention
+SE-20110,110,16,11996.176000000001,2014-04-11,1177,3,5,5,213.262,No,0.4276924729347229,Champions,405.35467529296875,Low Value,Low Retention,Low Value + Low Retention
+SF-20065,197,6,461.484,2014-09-10,1025,3,2,1,302.062,No,0.6827494502067566,Potential Loyalists,586.73583984375,Medium Value,Medium Retention,Medium Value + Medium Retention
+SF-20200,240,10,513.552,2014-12-23,921,2,3,1,2909.234,No,0.7178705930709839,Loyal Customers,665.0511474609375,Medium Value,Medium Retention,Medium Value + Medium Retention
+SF-20965,243,10,3099.192,2014-10-21,984,2,3,4,237.34300000000002,No,0.9284229874610901,Champions,875.539306640625,High Value,High Retention,High Value + High Retention
+SG-20080,563,10,2567.151,2015-10-31,609,1,3,4,839.43,No,0.9564390182495117,Loyal Customers,535.5750732421875,Medium Value,High Retention,Medium Value + High Retention
+SG-20470,1,14,1884.798,2014-07-26,1071,5,5,3,0,Yes,0.6527372002601624,Potential Loyalists,514.59698486328125,Medium Value,Medium Retention,Medium Value + Medium Retention
+SG-20605,67,12,3108.9120000000003,2014-01-23,1255,4,4,4,15.92,No,0.9307669401168823,Potential Loyalists,608.35400390625,Medium Value,High Retention,Medium Value + High Retention
+SG-20890,44,5,47.946,2014-03-30,1189,4,2,1,0,Yes,0.9180868268013,At Risk,431.7628479003906,Low Value,Medium Retention,Low Value + Medium Retention
+SH-19975,117,19,2566.7115,2014-12-10,934,3,5,4,840.128,No,0.7758665680885315,Champions,673.2271728515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+SH-20395,58,12,1963.854,2014-11-02,972,4,4,3,216.864,No,0.9339748620986938,Champions,851.87774658203125,High Value,High Retention,High Value + High Retention
+SH-20635,583,2,2096.392,2014-12-16,928,1,1,3,0,Yes,0.28180792927742004,Needs Attention,790.052490234375,High Value,Low Retention,High Value + Low Retention
+SJ-20125,61,18,1754.6979999999999,2015-09-22,648,4,5,3,2194.958,No,0.7086074948310852,Loyal Customers,497.38446044921875,Low Value,Medium Retention,Low Value + Medium Retention
+SJ-20215,72,6,723.614,2015-02-09,873,4,2,2,617.422,No,0.9381430745124817,Potential Loyalists,613.17047119140625,Medium Value,High Retention,Medium Value + High Retention
+SJ-20500,71,7,1318.7759999999998,2014-08-31,1035,4,2,2,0,Yes,0.5096176266670227,Needs Attention,534.29815673828125,Medium Value,Low Retention,Medium Value + Low Retention
+SK-19990,69,3,251.81,2016-11-28,215,4,1,1,631.5989999999999,No,0.9630988240242004,Potential Loyalists,553.6431884765625,Medium Value,High Retention,Medium Value + High Retention
+SL-20155,203,6,1348.758,2014-09-21,1014,2,2,3,1704.2540000000001,No,0.59881192445755,Loyal Customers,717.2764892578125,Medium Value,Low Retention,Medium Value + Low Retention
+SM-20005,239,6,244.494,2014-11-23,951,2,2,1,0,Yes,0.3768244981765747,Needs Attention,680.8209228515625,Medium Value,Low Retention,Medium Value + Low Retention
+SM-20320,554,13,24508.631999999998,2014-03-18,1201,1,4,5,534.418,No,0.5716975331306458,Loyal Customers,564.9180908203125,Medium Value,Low Retention,Medium Value + Low Retention
+SM-20905,424,6,1043.041,2016-05-03,424,1,2,2,0,Yes,0.5399883389472961,Needs Attention,495.8741760253906,Low Value,Low Retention,Low Value + Low Retention
+SM-20950,32,18,4492.892,2014-09-29,1006,5,5,5,1070.5,No,0.9213260412216187,Champions,770.5557861328125,High Value,Medium Retention,High Value + Medium Retention
+SN-20560,145,14,1097.824,2015-06-18,744,3,5,2,762.594,No,0.8825212717056274,Potential Loyalists,357.5335388183594,Low Value,Medium Retention,Low Value + Medium Retention
+SN-20710,225,18,2873.3552,2014-05-06,1152,2,5,4,254.604,No,0.9121710062026978,Loyal Customers,451.18280029296875,Low Value,Medium Retention,Low Value + Medium Retention
+SO-20335,69,9,1959.7715,2015-10-11,629,4,3,3,642.804,No,0.9091816544532776,Loyal Customers,676.0350341796875,Medium Value,Medium Retention,Medium Value + Medium Retention
+SP-20545,145,10,1306.086,2014-10-13,992,3,3,2,0,Yes,0.8987976908683777,Needs Attention,549.15948486328125,Medium Value,Medium Retention,Medium Value + Medium Retention
+SP-20620,205,12,2303.652,2014-09-08,1027,2,4,4,3136.667,No,0.8494403958320618,Champions,731.0859375,High Value,Medium Retention,High Value + Medium Retention
+SP-20650,204,15,1872.436,2014-04-16,1172,2,5,3,0,Yes,0.8909487724304199,Potential Loyalists,519.2713623046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+SP-20860,119,22,4232.588,2014-12-15,929,3,5,5,50.352000000000004,No,0.7430212497711182,Loyal Customers,710.5955810546875,Medium Value,Medium Retention,Medium Value + Medium Retention
+SP-20920,107,13,3966.697,2014-11-22,952,3,4,5,23.992,No,0.7845621705055237,Loyal Customers,859.31964111328125,High Value,Medium Retention,High Value + Medium Retention
+SR-20425,75,6,2826.2490000000003,2014-06-14,1113,4,2,4,407.232,No,0.9766544103622437,Loyal Customers,640.98480224609375,Medium Value,High Retention,Medium Value + High Retention
+SR-20740,14,12,4345.886,2014-02-20,1227,5,4,5,0,Yes,0.9836599826812744,Loyal Customers,545.20355224609375,Medium Value,High Retention,Medium Value + High Retention
+SS-20140,28,10,253.086,2014-11-23,951,5,3,1,1070.942,No,0.7740908861160278,Loyal Customers,642.65557861328125,Medium Value,Medium Retention,Medium Value + Medium Retention
+SS-20410,588,9,2844.147,2014-05-30,1128,1,3,4,212.66,No,0.8727990388870239,Potential Loyalists,439.23065185546875,Low Value,Medium Retention,Low Value + Medium Retention
+SS-20515,309,6,613.4,2014-07-14,1083,1,2,1,0,Yes,0.6635037660598755,At Risk,553.22021484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+SS-20590,250,9,418.49,2014-08-05,1061,2,3,1,0,Yes,0.32422178983688354,Needs Attention,575.5841064453125,Medium Value,Low Retention,Medium Value + Low Retention
+SS-20875,308,13,921.726,2014-12-14,930,2,4,2,42.91,No,0.2013632357120514,Needs Attention,601.7763671875,Medium Value,Low Retention,Medium Value + Low Retention
+ST-20530,11,11,419.004,2014-02-14,1233,5,4,1,14.336,No,0.82353675365448,Potential Loyalists,270.86602783203125,Low Value,Medium Retention,Low Value + Medium Retention
+SU-20665,110,14,1694.608,2015-12-05,574,3,5,3,900.7560000000001,No,0.9296797513961792,Loyal Customers,565.4730224609375,Medium Value,High Retention,Medium Value + High Retention
+SV-20365,233,12,3011.014,2014-01-11,1267,2,4,4,8459.936,No,0.9017495512962341,Champions,2227.18505859375,High Value,Medium Retention,High Value + Medium Retention
+SV-20785,138,25,4105.305,2014-04-12,1176,3,5,5,0,Yes,0.6039389371871948,Loyal Customers,408.4820251464844,Low Value,Low Retention,Low Value + Low Retention
+SV-20815,309,5,1259.41,2015-05-04,789,1,2,2,11.68,No,0.31873583793640137,Potential Loyalists,495.8741760253906,Low Value,Low Retention,Low Value + Low Retention
+SV-20935,68,5,838.028,2016-03-19,469,4,2,2,1065.463,No,0.9880744814872742,Loyal Customers,518.7950439453125,Medium Value,High Retention,Medium Value + High Retention
+SW-20245,126,9,845.72,2014-07-20,1077,3,3,2,239.358,No,0.8558430075645447,Potential Loyalists,545.824951171875,Medium Value,Medium Retention,Medium Value + Medium Retention
+SW-20275,105,4,954.15,2014-03-10,1209,3,1,2,1012.5,No,0.550074577331543,Loyal Customers,507.1359558105469,Medium Value,Low Retention,Medium Value + Low Retention
+SW-20350,440,3,552.23,2016-04-09,448,1,1,1,466.81399999999996,No,0.880749523639679,Needs Attention,647.1195068359375,Medium Value,Medium Retention,Medium Value + Medium Retention
+SW-20455,277,5,2621.652,2015-06-22,740,2,2,4,299.892,No,0.8980506658554077,Loyal Customers,787.4720458984375,High Value,Medium Retention,High Value + Medium Retention
+SW-20755,352,8,758.6959999999999,2014-11-02,972,1,3,2,0,Yes,0.7218758463859558,At Risk,599.82763671875,Medium Value,Medium Retention,Medium Value + Medium Retention
+SZ-20035,152,14,2674.935,2014-09-07,1028,3,5,4,950.394,No,0.9479508996009827,Champions,570.38134765625,Medium Value,High Retention,Medium Value + High Retention
+TA-21385,88,6,879.162,2014-09-12,1023,4,2,2,13716.458,No,0.8526033759117126,Loyal Customers,607.11932373046875,Medium Value,Medium Retention,Medium Value + Medium Retention
+TB-21055,102,14,1213.721,2016-06-17,379,3,5,2,254.16,No,0.7289592027664185,Needs Attention,357.5335388183594,Low Value,Medium Retention,Low Value + Medium Retention
+TB-21175,445,7,298.226,2014-12-08,936,1,2,1,3291.0699999999997,No,0.10999084264039993,Potential Loyalists,724.1544189453125,Medium Value,Low Retention,Medium Value + Low Retention
+TB-21190,582,2,773.4540000000001,2014-12-27,917,1,1,2,42.72,No,0.88608318567276,Potential Loyalists,571.5181884765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+TB-21250,167,19,1602.376,2014-12-08,936,3,5,3,0,Yes,0.6429007053375244,Potential Loyalists,586.03228759765625,Medium Value,Medium Retention,Medium Value + Medium Retention
+TB-21280,401,11,2198.4500000000003,2014-06-21,1106,1,4,4,0,Yes,0.40201249718666077,Potential Loyalists,546.17498779296875,Medium Value,Low Retention,Medium Value + Low Retention
+TB-21355,44,12,719.032,2016-01-25,523,4,4,2,115.296,No,0.984088659286499,Needs Attention,530.7723388671875,Medium Value,High Retention,Medium Value + High Retention
+TB-21400,20,17,9133.99,2014-01-21,1257,5,5,5,0,Yes,0.8957333564758301,Loyal Customers,1856.5428466796875,High Value,Medium Retention,High Value + Medium Retention
+TB-21520,513,17,4644.924,2014-10-17,988,1,5,5,92.562,No,0.9156559705734253,Loyal Customers,775.7352294921875,High Value,Medium Retention,High Value + Medium Retention
+TB-21595,103,7,1387.559,2014-02-18,1229,3,2,3,0,Yes,0.3812297284603119,Needs Attention,392.18719482421875,Low Value,Low Retention,Low Value + Low Retention
+TB-21625,37,13,1674.552,2014-08-06,1060,5,4,3,1123.116,No,0.8147076368331909,Champions,754.21502685546875,High Value,Medium Retention,High Value + Medium Retention
+TC-20980,217,12,19052.218,2014-11-07,967,2,4,5,0,Yes,0.4071798324584961,Potential Loyalists,906.3348388671875,High Value,Low Retention,High Value + Low Retention
+TC-21295,56,6,3088.114,2014-10-14,991,4,2,4,1178.6979999999999,No,0.9820348024368286,Loyal Customers,886.6910400390625,High Value,High Retention,High Value + High Retention
+TC-21475,62,10,1168.2,2014-11-22,952,4,3,2,76.776,No,0.8137395977973938,Potential Loyalists,643.93804931640625,Medium Value,Medium Retention,Medium Value + Medium Retention
+TC-21535,225,8,689.3860000000001,2014-11-03,971,2,3,2,53.172,No,0.8110805749893188,Loyal Customers,683.4859619140625,Medium Value,Medium Retention,Medium Value + Medium Retention
+TD-20995,16,9,1335.564,2014-05-19,1139,5,3,2,98.984,No,0.48984473943710327,Loyal Customers,315.9665222167969,Low Value,Low Retention,Low Value + Low Retention
+TG-21310,155,9,3058.372,2015-03-09,845,3,3,4,0,Yes,0.6603962779045105,Potential Loyalists,838.708251953125,High Value,Medium Retention,High Value + Medium Retention
+TG-21640,652,8,1825.8410000000001,2014-03-31,1188,1,3,3,248.82,No,0.7472352981567383,Potential Loyalists,497.0331115722656,Low Value,Medium Retention,Low Value + Medium Retention
+TH-21100,162,7,2422.824,2014-09-27,1008,3,2,4,0,Yes,0.5146447420120239,Potential Loyalists,818.393310546875,High Value,Low Retention,High Value + Low Retention
+TH-21115,358,5,2051.268,2014-09-23,1012,1,2,3,891.504,No,0.5592675805091858,Potential Loyalists,784.877685546875,High Value,Low Retention,High Value + Low Retention
+TH-21235,23,12,967.881,2014-11-04,970,5,4,2,54.32,No,0.8296557664871216,Potential Loyalists,790.03094482421875,High Value,Medium Retention,High Value + Medium Retention
+TH-21550,5,9,2206.428,2014-04-05,1183,5,3,4,2027.6680000000001,No,0.21208199858665466,Loyal Customers,523.9061279296875,Medium Value,Low Retention,Medium Value + Low Retention
+TM-21010,153,18,2939.266,2014-02-21,1226,3,5,4,15.96,No,0.9053720831871033,Loyal Customers,303.501953125,Low Value,Medium Retention,Low Value + Medium Retention
+TM-21490,93,1,325.86,2017-03-30,93,4,1,1,768.818,No,0.8979519605636597,Needs Attention,680.6351318359375,Medium Value,Medium Retention,Medium Value + Medium Retention
+TN-21040,197,11,3025.471,2014-10-10,995,3,4,4,104.75,No,0.9541864395141602,Loyal Customers,825.39666748046875,High Value,High Retention,High Value + High Retention
+TP-21130,158,9,1619.076,2015-04-14,809,3,3,3,2834.98,No,0.8567827939987183,Champions,770.4105224609375,High Value,Medium Retention,High Value + Medium Retention
+TP-21415,142,8,899.8707999999999,2015-11-28,581,3,3,2,4429.134,No,0.9651694297790527,Loyal Customers,540.91650390625,Medium Value,High Retention,Medium Value + High Retention
+TP-21565,168,10,1936.6399999999999,2015-03-01,853,3,3,3,0,Yes,0.5885322093963623,Needs Attention,770.4105224609375,High Value,Low Retention,High Value + Low Retention
+TR-21325,11,7,675.942,2014-12-01,943,5,2,2,0,Yes,0.742872953414917,Needs Attention,638.853271484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+TS-21085,175,2,4.833,2015-07-19,713,3,1,1,0,Yes,0.34483781456947327,At Risk,553.6431884765625,Medium Value,Low Retention,Medium Value + Low Retention
+TS-21160,322,17,2163.6240000000003,2014-04-23,1165,1,5,4,0,Yes,0.36104875802993774,Potential Loyalists,367.5245056152344,Low Value,Low Retention,Low Value + Low Retention
+TS-21205,16,19,5371.09,2014-03-21,1198,5,5,5,0,Yes,0.6445110440254211,Loyal Customers,366.55316162109375,Low Value,Medium Retention,Low Value + Medium Retention
+TS-21340,44,12,974.782,2014-01-19,1259,4,4,2,0,Yes,0.706774115562439,Needs Attention,874.61297607421875,High Value,Medium Retention,High Value + Medium Retention
+TS-21370,51,10,5399.437,2014-10-28,977,4,3,5,6492.314,No,0.9593977928161621,Loyal Customers,949.20635986328125,High Value,High Retention,High Value + High Retention
+TS-21430,230,5,1952.388,2014-07-30,1067,2,2,3,101.752,No,0.9523919224739075,Potential Loyalists,792.3802490234375,High Value,High Retention,High Value + High Retention
+TS-21505,279,6,1374.328,2014-12-20,924,2,2,3,868.946,No,0.518362283706665,Loyal Customers,730.587890625,High Value,Low Retention,High Value + Low Retention
+TS-21610,15,6,2403.472,2014-08-16,1050,5,2,4,416.952,No,0.8960963487625122,Loyal Customers,686.45318603515625,Medium Value,Medium Retention,Medium Value + Medium Retention
+TS-21655,56,14,3368.094,2015-02-06,876,4,5,5,0,Yes,0.8355109691619873,Potential Loyalists,728.146240234375,High Value,Medium Retention,High Value + Medium Retention
+TT-21070,416,8,1102.436,2014-05-18,1140,1,3,2,3813.166,No,0.7731838822364807,Champions,338.2352600097656,Low Value,Medium Retention,Low Value + Medium Retention
+TT-21220,1,15,1427.0439999999999,2014-09-23,1012,5,5,3,0,Yes,0.3487059473991394,Potential Loyalists,439.4931335449219,Low Value,Low Retention,Low Value + Low Retention
+TT-21265,224,3,439.5,2015-08-15,686,2,1,1,0,Yes,0.36734068393707275,At Risk,730.7777099609375,High Value,Low Retention,High Value + Low Retention
+TT-21460,119,7,2239.148,2015-12-08,571,3,2,4,3125.66,No,0.9608802795410156,Champions,737.32940673828125,High Value,High Retention,High Value + High Retention
+TW-21025,18,10,5227.562,2014-12-22,922,5,3,5,51.263999999999996,No,0.8673966526985168,Loyal Customers,833.46160888671875,High Value,Medium Retention,High Value + Medium Retention
+TZ-21580,495,8,1702.126,2014-11-11,963,1,3,3,5.16,No,0.8327561020851135,Potential Loyalists,818.362060546875,High Value,Medium Retention,High Value + Medium Retention
+VB-21745,115,9,1999.816,2015-07-17,715,3,3,3,5.78,No,0.8730520606040955,Potential Loyalists,676.0350341796875,Medium Value,Medium Retention,Medium Value + Medium Retention
+VD-21670,399,16,6442.254,2014-08-04,1062,1,5,5,0,Yes,0.3465656638145447,Potential Loyalists,473.09185791015625,Low Value,Low Retention,Low Value + Low Retention
+VF-21715,40,6,686.208,2014-03-01,1218,5,2,2,161.736,No,0.9208011627197266,Potential Loyalists,398.18414306640625,Low Value,Medium Retention,Low Value + Medium Retention
+VG-21790,153,6,654.87,2014-08-08,1058,3,2,1,191.14,No,0.869610607624054,Needs Attention,586.73583984375,Medium Value,Medium Retention,Medium Value + Medium Retention
+VG-21805,104,6,427.372,2014-09-22,1013,3,2,1,0,Yes,0.11556665599346161,Needs Attention,662.8914794921875,Medium Value,Low Retention,Medium Value + Low Retention
+VM-21685,107,10,2405.694,2014-04-07,1181,3,3,4,49.172,No,0.5191047191619873,Loyal Customers,579.6904296875,Medium Value,Low Retention,Medium Value + Low Retention
+VM-21835,382,7,365.87,2014-03-22,1197,1,2,1,14.82,No,0.3023969531059265,Needs Attention,354.4290771484375,Low Value,Low Retention,Low Value + Low Retention
+VP-21730,1,2,94.792,2015-07-05,727,5,1,1,899.1099999999999,No,0.8726532459259033,Potential Loyalists,497.8587951660156,Low Value,Medium Retention,Low Value + Medium Retention
+VP-21760,370,12,1466.74,2014-09-06,1029,1,4,3,1893.786,No,0.5524339079856873,Loyal Customers,560.23297119140625,Medium Value,Low Retention,Medium Value + Low Retention
+VS-21820,39,8,1055.981,2014-01-07,1271,5,3,2,0,Yes,0.3679560124874115,Needs Attention,1299.435791015625,High Value,Low Retention,High Value + Low Retention
+VT-21700,818,9,1736.596,2014-06-06,1121,1,3,3,0,Yes,0.421877384185791,Needs Attention,497.0331115722656,Low Value,Low Retention,Low Value + Low Retention
+VW-21775,140,14,4208.298,2014-05-11,1147,3,5,5,1925.74,No,0.9442121982574463,Champions,587.96429443359375,Medium Value,High Retention,Medium Value + High Retention
+WB-21850,2,34,6022.989,2014-11-04,970,5,5,5,137.113,No,0.8704026341438293,Champions,621.7572021484375,Medium Value,Medium Retention,Medium Value + Medium Retention
+XP-21865,240,22,1925.346,2014-01-20,1258,2,5,3,449.312,No,0.8242305517196655,Loyal Customers,1829.0989990234375,High Value,Medium Retention,High Value + Medium Retention
+YC-21895,298,7,4703.67,2014-11-17,957,2,2,5,750.68,No,0.9306384325027466,Champions,1082.150390625,High Value,High Retention,High Value + High Retention
+YS-21880,57,7,1851.384,2015-01-12,901,4,2,3,4869.0599999999995,No,0.8503516912460327,Champions,831.70489501953125,High Value,Medium Retention,High Value + Medium Retention
+ZC-21910,12,28,7996.017,2014-10-13,992,5,5,5,29.689999999999998,No,0.9665442705154419,Champions,526.97857666015625,Medium Value,High Retention,Medium Value + High Retention
+ZD-21925,20,9,1493.944,2014-08-27,1039,5,3,3,0,Yes,0.4019033908843994,Potential Loyalists,667.02020263671875,Medium Value,Low Retention,Medium Value + Low Retention
