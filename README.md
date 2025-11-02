@@ -25,9 +25,6 @@ Key insights generated from the predictive analytics pipeline:
 | ![Customer Segments Heatmap](figures/customer_segments_heatmap.png) | Matrix combining retention risk and predicted value tiers |
 | ![Expected ROI by Segment](figures/roi_by_segment.png) | Estimated marketing ROI per segment for campaign planning |
 
-## Live Report
-View the interactive predictive analytics report here:  
-[Open Predictive Analytics Report →](reports/Superstore_Predictive_Customer_Analytic.html)
 
 > **Previous Project:** [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)  
 > This RFM segmentation serves as the foundation for all predictive modeling and strategy simulations.
