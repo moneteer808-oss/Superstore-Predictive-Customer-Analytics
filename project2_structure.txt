@@ -1,13 +1,18 @@
-.
+Superstore-Predictive-Customer-Analytics/
+│
+├── README.md
 ├── Superstore-Predictive-Customer-Analytics.Rproj
-├── data
+│
+├── data/
 │   └── Superstore.csv
-├── figures
+│
+├── figures/
 │   ├── churn_probability_distribution.png
 │   ├── clv_actual_vs_predicted.png
 │   ├── customer_segments_heatmap.png
 │   └── roi_by_segment.png
-├── output
+│
+├── output/
 │   ├── high_value_low_retention_customers.csv
 │   ├── marketing_segment_summary.csv
 │   ├── predictive_customer_segments.csv
@@ -15,10 +20,10 @@
 │   ├── rfm_customer_segments.csv
 │   ├── segment_metrics.csv
 │   └── segment_roi_summary.csv
-├── reports
-│   ├── Superstore_Predictive_Analytic.Rmd
-│   └── Superstore_Predictive_Analytic.html
-└── scripts
-    ├── Superrstore_Predictive_Analytic.R
-    ├── Superstore_Predictive_Analytic.R
-    └── initial scripts.R
+│
+├── reports/
+│   ├── Superstore_Predictive_Analytics.Rmd
+│   └── Superstore_Predictive_Analytics.html
+│
+└── scripts/
+    └── Superrstore_Predictive_Analytic.R   ← main and correct version
