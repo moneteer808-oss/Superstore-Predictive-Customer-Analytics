@@ -35,13 +35,13 @@ Dataset: [Superstore Sales Dataset (Kaggle)](https://www.kaggle.com/datasets/viv
 
 ---
 
-### 🧠 Tech Stack
+### Tech Stack
 - R, Tidyverse, Caret, RandomForest, XGBoost  
 - R Markdown, Shiny, ggplot2  
 
 ---
 
-### 📈 Project Objective
+### Project Objective
 Develop a unified customer intelligence system that:
 1. Predicts customer churn risk  
 2. Estimates customer lifetime value (CLV)  
@@ -50,7 +50,7 @@ Develop a unified customer intelligence system that:
 
 ---
 
-### 🔗 Related Repository
+### Related Repository
 - [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)
 
 ---
