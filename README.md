@@ -53,9 +53,14 @@ Comprehensive analysis that:
 ---
 
 ### Learning Journey
-- **Previous**: [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)
-- **Next**: [Customer Analytics - Python Implementation](https://github.com/moneteer808-oss/Customer-Analytic-Python) (Successful pivot implementation)
+**Previous Project:** [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)  
+*Foundation RFM analysis that informed this predictive exploration*
 
+**Next Implementation:** [Customer Analytics - Python](https://github.com/moneteer808-oss/Customer-Analytic-Python)  
+*Python implementation of the successful descriptive analytics pivot*
+
+**Tool Comparison:** [RFM Customer Segmentation - Python](https://github.com/moneteer808-oss/RFM-Customer-Segmentation-Python)  
+*RFM analysis comparison between R and Python*
 ---
 
 ### Key Learning
