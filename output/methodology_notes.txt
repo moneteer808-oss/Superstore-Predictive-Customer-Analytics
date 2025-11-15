@@ -1,0 +1,15 @@
+METHODOLOGY NOTE: PREDICTIVE ANALYTICS LIMITATION
+
+Initial analysis revealed fundamental limitations for predictive modeling:
+- Near-zero correlations between historical behavior and future spending
+- All feature-future outcome correlations < 0.06
+- Customer future behavior is unpredictable with available RFM features
+
+SUCCESSFUL ANALYTICAL PIVOT:
+The project successfully delivered value through descriptive analytics:
+- RFM segmentation with clear strategic implications
+- Actionable customer prioritization based on historical value
+- Data-driven marketing recommendations
+- Product category performance insights
+
+All deliverables are based on proven historical patterns rather than unreliable future predictions.

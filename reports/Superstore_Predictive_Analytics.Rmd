@@ -1,5 +1,5 @@
 ---
-title: "Predictive Customer Segmentation Report (Superstore Data)"
+title: "Customer Analytics Feasibility Assessment Report (Superstore Data)"
 author: "Moneteer"
 date: "`r Sys.Date()`"
 output:
@@ -11,13 +11,26 @@ output:
 
 # About This Report
 
-This RMarkdown file contains the predictive modeling analysis for customer segmentation using Superstore sales data. Building on the RFM analysis from Project 1, this report implements machine learning models to predict churn probability and combines it with historical spend to create actionable marketing segments with ROI analysis. The final report was completed on `r date()`.
+This report documents a comprehensive **feasibility assessment of predictive modeling** for customer behavior forecasting using Superstore sales data. The analysis reveals fundamental data limitations and successfully **pivots to descriptive analytics** to deliver actionable business insights through customer segmentation.
 
-**Data Description:**
+**Key Findings:**
+- Predictive modeling shows weak correlations with future behavior (all < 0.06)
+- Traditional RFM segmentation provides reliable business value
+- Clear strategic segments identified for targeted marketing
+- Technology category demonstrates superior performance
 
-This dataset contains detailed sales transactions for a retail "Superstore", including order information, customer details, sales, quantity, discounts, profit, and shipping data.
+**Analytical Journey:**
+1. **Predictive Modeling Exploration**: Attempted churn and CLV prediction
+2. **Feasibility Assessment**: Discovered weak predictive signals
+3. **Strategic Pivot**: Successfully delivered value through descriptive analytics
+4. **Business Insights**: Customer prioritization and marketing recommendations
 
 **Data Source:** [Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final/data)
+
+**Data Description:**
+This dataset contains detailed sales transactions for a retail "Superstore", including order information, customer details, sales, quantity, discounts, profit, and shipping data.
+
+**Disclaimer:** This dataset is used for educational purposes only. All analyses, results, and insights presented in this report are meant for learning, demonstration, and practice.
 
 **Prerequisites:**
 
@@ -25,10 +38,6 @@ This analysis builds upon Project 1 (RFM Analysis). Ensure you have:
 
 - Raw data: `data/Superstore.csv`
 - Output from Project 1: `output/rfm_customer_segments.csv` 
-
-**Disclaimer:**
-
-This dataset is used for educational purposes only. All analyses, results, and insights presented in this report are meant for learning, demonstration, and practice.
 
 ```{r setup, include=FALSE}
 # Global options
@@ -464,4 +473,13 @@ kable(recommendations, caption = "Strategic Recommendations by Segment")
 
 ## Summary
 
-This analysis successfully implemented predictive models for customer segmentation, combining churn prediction with historical customer value to create actionable marketing segments. The model identified high-risk, high-value customers requiring immediate intervention, as well as opportunities for growth across various customer tiers.
+This analysis began as a predictive modeling exploration but revealed fundamental data limitations through rigorous feasibility assessment. The key insight is that **customer future behavior shows near-zero correlation with historical RFM patterns** in this dataset.
+
+**Strategic Pivot Success:**
+- Successfully transitioned from predictive modeling to descriptive analytics
+- RFM segmentation provides reliable, actionable business intelligence
+- Identified high-value at-risk customers requiring immediate intervention
+- Delivered data-driven marketing recommendations based on historical patterns
+
+**Key Learning:**
+This project demonstrates mature analytical judgment - knowing when **not** to pursue predictive modeling is as important as knowing when to use it. The successful pivot to descriptive analytics delivered tangible business value where predictive approaches would have yielded unreliable results.

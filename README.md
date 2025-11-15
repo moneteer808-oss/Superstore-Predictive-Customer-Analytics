@@ -1,33 +1,35 @@
-# Superstore Predictive Customer Analytics
+# Superstore Predictive Customer Analytics - Feasibility Assessment
 
-This project extends the insights from [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation) by applying **predictive analytics** to forecast **customer churn** and **lifetime value (CLV)**.  
-It combines machine learning models with RFM segmentation to support **marketing strategy and ROI optimization**.
+This project explores the **feasibility of predictive modeling** for customer behavior forecasting, building on insights from [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation).  
+The analysis reveals fundamental data limitations and successfully **pivots to descriptive analytics** for actionable business insights.
 
-## Key Features
-- Clean, modular R workflow for predictive modeling
-- Churn probability and CLV prediction using regression and classification
-- Customer-level probability and value scoring
-- Integrated RFM + Predictive segmentation for business decisions
+## Key Findings
+- **Predictive modeling limitations identified**: All correlations with future spend < 0.06
+- **Strategic pivot to descriptive analytics**: RFM segmentation provides reliable business value
+- **Actionable customer segments**: High-value at-risk customers identified for immediate action
+- **Technology category superiority**: Highest spend and lowest churn rates
+
+## Analytical Journey
+1. **Predictive Modeling Exploration**: Attempted churn and CLV prediction
+2. **Feasibility Assessment**: Discovered weak predictive signals in the data
+3. **Strategic Pivot**: Successfully delivered value through descriptive segmentation
+4. **Business Insights**: Customer prioritization and marketing recommendations
 
 ## Outputs
-- `churn_predictions.csv`: Customer churn likelihoods  
-- `clv_predictions.csv`: Predicted customer lifetime value  
-- `predictive_customer_segments.csv`: Combined RFM + predictive segment classifications  
-- `Superstore_Predictive_Customer_Analytics.html`: Interactive HTML report  
+- `customer_analytics_comprehensive.csv`: Complete customer intelligence dataset
+- `high_priority_customers.csv`: Immediate action required customer list
+- `marketing_strategy_recommendations.csv`: Data-driven action plan
+- `methodology_notes.txt`: Detailed feasibility assessment documentation
 
 ## Visual Highlights  
-Key insights generated from the predictive analytics pipeline:
+Key insights from the descriptive analytics approach:
 
 | Visualization | Description |
 |----------------|--------------|
-| ![Churn Probability Distribution](figures/churn_probability_distribution.png) | Probability density of churn likelihoods across customer groups |
-| ![CLV Model: Actual vs Predicted Spend](figures/clv_actual_vs_predicted.png) | Regression comparison between predicted and actual CLV |
-| ![Customer Segments Heatmap](figures/customer_segments_heatmap.png) | Matrix combining retention risk and predicted value tiers |
-| ![Expected ROI by Segment](figures/roi_by_segment.png) | Estimated marketing ROI per segment for campaign planning |
-
-
-> **Previous Project:** [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)  
-> This RFM segmentation serves as the foundation for all predictive modeling and strategy simulations.
+| ![Customer Segments Heatmap](figures/customer_segments_heatmap_clear.png) | Strategic segments based on historical value and engagement |
+| ![Churn Rate by Segment](figures/churn_by_segment.png) | Churn analysis across RFM segments |
+| ![Category Performance](figures/category_performance.png) | Product category value comparison |
+| ![ROI Potential](figures/roi_potential.png) | Expected marketing return by segment |
 
 ## Data Source
 Dataset: [Superstore Sales Dataset (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final/data)  
@@ -35,23 +37,29 @@ Dataset: [Superstore Sales Dataset (Kaggle)](https://www.kaggle.com/datasets/viv
 
 ---
 
-### 🧠 Tech Stack
-- R, Tidyverse, Caret, RandomForest, XGBoost  
-- R Markdown, Shiny, ggplot2  
+### Tech Stack
+- R, Tidyverse, ggplot2  
+- Statistical analysis and feasibility assessment
 
 ---
 
-### 📈 Project Objective
-Develop a unified customer intelligence system that:
-1. Predicts customer churn risk  
-2. Estimates customer lifetime value (CLV)  
-3. Integrates both predictions with RFM segments  
-4. Prioritizes marketing spend based on expected ROI
+### Project Objective
+Comprehensive analysis that:
+1. **Explored predictive modeling** feasibility for customer behavior
+2. **Identified data limitations** through rigorous correlation analysis  
+3. **Successfully pivoted** to descriptive analytics for business value
+4. **Delivered actionable insights** through customer segmentation
 
 ---
 
-### 🔗 Related Repository
-- [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)
+### Learning Journey
+- **Previous**: [Superstore RFM Customer Segmentation](https://github.com/moneteer808-oss/Superstore-RFM-Customer-Segmentation)
+- **Next**: [Customer Analytics - Python Implementation](https://github.com/moneteer808-oss/Customer-Analytic-Python) (Successful pivot implementation)
+
+---
+
+### Key Learning
+This project demonstrates mature analytical judgment: knowing when **not** to use advanced models is as important as knowing when to use them.
 
 ---
 

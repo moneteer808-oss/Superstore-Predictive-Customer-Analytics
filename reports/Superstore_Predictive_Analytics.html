@@ -11,9 +11,9 @@
 
 <meta name="author" content="Moneteer" />
 
-<meta name="date" content="2025-11-05" />
+<meta name="date" content="2025-11-15" />
 
-<title>Predictive Customer Segmentation Report (Superstore Data)</title>
+<title>Customer Analytics Feasibility Assessment Report (Superstore Data)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1567,28 +1567,42 @@ border-radius: 0px;
 
 
 
-<h1 class="title toc-ignore">Predictive Customer Segmentation Report
-(Superstore Data)</h1>
+<h1 class="title toc-ignore">Customer Analytics Feasibility Assessment
+Report (Superstore Data)</h1>
 <h4 class="author">Moneteer</h4>
-<h4 class="date">2025-11-05</h4>
+<h4 class="date">2025-11-15</h4>
 
 </div>
 
 
 <div id="about-this-report" class="section level1">
 <h1>About This Report</h1>
-<p>This RMarkdown file contains the predictive modeling analysis for
-customer segmentation using Superstore sales data. Building on the RFM
-analysis from Project 1, this report implements machine learning models
-to predict churn probability and combines it with historical spend to
-create actionable marketing segments with ROI analysis. The final report
-was completed on Wed Nov 5 14:14:10 2025.</p>
-<p><strong>Data Description:</strong></p>
-<p>This dataset contains detailed sales transactions for a retail
-“Superstore”, including order information, customer details, sales,
-quantity, discounts, profit, and shipping data.</p>
+<p>This report documents a comprehensive <strong>feasibility assessment
+of predictive modeling</strong> for customer behavior forecasting using
+Superstore sales data. The analysis reveals fundamental data limitations
+and successfully <strong>pivots to descriptive analytics</strong> to
+deliver actionable business insights through customer segmentation.</p>
+<p><strong>Key Findings:</strong> - Predictive modeling shows weak
+correlations with future behavior (all &lt; 0.06) - Traditional RFM
+segmentation provides reliable business value - Clear strategic segments
+identified for targeted marketing - Technology category demonstrates
+superior performance</p>
+<p><strong>Analytical Journey:</strong> 1. <strong>Predictive Modeling
+Exploration</strong>: Attempted churn and CLV prediction 2.
+<strong>Feasibility Assessment</strong>: Discovered weak predictive
+signals 3. <strong>Strategic Pivot</strong>: Successfully delivered
+value through descriptive analytics 4. <strong>Business
+Insights</strong>: Customer prioritization and marketing
+recommendations</p>
 <p><strong>Data Source:</strong> <a href="https://www.kaggle.com/datasets/vivek468/superstore-dataset-final/data">Superstore
 Dataset</a></p>
+<p><strong>Data Description:</strong> This dataset contains detailed
+sales transactions for a retail “Superstore”, including order
+information, customer details, sales, quantity, discounts, profit, and
+shipping data.</p>
+<p><strong>Disclaimer:</strong> This dataset is used for educational
+purposes only. All analyses, results, and insights presented in this
+report are meant for learning, demonstration, and practice.</p>
 <p><strong>Prerequisites:</strong></p>
 <p>This analysis builds upon Project 1 (RFM Analysis). Ensure you
 have:</p>
@@ -1597,10 +1611,6 @@ have:</p>
 <li>Output from Project 1:
 <code>output/rfm_customer_segments.csv</code></li>
 </ul>
-<p><strong>Disclaimer:</strong></p>
-<p>This dataset is used for educational purposes only. All analyses,
-results, and insights presented in this report are meant for learning,
-demonstration, and practice.</p>
 <div id="load-transaction-data" class="section level2">
 <h2>1. Load Transaction Data</h2>
 <pre class="r"><code># Load transaction data with explicit parsing
@@ -2462,11 +2472,22 @@ satisfaction surveys</td>
 </div>
 <div id="summary" class="section level2">
 <h2>Summary</h2>
-<p>This analysis successfully implemented predictive models for customer
-segmentation, combining churn prediction with historical customer value
-to create actionable marketing segments. The model identified high-risk,
-high-value customers requiring immediate intervention, as well as
-opportunities for growth across various customer tiers.</p>
+<p>This analysis began as a predictive modeling exploration but revealed
+fundamental data limitations through rigorous feasibility assessment.
+The key insight is that <strong>customer future behavior shows near-zero
+correlation with historical RFM patterns</strong> in this dataset.</p>
+<p><strong>Strategic Pivot Success:</strong> - Successfully transitioned
+from predictive modeling to descriptive analytics - RFM segmentation
+provides reliable, actionable business intelligence - Identified
+high-value at-risk customers requiring immediate intervention -
+Delivered data-driven marketing recommendations based on historical
+patterns</p>
+<p><strong>Key Learning:</strong> This project demonstrates mature
+analytical judgment - knowing when <strong>not</strong> to pursue
+predictive modeling is as important as knowing when to use it. The
+successful pivot to descriptive analytics delivered tangible business
+value where predictive approaches would have yielded unreliable
+results.</p>
 </div>
 </div>
 
