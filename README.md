@@ -68,6 +68,6 @@ This project demonstrates mature analytical judgment: knowing when **not** to us
 
 ---
 
-© 2025 Moneteer808@gmail.com — For educational use only.
+© 2025 [Moneteer](Moneteer808@gmail.com) — For educational use only.
 
 
