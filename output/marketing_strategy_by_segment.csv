@@ -1,0 +1,7 @@
+Segment,Priority,Actions,Budget_Allocation
+Champions,Retain & Grow,"Exclusive offers, loyalty rewards, premium support",High
+Loyal Customers,Upsell,"Cross-sell complementary products, volume discounts",Medium
+Potential Loyalists,Engage & Convert,"Personalized recommendations, email campaigns",Medium
+Needs Attention,Reactivate,"Win-back campaigns, special promotions, surveys",Medium
+At Risk,URGENT: Save,"Immediate personal contact, deep discounts, account review",High
+High Value Inactive,HIGH PRIORITY: Win-back,"Personal outreach, satisfaction investigation, special offers",High
